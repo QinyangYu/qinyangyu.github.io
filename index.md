@@ -8,13 +8,23 @@ layout: homepage
 
 I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). My current research focuses on social networks and computational social science (CSS). Substantively, I study human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
 
+<style>
+.research-columns {
+  columns: 2;          /* 两列 */
+  -webkit-columns: 2;  /* Safari 支持 */
+  -moz-columns: 2;     /* Firefox 支持 */
+}
+</style>
+
 ## Research Interest
 
-- Social Networks
-- Computational Social Science
-- Experimental Design
-- Game Theory
-- Causal Inference
+<ul class="research-columns">
+  <li>Social Networks</li>
+  <li>Computational Social Science</li>
+  <li>Experimental Design</li>
+  <li>Game Theory</li>
+  <li>Causal Inference</li>
+</ul>
 
 
 <h2>Education</h2>
