@@ -6,7 +6,9 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a Physics Ph.D. candidate at [Spin-Ion Technologies](https://www.spin-ion.com/) and [Université Paris-Saclay](https://www.universite-paris-saclay.fr/), working under the mentorship of Dr. [Ravelosona dafiné](https://www.spin-ion.com/about-us/), the director of research [CNRS](https://www.cnrs.fr/fr) and CTO of [Spin-Ion Technologies](https://www.spin-ion.com/). My research involves magnetoelectric ("ME") materials for energy-efficient information technology and "ME" materials for data security in information technology using Multiferroics/Magneto-ionics/Surface charging, with a special focus on the boosting magneto-ionic effect using ion irradiation and implantation.
+I am currently a second-year graduate student in the [Master of Science in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). I earned my bachelor's degree with First Class Honor in Economics and a minor in Mathematics from [The Chinese University of Hong Kong, Shenzhen (CUHKsz)](https://www.cuhk.edu.cn/en).
+
+My current research interests lie in networks and computational social science (CSS). Substantively, I focus on human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
 
 ## Research Interest
 
