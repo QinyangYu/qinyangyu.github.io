@@ -60,15 +60,3 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
     </ul>
   </li>
 </ul>
-
- 
-
-{% include_relative _includes/news.md %}
-
-{% include_relative _includes/projects.md %}
-
-{% include_relative _includes/publications.md %}
-
-{% include_relative _includes/conference.md %}
-
-{% include_relative _includes/contact.md %}
