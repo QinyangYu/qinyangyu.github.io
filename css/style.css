@@ -12639,3 +12639,14 @@ body.night .twikoo code {
 
 /* 只调整 Education 第一层圆点的间距 */
 ul.edu > li { margin: 0.35em 0 !important; }
+
+.nav-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-center a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
