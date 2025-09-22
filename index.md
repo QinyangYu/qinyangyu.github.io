@@ -10,9 +10,9 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 <style>
 .research-columns {
-  columns: 2;          /* 两列 */
-  -webkit-columns: 2;  /* Safari 支持 */
-  -moz-columns: 2;     /* Firefox 支持 */
+  columns: 3;          /* 两列 */
+  -webkit-columns: 3;  /* Safari 支持 */
+  -moz-columns: 3;     /* Firefox 支持 */
 }
 </style>
 
@@ -20,9 +20,13 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 <ul class="research-columns">
   <li>Social Networks</li>
+  <li>Complex Systems</li>
   <li>Computational Social Science</li>
+  <li>Information Diffusion</li>
+  <li>Opinion Dynamics</li>
+  <li>Collective Behaviors</li>
   <li>Experimental Design</li>
-  <li>Game Theory</li>
+  <li>Game Theory & Mathematical Modeling</li>
   <li>Causal Inference</li>
 </ul>
 
