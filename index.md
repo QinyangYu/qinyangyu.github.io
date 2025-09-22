@@ -16,7 +16,18 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 - Game Theory
 - Causal Inference
 
-## Education
+<style>
+/* 只调 Education 的第一层圆点间距 */
+#education + ul > li {
+  margin: 0.35em 0 !important;   /* 想更紧就 0.30em，想更松就 0.45em */
+}
+/* 可选：让二级列表更紧凑一点（不改第一层） */
+#education + ul > li > ul {
+  margin-top: 0.25em !important;
+}
+</style>
+
+<h2 id="education">Education</h2>
 
 - [**Duke University**](https://duke.edu/)
   - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)
