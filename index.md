@@ -21,14 +21,14 @@ My current research focuses on social networks and computational social science 
 ## Education
 - [**Duke Univerisity**](https://duke.edu/)
   - [**M.S. in Economics and Computation**](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected), Durham, United States
-- **M.S. in Economics and Computation**, 2024 - 2026 (Expected), [Duke University](https://duke.edu/), Durham, United States
-- **B.B.A in Economics, Minor in Mathematics**, 2020 - 2024, [The Chinese University of Hong Kong, Shenzhen (CUHKsz)](https://www.cuhk.edu.cn/en), Shenzhen, China
+- [**The Chinese University of Hong Kong, Shenzhen (CUHKsz)**](https://www.cuhk.edu.cn/en)
+  - [**B.B.A in Economics (Economic Science Stream)**](https://sme.cuhk.edu.cn/en/page/43), 2020 - 2024, Shenzhen, China
+  - [**Minor in Mathematics and Applied Mathematics**](https://registry.cuhk.edu.cn/en/page/243), 2020 - 2024, Shenzhen, China
+- [**New York University Shanghai**](https://shanghai.nyu.edu/)
+  -
+  -
+-
 
-- **B.Sc. in Materials Science**, 2009 - 2013, [Nanjing Tech Univeristy](https://www.njtech.edu.cn/), China
-- **German Certificate**, 2011 - 2012, [Nanjing Univeristy](https://www.nju.edu.cn/), China
-- **Coursera Certificate**, 2024 - present, [Coursera](https://www.coursera.org/), Online
-  - [Business English](https://blog.songchen.science/documents/coursera/6B4CVLYK9ASD.pdf)
-  - [Google Project Management](https://blog.songchen.science/documents/coursera/GPM.pdf)
 
 ## Grants and Fellowships
 - **Marie Skłodowska-Curie Actions (MSCA) Individual Fellowship**, 2020-2024, Early Stage Researcher (ESR), Grant Number: 864415
