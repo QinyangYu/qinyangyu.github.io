@@ -6,9 +6,7 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [Master of Science in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). I earned my bachelor's degree in Economics and a minor in Mathematics from [The Chinese University of Hong Kong, Shenzhen (CUHKsz)](https://www.cuhk.edu.cn/en).
-
-My current research focuses on social networks and computational social science (CSS). Substantively, I study human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
+I am currently a second-year graduate student in the [M.s. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). My current research focuses on social networks and computational social science (CSS). Substantively, I study human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
 
 ## Research Interest
 
@@ -20,9 +18,9 @@ My current research focuses on social networks and computational social science 
 
 ## Education
 - [**Duke Univerisity**](https://duke.edu/)
-  - [**M.S. in Economics and Computation**](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected), Durham, United States
+  - [**Master of Science in Economics and Computation (MSEC)**](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected), Durham, United States
 - [**The Chinese University of Hong Kong, Shenzhen (CUHKsz)**](https://www.cuhk.edu.cn/en)
-  - [**B.B.A in Economics (Economic Science Stream)**](https://sme.cuhk.edu.cn/en/page/43), 2020 - 2024, Shenzhen, China
+  - [**Bachelor of Business Administration, Major in Economics (Economic Science Stream)**](https://sme.cuhk.edu.cn/en/page/43), 2020 - 2024, Shenzhen, China
   - [**Minor in Mathematics and Applied Mathematics**](https://registry.cuhk.edu.cn/en/page/243), 2020 - 2024, Shenzhen, China
 - [**New York University Shanghai**](https://shanghai.nyu.edu/)
   -
