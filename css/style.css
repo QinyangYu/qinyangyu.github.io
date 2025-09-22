@@ -12636,3 +12636,14 @@ body.night .twikoo code {
     background-color: #373d48;
   }
 }
+
+/* 调整正文里 Education 这一层列表的间距 */
+#education + ul > li {
+  margin: 0.35em 0 !important;
+}
+
+/* 如果你希望全站一级列表都更紧凑 */
+ul > li {
+  margin: 0.35em 0 !important;
+}
+
