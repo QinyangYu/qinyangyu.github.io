@@ -21,14 +21,14 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 <ul style="margin:0; padding-left:1.25em;">
   <li style="margin:0.35em 0;">
-    <strong><a href="https://duke.edu/">Duke University</a></strong>
+    <strong><a href="https://duke.edu/" style="color:#000;">Duke University</a></strong>
     <ul style="margin:0.25em 0 0 1.1em;">
       <li><a href="https://econ.duke.edu/masters-programs/degree-programs/msec">M.S. in Economics and Computation (MSEC)</a>, 2024–2026 (Expected)</li>
     </ul>
   </li>
 
   <li style="margin:0.35em 0;">
-    <strong><a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen (CUHKsz)</a></strong>
+    <strong><a href="https://www.cuhk.edu.cn/en" style="color:#000;">The Chinese University of Hong Kong, Shenzhen (CUHKsz)</a></strong>
     <ul style="margin:0.25em 0 0 1.1em;">
       <li><a href="https://sme.cuhk.edu.cn/en/page/43">B.B.A. in Economics (Economic Science Stream)</a> with Honors, First Class, 2020–2024</li>
       <li><a href="https://registry.cuhk.edu.cn/en/page/243">Minor in Mathematics and Applied Mathematics</a>, 2020–2024</li>
@@ -36,7 +36,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   </li>
 
   <li style="margin:0.35em 0;">
-    <strong><a href="https://shanghai.nyu.edu/">New York University Shanghai</a></strong>
+    <strong><a href="https://shanghai.nyu.edu/" style="color:#000;">New York University Shanghai</a></strong>
     <ul style="margin:0.25em 0 0 1.1em;">
       <li><a href="https://sicss.io/2025/nyu-shanghai/">Summer Institute in Computational Social Science (SICSS)</a>, Jun.2025</li>
       <li><a href="https://caser.shanghai.nyu.edu/training/2025-summer-school-methods/">Summer School in Applied Social Science Research Methods (Advanced Courses)</a>, Jul.2025</li>
@@ -44,7 +44,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   </li>
 
   <li style="margin:0.35em 0;">
-    <strong><a href="https://www.cam.ac.uk/">The University of Cambridge</a></strong>
+    <strong><a href="https://www.cam.ac.uk/" style="color:#000;">The University of Cambridge</a></strong>
     <ul style="margin:0.25em 0 0 1.1em;">
       <li><a href="https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme">The Online Summer Research Programme at Pembroke College</a> (First with Distinction), Jun–Jul.2023</li>
     </ul>
