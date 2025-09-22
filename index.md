@@ -21,7 +21,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 <div id="education">
   
 - [**Duke University**](https://duke.edu/)
-  - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)\
+  - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)
 
 - [**The Chinese University of Hong Kong, Shenzhen (CUHKsz)**](https://www.cuhk.edu.cn/en)
   - [B.B.A. in Economics (Economic Science Stream)](https://sme.cuhk.edu.cn/en/page/43) with Honors, First Class, 2020-2024
