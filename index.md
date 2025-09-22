@@ -26,7 +26,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   <li>Opinion Dynamics</li>
   <li>Collective Behaviors</li>
   <li>Experimental Design</li>
-  <li>Game Theory & Formal Modeling</li>
+  <li>Game Theory</li>
   <li>Causal Inference</li>
 </ul>
 
