@@ -8,16 +8,15 @@ layout: homepage
 
 I am currently a second-year graduate student in the [Master of Science in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). I earned my bachelor's degree in Economics and a minor in Mathematics from [The Chinese University of Hong Kong, Shenzhen (CUHKsz)](https://www.cuhk.edu.cn/en).
 
-My current research interests lie in networks and computational social science (CSS). Substantively, I focus on human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
+My current research interests lie in social networks and computational social science (CSS). Substantively, I focus on human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
 
 ## Research Interest
 
-- **Ion-material Simulation:** SRIM, SDTrimSP, RustBCA
-- **Ion Irradiation/Implantation**
-- **Machine Learning:** fairness AI, penalization and augmentation methods
-- **E-field controlled magnetization** VCMA, Strain-mediated ME (Magnetoelectric) Effects, Straintronic, iontronic, E-filed induced spin reorientation, SOT.
-- **Micro-, Nanofabrication**
-- **Neuromorphic Computing** Neuromorphic Sensing and Perception, Hybrid Computing Systems, Brain-Inspired Robotics
+- Social Networks
+- Computational Social Science
+- Experimental Design
+- Game Theory
+- Causal Inference
 
 ## Education
 - **Ph.D. in Physics**, 2021 - 2024, [Université Paris-Saclay](https://www.universite-paris-saclay.fr/), France
