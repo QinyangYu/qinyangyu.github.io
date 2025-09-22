@@ -8,7 +8,7 @@ layout: homepage
 
 I am currently a second-year graduate student in the [Master of Science in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). I earned my bachelor's degree in Economics and a minor in Mathematics from [The Chinese University of Hong Kong, Shenzhen (CUHKsz)](https://www.cuhk.edu.cn/en).
 
-My current research interests lie in social networks and computational social science (CSS). Substantively, I focus on human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
+My current research focuses on social networks and computational social science (CSS). Substantively, I study human dynamics in networks and complex social systems, in particular how information, opinions, and behaviors diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in network-based causal inference and experiments, as well as mathematical or game-theoretic modeling in networked settings. 
 
 ## Research Interest
 
@@ -19,8 +19,11 @@ My current research interests lie in social networks and computational social sc
 - Causal Inference
 
 ## Education
-- **Ph.D. in Physics**, 2021 - 2024, [Université Paris-Saclay](https://www.universite-paris-saclay.fr/), France
-- **M.Sc. in Materials Science**, 2017 - 2021, [RWTH-Aachen](https://www.rwth-aachen.de/go/id/a/?lidx=1), Germany
+- [**Duke Univerisity**](https://duke.edu/)
+  - [**M.S. in Economics and Computation**](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected), Durham, United States
+- **M.S. in Economics and Computation**, 2024 - 2026 (Expected), [Duke University](https://duke.edu/), Durham, United States
+- **B.B.A in Economics, Minor in Mathematics**, 2020 - 2024, [The Chinese University of Hong Kong, Shenzhen (CUHKsz)](https://www.cuhk.edu.cn/en), Shenzhen, China
+
 - **B.Sc. in Materials Science**, 2009 - 2013, [Nanjing Tech Univeristy](https://www.njtech.edu.cn/), China
 - **German Certificate**, 2011 - 2012, [Nanjing Univeristy](https://www.nju.edu.cn/), China
 - **Coursera Certificate**, 2024 - present, [Coursera](https://www.coursera.org/), Online
