@@ -12,12 +12,12 @@ address: ""
 address_link: ""
 
 # Search Engine Optimization (SEO)
-keywords: song chen, chen song, songchen, chensong
-canonical: https://minimal-light-theme.yliu.me/
-description: Song Chen is a Ph.D. canditate at Spin-Ion Technologies and Université Paris-Saclay. His research lies at using magneto-ionics to develop new concepts for magnetic data storage, spintronic devices and magnonics, always with the aim of improving energy efficiency with respect to currently available technologies - with a special focus on the boosting magneto-ionic effect using ion irradiation & ion implantation.
+#keywords: song chen, chen song, songchen, chensong
+#canonical: https://minimal-light-theme.yliu.me/
+#description: Song Chen is a Ph.D. canditate at Spin-Ion Technologies and Université Paris-Saclay. His research lies at using magneto-ionics to develop new concepts for magnetic data storage, spintronic devices and magnonics, always with the aim of improving energy efficiency with respect to currently available technologies - with a special focus on the boosting magneto-ionic effect using ion irradiation & ion implantation.
 
 # The option is used to enable the Johns Hopkins template.
-enable_hopkins_logo: true
+enable_hopkins_logo: false
 
 # The option is used to show the last update time.
 enable_last_update: false
