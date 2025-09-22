@@ -12637,13 +12637,5 @@ body.night .twikoo code {
   }
 }
 
-/* 调整正文里 Education 这一层列表的间距 */
-#education + ul > li {
-  margin: 0.35em 0 !important;
-}
-
-/* 如果你希望全站一级列表都更紧凑 */
-ul > li {
-  margin: 0.35em 0 !important;
-}
-
+/* 只调整 Education 第一层圆点的间距 */
+ul.edu > li { margin: 0.35em 0 !important; }
