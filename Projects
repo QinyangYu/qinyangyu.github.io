@@ -1,7 +1,0 @@
----
-layout: page      # 或 default，看你主题支持什么
-title: Projects
-permalink: /projects/
----
-
-{% include_relative _includes/projects.md %}
