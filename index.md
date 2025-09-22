@@ -20,7 +20,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 - [**Duke Univerisity**](https://duke.edu/)
   - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)
 - [**The Chinese University of Hong Kong, Shenzhen (CUHKsz)**](https://www.cuhk.edu.cn/en)
-  - [B.B.A. in Economics (Economic Science Stream) with Honors, First Class](https://sme.cuhk.edu.cn/en/page/43), 2020-2024
+  - [B.B.A. in Economics (Economic Science Stream)](https://sme.cuhk.edu.cn/en/page/43) with Honors, First Class, 2020-2024
   - [Minor in Mathematics and Applied Mathematics](https://registry.cuhk.edu.cn/en/page/243), 2020-2024
 - [**New York University Shanghai**](https://shanghai.nyu.edu/), 
   - [Summer Institute in Computational Social Science (SICSS)](https://sicss.io/2025/nyu-shanghai/), Jun.2025
