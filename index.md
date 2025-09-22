@@ -34,3 +34,12 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   - [The Online Summer Research Programme at Pembroke College](https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme) (First with Distinction), Jun–Jul.2023
  
 
+{% include_relative _includes/news.md %}
+
+{% include_relative _includes/projects.md %}
+
+{% include_relative _includes/publications.md %}
+
+{% include_relative _includes/conference.md %}
+
+{% include_relative _includes/contact.md %}
