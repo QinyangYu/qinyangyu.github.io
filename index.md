@@ -20,12 +20,14 @@ I am currently a second-year graduate student in the [M.s. in Economics and Comp
 - [**Duke Univerisity**](https://duke.edu/)
   - [Master of Science in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected), Durham, United States
 - [**The Chinese University of Hong Kong, Shenzhen (CUHKsz)**](https://www.cuhk.edu.cn/en)
-  - [Bachelor of Business Administration, Major in Economics (Economic Science Stream)](https://sme.cuhk.edu.cn/en/page/43), 2020 - 2024, Shenzhen, China
-  - [Minor in Mathematics and Applied Mathematics](https://registry.cuhk.edu.cn/en/page/243), 2020 - 2024, Shenzhen, China
+  - [Bachelor of Business Administration with Honours, First Class]
+    - [Major in Economics (Economic Science Stream)](https://sme.cuhk.edu.cn/en/page/43), 2020 - 2024, Shenzhen, China
+    - [Minor in Mathematics and Applied Mathematics](https://registry.cuhk.edu.cn/en/page/243), 2020 - 2024, Shenzhen, China
 - [**New York University Shanghai**](https://shanghai.nyu.edu/)
-  -
-  -
--
+  - [Summer Institute in Computational Social Science (SICSS)](https://sicss.io/2025/nyu-shanghai/), Jun.2025, Shanghai, China
+  - [Summer School in Applied Social Science Research Methods (Advanced Courses)](https://caser.shanghai.nyu.edu/training/2025-summer-school-methods/), Jul.2025, Shanghai, China
+- [**The University of Cambridge**](https://www.cam.ac.uk/)
+  - [The Online Summer Research Programme at Pembroke College] (First with Distinction), Jun–Jul.2023, Online
 
 
 ## Grants and Fellowships
