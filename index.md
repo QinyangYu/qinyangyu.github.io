@@ -19,10 +19,10 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 ## Research Interest
 
 <ul class="research-columns">
-  <li>Social Networks & Complex Systems</li>
+  <li>Social Networks, Complex Systems</li>
   <li>Computational Social Science</li>
-  <li>Causal Inference & Experiments</li>
-  <li>Game Theory & Mathematical Modeling</li>
+  <li>Causal Inference, Experiments</li>
+  <li>Game Theory, Mathematical Modeling</li>
   <li>Information Diffusion, Opinion Dynamics, Collective Behaviors</li>
 </ul>
 
