@@ -17,21 +17,40 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 - Causal Inference
 
 
-## Education
+<h2>Education</h2>
 
-- [**Duke University**](https://duke.edu/)
-  - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)
+<ul style="margin:0; padding-left:1.25em;">
+  <li style="margin:0.35em 0;">
+    <strong><a href="https://duke.edu/">Duke University</a></strong>
+    <ul style="margin:0.25em 0 0 1.1em;">
+      <li><a href="https://econ.duke.edu/masters-programs/degree-programs/msec">M.S. in Economics and Computation (MSEC)</a>, 2024–2026 (Expected)</li>
+    </ul>
+  </li>
 
-- [**The Chinese University of Hong Kong, Shenzhen (CUHKsz)**](https://www.cuhk.edu.cn/en)
-  - [B.B.A. in Economics (Economic Science Stream)](https://sme.cuhk.edu.cn/en/page/43) with Honors, First Class, 2020-2024
-  - [Minor in Mathematics and Applied Mathematics](https://registry.cuhk.edu.cn/en/page/243), 2020-2024
+  <li style="margin:0.35em 0;">
+    <strong><a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen (CUHKsz)</a></strong>
+    <ul style="margin:0.25em 0 0 1.1em;">
+      <li><a href="https://sme.cuhk.edu.cn/en/page/43">B.B.A. in Economics (Economic Science Stream)</a> with Honors, First Class, 2020–2024</li>
+      <li><a href="https://registry.cuhk.edu.cn/en/page/243">Minor in Mathematics and Applied Mathematics</a>, 2020–2024</li>
+    </ul>
+  </li>
 
-- [**New York University Shanghai**](https://shanghai.nyu.edu/)
-  - [Summer Institute in Computational Social Science (SICSS)](https://sicss.io/2025/nyu-shanghai/), Jun.2025
-  - [Summer School in Applied Social Science Research Methods (Advanced Courses)](https://caser.shanghai.nyu.edu/training/2025-summer-school-methods/), Jul.2025
+  <li style="margin:0.35em 0;">
+    <strong><a href="https://shanghai.nyu.edu/">New York University Shanghai</a></strong>
+    <ul style="margin:0.25em 0 0 1.1em;">
+      <li><a href="https://sicss.io/2025/nyu-shanghai/">Summer Institute in Computational Social Science (SICSS)</a>, Jun.2025</li>
+      <li><a href="https://caser.shanghai.nyu.edu/training/2025-summer-school-methods/">Summer School in Applied Social Science Research Methods (Advanced Courses)</a>, Jul.2025</li>
+    </ul>
+  </li>
 
-- [**The University of Cambridge**](https://www.cam.ac.uk/)
-  - [The Online Summer Research Programme at Pembroke College](https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme) (First with Distinction), Jun–Jul.2023
+  <li style="margin:0.35em 0;">
+    <strong><a href="https://www.cam.ac.uk/">The University of Cambridge</a></strong>
+    <ul style="margin:0.25em 0 0 1.1em;">
+      <li><a href="https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme">The Online Summer Research Programme at Pembroke College</a> (First with Distinction), Jun–Jul.2023</li>
+    </ul>
+  </li>
+</ul>
+
  
 
 {% include_relative _includes/news.md %}
