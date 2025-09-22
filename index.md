@@ -18,7 +18,6 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 
 ## Education
-{: .edu }
 
 - [**Duke University**](https://duke.edu/)
   - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)
