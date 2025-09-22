@@ -22,12 +22,12 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   <li>Social Networks</li>
   <li>Complex Systems</li>
   <li>Computational Social Science</li>
-  <li>Information Diffusion</li>
-  <li>Opinion Dynamics</li>
-  <li>Collective Behaviors</li>
   <li>Experimental Design</li>
   <li>Game Theory</li>
   <li>Causal Inference</li>
+  <li>Information Diffusion</li>
+  <li>Opinion Dynamics</li>
+  <li>Collective Behaviors</li>
 </ul>
 
 
