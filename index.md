@@ -23,8 +23,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   <li>Computational Social Science</li>
   <li>Causal Inference & Experimental Design</li>
   <li>Game Theory & Mathematical Modeling</li>
-  <li>Information Diffusion & Opinion Dynamics</li>
-  <li>Collective Behaviors</li>
+  <li>Information Diffusion, Opinion Dynamics & Collective Behaviors</li>
 </ul>
 
 
