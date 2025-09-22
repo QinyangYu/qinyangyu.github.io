@@ -18,8 +18,6 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 ## Education
 
-<div id="education">
-  
 - [**Duke University**](https://duke.edu/)
   - [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec), 2024 - 2026 (Expected)
 
@@ -34,7 +32,6 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 - [**The University of Cambridge**](https://www.cam.ac.uk/)
   - [The Online Summer Research Programme at Pembroke College](https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme) (First with Distinction), Jun–Jul.2023
 
-</div>
 
 ## Grants and Fellowships
 - **Marie Skłodowska-Curie Actions (MSCA) Individual Fellowship**, 2020-2024, Early Stage Researcher (ESR), Grant Number: 864415
