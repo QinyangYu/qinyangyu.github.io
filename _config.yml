@@ -12,9 +12,9 @@ address: ""
 address_link: ""
 
 # Search Engine Optimization (SEO)
-keywords: song chen, chen song, songchen, chensong
-canonical: https://minimal-light-theme.yliu.me/
-description: Song Chen is a Ph.D. canditate at Spin-Ion Technologies and Université Paris-Saclay. His research lies at using magneto-ionics to develop new concepts for magnetic data storage, spintronic devices and magnonics, always with the aim of improving energy efficiency with respect to currently available technologies - with a special focus on the boosting magneto-ionic effect using ion irradiation & ion implantation.
+keywords: Qinyang Yu, Yu Qinyang, computational social science, social networks, SNA, Duke University
+canonical: https://qinyangyu.github.io/
+description: Qinyang Yu is currently a second-year graduate student in the Master of Science in Economics and Computation (MSEC) at Duke University. His research focuses on computational social science (CSS) and networks.
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: false
