@@ -4,7 +4,7 @@
 @import "minimal-light";
 
 
-/* 只调第一层列表（Education 外层 li）间距 */
-.page-content > ul > li {
-  margin-bottom: 0.5em;  /* 默认大约是 1em，可以缩小一半 */
+/* 只调 Education 外层 li 的间距 */
+#education > ul > li { 
+  margin: 0.4em 0 !important;  /* 0.3–0.6em 自行微调 */
 }
