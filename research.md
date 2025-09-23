@@ -6,7 +6,7 @@ permalink: /research/
 
 # Cluster 1: Networks, Experiments, & Games
 
-### Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election
+### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf)
 **SICSS, NYU Shanghai** 
 **Jun. 2025**  
 - This group project analyzed the retweet network and texts of 260 Chinese-speaking Trump supporters on X, explored the relationship between network structure and ideological extremity using LDA, SHAP, and GNNExplainer, and discussed intervention strategies  
