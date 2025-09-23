@@ -4,10 +4,6 @@ title: "Research"
 permalink: /research/
 ---
 
-<h1 id="research">Research</h1>
-
-<h2 style="margin: 30px 0 -15px;">Projects</h2>
-
 # Research Experience
 
 ## Cluster 1: Networks, Experiments, & Games
