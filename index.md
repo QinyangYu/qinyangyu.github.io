@@ -63,7 +63,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 <h2>Honors and Awards</h2>
 
-<ul style="margin:0; padding-left:1.25em;">
+<ul style="margin:20px; padding-left:1.25em;">
   <li>Economics Master’s Scholarship Award (Duke University)</li>
   <li>Undergraduate Research Award (19th, 20th, 21st Round, CUHKsz)</li>
   <li>Academic Performance Scholarship (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
