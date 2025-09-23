@@ -36,7 +36,7 @@
     <script src="{{ '/assets/js/github-stars.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}"></script>
 
-    <!-- Mobile nav toggle，与 homepage 同步 -->
+    <!-- Mobile nav toggle -->
     <script>
       function myFunction() {
         var x = document.getElementById("myLinks");
@@ -44,25 +44,26 @@
       }
     </script>
 
-    <!-- 仅子页的轻量样式：正文容器、避免被导航压住、修复 pub 列表间距 -->
+    <!-- 子页样式 -->
     <style>
-      :root { --content-width: 900px; }
+      :root { --content-width: 900px; --nav-height: 64px; }
+
       .page-container{
         max-width: var(--content-width);
         margin: 0 auto;
-        padding: 28px 18px 24px;
+        padding: calc(var(--nav-height) + 16px) 18px 24px; /* 避免被导航遮住 */
       }
-      /* 子页不显示 homepage 的头像列 */
+
+      /* 去掉 homepage 的头像/左栏 */
       header, .wrapper > header { display: none !important; }
 
-      /* 若 nav.css 没固定高度，这里只留最小修正；你可按需调整 */
-      .page-container h1:first-child { margin-top: 8px; }
+      /* 避免标题再顶上去 */
+      .page-container h1:first-child { margin-top: 0; }
 
-      /* 兼容旧的 pub 样式，避免空白 */
+      /* publication 列表修正 */
       .publications .pub-row { display: block; }
       .publications .col-sm-12 { width: 100%; padding-left: 0; padding-right: 0; }
 
-      /* 列表卡片（如果你已有同名规则，可忽略） */
       .bibliography { list-style: none; padding-left: 0; }
       .bibliography > li {
         margin: 18px 0;
@@ -80,20 +81,17 @@
   </head>
 
   <body>
-    <!-- 顶部导航：完全复用 homepage 的结构与 include -->
+    <!-- 顶部导航：不显示 affiliation 图标 -->
     <div class="topnav">
-      <a href="{{ site.affiliation_link }}"><img width="190" src="{{ site.affiliation_logo }}" alt="affiliation"></a>
-
       <div id="myLinks">
         {% include navigation.md %}
       </div>
-
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-    <!-- 返回顶部（如不需要可删除） -->
+    <!-- 返回顶部（可选） -->
     <script src="{{ '/assets/js/vanilla-back-to-top.min.js' | relative_url }}"></script>
     <script>
       if (typeof addBackToTop === 'function') {
@@ -101,10 +99,18 @@
       }
     </script>
     <style>
-      #back-to-top { border:1px solid #ccc; border-radius:0; font-size:15px; width:100px; text-align:center; line-height:30px; height:30px; }
+      #back-to-top {
+        border:1px solid #ccc;
+        border-radius:0;
+        font-size:15px;
+        width:100px;
+        text-align:center;
+        line-height:30px;
+        height:30px;
+      }
     </style>
 
-    <!-- 正文：居中容器 -->
+    <!-- 正文容器 -->
     <main class="page-container">
       {{ content }}
 
@@ -137,8 +143,12 @@
     <footer>
       <div style="font:12px/1.2 Crimson Pro, serif; text-align:center; padding:20px 0;">
         <small>
-          {% if site.imprint %}<a href="{{ site.imprint }}" rel="noopener"><autocolor>Imprint / Impressum</autocolor></a><br>{% endif %}
-          {% if site.data_protection %}<a href="{{ site.data_protection }}" rel="noopener"><autocolor>Data Protection / Datenschutzhinweis</autocolor></a>{% endif %}
+          {% if site.imprint %}
+            <a href="{{ site.imprint }}" rel="noopener"><autocolor>Imprint / Impressum</autocolor></a><br>
+          {% endif %}
+          {% if site.data_protection %}
+            <a href="{{ site.data_protection }}" rel="noopener"><autocolor>Data Protection / Datenschutzhinweis</autocolor></a>
+          {% endif %}
         </small>
       </div>
     </footer>
