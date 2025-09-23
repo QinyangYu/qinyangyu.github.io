@@ -11,7 +11,7 @@ permalink: /research/
 - This group project analyzed the retweet network and texts of 260 Chinese-speaking Trump supporters on X, explored the relationship between network structure and ideological extremity using LDA, SHAP, and GNNExplainer, and discussed intervention strategies  
 - Simulated counterfactual network interventions via the Friedkin-Johnsen opinion dynamics model in Python; compared five rewiring algorithms to effectively reduce extremity; contributed to a 20-minute oral and a poster presentation for the Ideathon event in SICSS  
 
-### [“Ding-Dong! The Wicked Witch Is Dead!”: A Model of Scapegoating in Social Networks](files/research/Working_Paper_1.pdf)  
+### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks (Old Draft)](files/research/Working_Paper_1.pdf)  
 **Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
 **Abstract:** Scapegoating often targets marginalized individuals. Existing accounts focus on identity attributes. In contrast, this paper develops a structural theory of scapegoating that emphasizes how network position shapes vulnerability to unfair blame. A leader facing systemic failure strategically decides whether to self-blame or scapegoat, while agents embedded in a network update beliefs and form public opinions through social learning. Game-theoretic analysis shows that scapegoating systematically targets peripheral nodes with lower centrality. The findings offer insights into the structural mechanism driving inequality and social injustice in interconnected communities.
 
