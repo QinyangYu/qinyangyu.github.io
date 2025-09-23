@@ -24,7 +24,7 @@
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
 
-    <!-- CSS（相对路径，子页也能加载） -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -51,7 +51,7 @@
       .page-container{
         max-width: var(--content-width);
         margin: 0 auto;
-        padding: calc(var(--nav-height) + 16px) 18px 24px; /* 避免被导航遮住 */
+        padding: calc(var(--nav-height) + 12px) 18px 24px; /* 顶部避免被遮 */
       }
 
       /* 去掉 homepage 的头像/左栏 */
@@ -60,28 +60,45 @@
       /* 避免标题再顶上去 */
       .page-container h1:first-child { margin-top: 0; }
 
+      /* ---- 紧凑化 ---- */
+      .page-container h2, .page-container h3, .page-container h4 {
+        margin-top: 16px;
+        margin-bottom: 4px;
+      }
+      .page-container p {
+        margin: 2px 0;
+      }
+      .page-container ul, .page-container ol {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-left: 20px;
+      }
+      .page-container li {
+        margin-bottom: 3px;
+      }
+
       /* publication 列表修正 */
       .publications .pub-row { display: block; }
       .publications .col-sm-12 { width: 100%; padding-left: 0; padding-right: 0; }
 
       .bibliography { list-style: none; padding-left: 0; }
       .bibliography > li {
-        margin: 18px 0;
-        padding: 18px 20px;
+        margin: 14px 0;
+        padding: 14px 16px;
         border: 1px solid #eee;
-        border-radius: 12px;
+        border-radius: 10px;
         background: #fff;
       }
-      .bibliography .title { font-weight: 600; font-size: 18px; line-height: 1.35; margin-bottom: 6px; }
-      .bibliography .author { margin-top: 6px; color: #555; }
-      .bibliography .periodical { margin-top: 6px; color: #666; }
-      .bibliography .abbr .badge { font-size: 11px; padding: 3px 6px; border-radius: 6px; background: #f1f3f5; color: #444; }
-      .bibliography .links a { margin-right: 8px; margin-top: 6px; display: inline-block; }
+      .bibliography .title { font-weight: 600; font-size: 18px; line-height: 1.35; margin-bottom: 4px; }
+      .bibliography .author { margin-top: 3px; color: #555; }
+      .bibliography .periodical { margin-top: 3px; color: #666; }
+      .bibliography .abbr .badge { font-size: 11px; padding: 2px 5px; border-radius: 6px; background: #f1f3f5; color: #444; }
+      .bibliography .links a { margin-right: 6px; margin-top: 4px; display: inline-block; }
     </style>
   </head>
 
   <body>
-    <!-- 顶部导航：不显示 affiliation 图标 -->
+    <!-- 顶部导航（已去掉 affiliation 图标） -->
     <div class="topnav">
       <div id="myLinks">
         {% include navigation.md %}
@@ -90,25 +107,6 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-
-    <!-- 返回顶部（可选） -->
-    <script src="{{ '/assets/js/vanilla-back-to-top.min.js' | relative_url }}"></script>
-    <script>
-      if (typeof addBackToTop === 'function') {
-        addBackToTop({ backgroundColor: '#fff', innerHTML: 'Back to Top', textColor: '#333' });
-      }
-    </script>
-    <style>
-      #back-to-top {
-        border:1px solid #ccc;
-        border-radius:0;
-        font-size:15px;
-        width:100px;
-        text-align:center;
-        line-height:30px;
-        height:30px;
-      }
-    </style>
 
     <!-- 正文容器 -->
     <main class="page-container">
