@@ -20,7 +20,7 @@ permalink: /research/
 
 ### [Government Endorsement and Voter Skepticism: An Experiment of Selective Disclosure in Political Communication](files/research/ECON_690_Concept_Paper_Group_3.pdf)  
 **Supervised by FSU’s Prof. Pellumb Reshidi, Mar.2025 – May.2025**  
-**Abstract:**
+**Abstract:** This paper investigates how explicit knowledge of government bias influences voter skepticism when truthful but selectively disclosed information is presented. We propose a theoretical framework and characterize skeptical and credible Perfect Bayesian Equilibria. We design an individual experiment by randomly assigning participants to interact with either a neutral or biased government with different disclosure strategies. In each round, subjects receive a truthful but potentially ambiguous message, update beliefs, and decide whether to vote for a policy alternative. We test skeptical equilibrium selection under strategic uncertainty and skeptical equilibrium deviation under strategic certainty. Our study contributes to political-communication literature by linking theories of information disclosure and sender credibility to experimental evidence on how bias and transparency jointly shape collective decision-making.
 
 ### [Lawful Roots, Lawless Routes: The Paradox of Litigation-Related Petitions in China](files/research/Independent_Research_1.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Sep.2023 – Dec.2023**  
