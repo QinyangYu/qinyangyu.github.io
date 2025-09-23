@@ -12,7 +12,7 @@ permalink: /research/
 - Simulated counterfactual network interventions via the Friedkin-Johnsen opinion dynamics model in Python; compared five rewiring algorithms to effectively reduce extremity; contributed to a 20-minute oral and a poster presentation for the Ideathon event in SICSS  
 
 ### [“Ding-Dong! The Wicked Witch Is Dead!”: A Model of Scapegoating in Social Networks](files/research/Working_Paper_1.pdf)  
-**Supervised by Duke’s Prof. Charles Becker · Dec. 2024 – Present**  
+**Supervised by Duke’s Prof. Charles Becker  |  Dec. 2024 – Present**  
 - This independent research proposed a networked game to explore the structural mechanisms of scapegoating  
 - Used game theory and ABM to analyze how network structure influences scapegoat selection via network centrality measures, and examined why leaders with higher political trust scapegoat more effectively, while peripheral agents are more vulnerable  
 - Concluded mechanisms driving inequality and social injustice within interconnected communities, yielding an A+ graded course paper  
