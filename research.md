@@ -6,11 +6,11 @@ permalink: /research/
 
 # Cluster 1: Networks, Experiments, & Games
 
-### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf)
+### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf) (Slides)
 **SICSS, NYU Shanghai, Jun.2025**  
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
-### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks (Old Draft)](files/research/Working_Paper_1.pdf)  
+### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/Working_Paper_1.pdf) (Old Draft)
 **Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
 **keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Public Trust, Structural Inequality, Collective Violence
 
