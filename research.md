@@ -24,7 +24,7 @@ permalink: /research/
 
 ### [Lawful Roots, Lawless Routes: The Paradox of Litigation-Related Petitions in China](files/research/Independent_Research_1.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Sep.2023 – Dec.2023**  
-**Abstract:**
+**Abstract:** In the absence of a robust legal framework, petitions in China present significant governance challenges. Counter-intuitively, among specific types of petitions, litigation-related petitions are particularly more prone to escalate into unauthorized forms compared to others without clear legal boundaries. Why does a law-rooted system eventually generate universal lawless behaviors? This study offers a theoretical explanation and examines factors contributing to this problematic type of petitions. We incorporate petitioners into a Bayesian learning process with a biased legal signal structure. Concurrently, the local government interacts by setting a Poisson-distributed arrival rate of returns. Our findings highlight an amplification mechanism where petitioners misinterpret legal norms and form biased posterior beliefs. As a practical application, the model suggests that adjusting how information is conveyed and modifying the governance environment could serve as preventive strategies in local governance.
 
 ### [A Game Theoretic Analysis for Witch Killing and Human Sacrifice](files/research/ECO3160_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Dec.2022**  
@@ -39,11 +39,11 @@ permalink: /research/
 
 ### [Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme](files/research/Working_Paper_2.pdf)    
 **Coauthored with Cambridge’s Dr. Saite Lu, Aug.2023 – Present**  
-**Abstract:**
+**Abstract:** The significance of subjective well-being (SWB) in the development agenda has gained growing recognition in both academic and policy discussions. However, the intricate structure of SWB, which includes multiple sub-dimensions, remains insufficiently examined. This study addresses this gap by analysing SWB across three sub-dimensions—cognition, affect, and eudaimonia—as defined by the Organisation for Economic Co-operation and Development (OECD). It focuses on the impact of China’s New Rural Pension Scheme (NRPS), introduced in 2009, employing a Regression Discontinuity Design (RDD) to establish a causal link between NRPS participation and SWB. The findings reveal that receiving the pension significantly enhances SWB among rural elderly residents, with particularly strong improvements in the affective and eudaimonic dimensions. Additionally, the study identifies multi-dimensional heterogeneity in the scheme’s effectiveness, offering policy insights in educational, family, social-class, and regional inequalities.
 
 ### [On the Development Path of Hong Kong and Singapore Economy: Is the Industrial Policy Important?](files/research/Independent_Research_3.pdf)    
 **Supervised by CUHKsz’s Prof. Chunrong Ai, Jun.2022 – Jul.2023**  
-**Abstract:**
+**Abstract:** Singapore and Hong Kong exhibit numerous parallels, including their size, historical narratives, status as free trade ports, and economic take-off post the 1960s. However, they significantly differ in the government’s role in industrial policies. While the Hong Kong government adheres to a laissez-faire approach, the Singaporean government actively promotes and nurtures specific industries and upgrades manufacturing sectors. This case study investigates the consequence of these policy differences and the dynamics between industrial and development divergence. The results from a structural vector autoregressive (VAR) framework with exogenous policy shocks show that manufacturing serves as a linchpin in the mechanism of how industrial policies lead to development divergence.
 
 ### [Predicting Default Rate of Lending Club Loans: Lasso-Penalized Logistic Regression and Nonlinear Methods](files/research/ECO3080_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Qihui Chen, Dec.2022**  
