@@ -9,5 +9,7 @@ main:
     url: /teaching/
   - title: "Research"
     url: /research/
+  - title: "CV"
+    url: /CV/ 
   - title: "Home"
     url: /
