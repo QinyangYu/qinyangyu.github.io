@@ -24,7 +24,7 @@
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
 
-    <!-- CSS -->
+    <!-- CSS（相对路径，子页也能加载） -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -44,61 +44,65 @@
       }
     </script>
 
-    <!-- 子页样式 -->
+    <!-- 子页样式（紧凑排版 + 顶部留白） -->
     <style>
       :root { --content-width: 900px; --nav-height: 64px; }
 
       .page-container{
         max-width: var(--content-width);
         margin: 0 auto;
-        padding: calc(var(--nav-height) + 12px) 18px 24px; /* 顶部避免被遮 */
+        padding: calc(var(--nav-height) + 16px) 18px 24px; /* 避免被导航遮住 */
       }
 
-      /* 去掉 homepage 的头像/左栏 */
+      /* 子页不显示 homepage 的头像左栏 */
       header, .wrapper > header { display: none !important; }
 
-      /* 避免标题再顶上去 */
-      .page-container h1:first-child { margin-top: 0; }
-
-      /* ---- 紧凑化 ---- */
-      .page-container h2, .page-container h3, .page-container h4 {
+      /* 统一紧凑：标题/段落/列表间距（对所有子页生效） */
+      .page-container h1 { margin: 0 0 10px; }
+      .page-container h2,
+      .page-container h3,
+      .page-container h4 {
         margin-top: 16px;
-        margin-bottom: 4px;
+        margin-bottom: 6px;   /* 标题到下一行（机构/时间）的距离更小 */
+        line-height: 1.25;
       }
-      .page-container p {
-        margin: 2px 0;
+      .page-container p {        /* 普通段落之间的间距 */
+        margin: 3px 0;
       }
-      .page-container ul, .page-container ol {
-        margin-top: 2px;
-        margin-bottom: 2px;
+      .page-container strong,
+      .page-container em {
+        line-height: 1.3;
+      }
+      .page-container ul,
+      .page-container ol {
+        margin: 4px 0;          /* 列表上下间距 */
         padding-left: 20px;
       }
       .page-container li {
-        margin-bottom: 3px;
+        margin-bottom: 3px;     /* 列表项更紧凑 */
       }
 
-      /* publication 列表修正 */
+      /* publication 列表（旧样式兼容） */
       .publications .pub-row { display: block; }
       .publications .col-sm-12 { width: 100%; padding-left: 0; padding-right: 0; }
-
       .bibliography { list-style: none; padding-left: 0; }
       .bibliography > li {
-        margin: 14px 0;
-        padding: 14px 16px;
+        margin: 18px 0;
+        padding: 18px 20px;
         border: 1px solid #eee;
-        border-radius: 10px;
+        border-radius: 12px;
         background: #fff;
       }
-      .bibliography .title { font-weight: 600; font-size: 18px; line-height: 1.35; margin-bottom: 4px; }
-      .bibliography .author { margin-top: 3px; color: #555; }
-      .bibliography .periodical { margin-top: 3px; color: #666; }
-      .bibliography .abbr .badge { font-size: 11px; padding: 2px 5px; border-radius: 6px; background: #f1f3f5; color: #444; }
-      .bibliography .links a { margin-right: 6px; margin-top: 4px; display: inline-block; }
+      .bibliography .title { font-weight: 600; font-size: 18px; line-height: 1.35; margin-bottom: 6px; }
+      .bibliography .author { margin-top: 6px; color: #555; }
+      .bibliography .periodical { margin-top: 6px; color: #666; }
+      .bibliography .abbr .badge { font-size: 11px; padding: 3px 6px; border-radius: 6px; background: #f1f3f5; color: #444; }
+      .bibliography .links a { margin-right: 8px; margin-top: 6px; display: inline-block; }
     </style>
   </head>
 
   <body>
-    <!-- 顶部导航（已去掉 affiliation 图标） -->
+    <!-- 顶部导航：不显示 affiliation 图标 -->
     <div class="topnav">
       <div id="myLinks">
         {% include navigation.md %}
@@ -107,6 +111,25 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+
+    <!-- 返回顶部（可选） -->
+    <script src="{{ '/assets/js/vanilla-back-to-top.min.js' | relative_url }}"></script>
+    <script>
+      if (typeof addBackToTop === 'function') {
+        addBackToTop({ backgroundColor: '#fff', innerHTML: 'Back to Top', textColor: '#333' });
+      }
+    </script>
+    <style>
+      #back-to-top {
+        border:1px solid #ccc;
+        border-radius:0;
+        font-size:15px;
+        width:100px;
+        text-align:center;
+        line-height:30px;
+        height:30px;
+      }
+    </style>
 
     <!-- 正文容器 -->
     <main class="page-container">
@@ -142,7 +165,7 @@
       <div style="font:12px/1.2 Crimson Pro, serif; text-align:center; padding:20px 0;">
         <small>
           {% if site.imprint %}
-            <a href="{{ site.imprint }}" rel="noopener"><autocolor>Imprint / Impressum</autocolor></a><br>
+            <a href="{{ site.imprint }}" rel="noopener"><autocolor>Imprint / Impressum</autocololr></a><br>
           {% endif %}
           {% if site.data_protection %}
             <a href="{{ site.data_protection }}" rel="noopener"><autocolor>Data Protection / Datenschutzhinweis</autocolor></a>
