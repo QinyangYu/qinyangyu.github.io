@@ -19,12 +19,12 @@
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:image" content="{{ site.avatar }}">
 
-    <!-- Icons / Canonical -->
+    <!-- Canonical & Icons -->
     <link rel="canonical" href="{{ site.canonical }}"/>
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
 
-    <!-- CSS（用 relative_url，确保子路径也能加载） -->
+    <!-- CSS（相对路径，子页也能加载） -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -36,15 +36,15 @@
     <script src="{{ '/assets/js/github-stars.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}"></script>
 
-    <!-- Mobile nav toggle -->
+    <!-- Mobile nav toggle，与 homepage 同步 -->
     <script>
-      function toggleNav() {
+      function myFunction() {
         var x = document.getElementById("myLinks");
         x.style.display = (x.style.display === "block") ? "none" : "block";
       }
     </script>
 
-    <!-- 子页样式修正：无头像栏、正文居中、避免旧栅格冲突 -->
+    <!-- 仅子页的轻量样式：正文容器、避免被导航压住、修复 pub 列表间距 -->
     <style>
       :root { --content-width: 900px; }
       .page-container{
@@ -52,17 +52,17 @@
         margin: 0 auto;
         padding: 28px 18px 24px;
       }
-      /* 顶部导航（沿用 homepage），但子页不显示左侧头像栏 */
+      /* 子页不显示 homepage 的头像列 */
       header, .wrapper > header { display: none !important; }
 
-      /* 防止固定/占位导航遮住首行内容（根据你主题实际高度可再上调） */
+      /* 若 nav.css 没固定高度，这里只留最小修正；你可按需调整 */
       .page-container h1:first-child { margin-top: 8px; }
 
-      /* 兼容 homepage 遗留的 .pub-row/.col-sm-* 样式，消除不必要的空隙 */
+      /* 兼容旧的 pub 样式，避免空白 */
       .publications .pub-row { display: block; }
       .publications .col-sm-12 { width: 100%; padding-left: 0; padding-right: 0; }
 
-      /* 列表卡片的统一视觉（如果你已有 pub.css，可删掉此段） */
+      /* 列表卡片（如果你已有同名规则，可忽略） */
       .bibliography { list-style: none; padding-left: 0; }
       .bibliography > li {
         margin: 18px 0;
@@ -80,19 +80,20 @@
   </head>
 
   <body>
-    <!-- 顶部导航（与 homepage 一致），注意使用 relative_url -->
+    <!-- 顶部导航：完全复用 homepage 的结构与 include -->
     <div class="topnav">
       <a href="{{ site.affiliation_link }}"><img width="190" src="{{ site.affiliation_logo }}" alt="affiliation"></a>
+
       <div id="myLinks">
-        {% comment %} 导航项来自 _data/navigation.yml {% endcomment %}
-        {% for link in site.data.navigation.main %}
-          <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
-        {% endfor %}
+        {% include navigation.md %}
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="toggleNav()"><i class="fa fa-bars"></i></a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
-    <!-- Back-to-top（可选） -->
+    <!-- 返回顶部（如不需要可删除） -->
     <script src="{{ '/assets/js/vanilla-back-to-top.min.js' | relative_url }}"></script>
     <script>
       if (typeof addBackToTop === 'function') {
@@ -103,7 +104,7 @@
       #back-to-top { border:1px solid #ccc; border-radius:0; font-size:15px; width:100px; text-align:center; line-height:30px; height:30px; }
     </style>
 
-    <!-- 正文（居中，无头像列） -->
+    <!-- 正文：居中容器 -->
     <main class="page-container">
       {{ content }}
 
@@ -112,9 +113,9 @@
       <small>Last Update:
         <script>
           (function(){
-            var monthNames=["January","Februray","March","April","May","June","July","August","September","October","November","December"];
+            var m=["January","Februray","March","April","May","June","July","August","September","October","November","December"];
             var d=new Date(document.lastModified);
-            document.write(d.getDate()+". "+monthNames[d.getMonth()]+" "+d.getFullYear());
+            document.write(d.getDate()+". "+m[d.getMonth()]+" "+d.getFullYear());
           })();
         </script>
       </small>
