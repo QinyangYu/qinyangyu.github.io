@@ -86,4 +86,45 @@ permalink: /teaching/
 **Lumos Society of Muse College, CUHKsz**  
 **My Experience:**  
 - Instructed 10 lower-grade classes in Chinese and Arts (Music); served as the host and pianist in the art performance  
-- Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)  
+- Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
+
+<div id="volunteerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/files/teaching/volunteer/0.jpg" class="d-block w-100" alt="Photo 0">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/1.jpg" class="d-block w-100" alt="Photo 1">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/2.jpg" class="d-block w-100" alt="Photo 2">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/3.png" class="d-block w-100" alt="Photo 3">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/4.png" class="d-block w-100" alt="Photo 4">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/5.png" class="d-block w-100" alt="Photo 5">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/6.jpg" class="d-block w-100" alt="Photo 6">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/7.jpg" class="d-block w-100" alt="Photo 7">
+    </div>
+    <div class="carousel-item">
+      <img src="/files/teaching/volunteer/8.jpg" class="d-block w-100" alt="Photo 8">
+    </div>
+  </div>
+
+  <!-- 左右箭头 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
