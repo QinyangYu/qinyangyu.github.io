@@ -28,7 +28,7 @@ permalink: /teaching/
 - [CS_230_Problem_Sets_Logic.pdf](/files/teaching/cs230/CS_230_Problem_Sets_Logic.pdf)  
 - [CS_230_Problem_Sets_Proof.pdf](/files/teaching/cs230/CS_230_Problem_Sets_Proof.pdf)  
 - [CS_230_Problem_Sets_Induction.pdf](/files/teaching/cs230/CS_230_Problem_Sets_Induction.pdf)
-<br>
+
 **My Recordings:**
 - [Exam 1 Review Session - Logic.mp4](https://drive.google.com/open?id=1TVX0XUG9HtLOCrelXNcw_z2kdcH_SUzo&usp=drive_copy)
 
