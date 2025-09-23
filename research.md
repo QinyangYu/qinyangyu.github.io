@@ -7,7 +7,7 @@ permalink: /research/
 # Cluster 1: Networks, Experiments, & Games
 
 ### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf)
-**SICSS, NYU Shanghai, Jun.2025**
+**SICSS, NYU Shanghai, Jun.2025** 
 **Abstract:** This project analyzes the retweet network and texts of 260 Chinese-speaking Trump supporters on X. We explore the relationship between network structure and ideological extremity using topic modeling and explainable AI methods. In addition, we simulate counterfactual network interventions via the Friedkin-Johnsen opinion dynamics model and compared five rewiring algorithms to effectively reduce extremity.
 
 ### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks (Old Draft)](files/research/Working_Paper_1.pdf)  
