@@ -28,8 +28,7 @@ permalink: /research/
 
 ### [A Game Theoretic Analysis for Witch Killing and Human Sacrifice](files/research/ECO3160_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Dec.2022**  
-- Constructed a Bayesian game to analyze witch killing and human sacrifice under incomplete information in rural Africa and India  
-- Compared SPNE and PBE to explain collective religious violence and proposed five preventive approaches as model implications  
+**Abstract:** We model witch killing as a sequential game between a leader and villagers under incomplete information. The pooling equilibrium explains why communities accept killing even of innocents. Policy implications highlight income support, education, family bonds, legal punishment, and democratic checks as ways to shift incentives against violence.
 
 <br>
 ---
@@ -47,7 +46,7 @@ permalink: /research/
 
 ### [Predicting Default Rate of Lending Club Loans: Lasso-Penalized Logistic Regression and Nonlinear Methods](files/research/ECO3080_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Qihui Chen, Dec.2022**  
-**Keywords:**
+**Abstract:** This study applies logistic, lasso-logit, tree-based, and neural network models to predict default rate in Lending Club loans. We emphasize specificity to reduce false positives. Results show plain logistic regression balances accuracy and efficiency best, while lasso-logit and neural nets improve AUC at higher cost, and tree-based methods underperform on specificity.
 
 ### Total Factor Productivity and Social Capital  
 **Research Assistant, Supervised by Cambridge’s Dr. Saite Lu , Aug.2023 – Jun.2024**  
