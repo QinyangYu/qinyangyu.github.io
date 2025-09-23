@@ -31,6 +31,7 @@ permalink: /teaching/
 **My Recordings:**  
 - [Exam 1 Review Session - Logic.mp4](https://drive.google.com/open?id=1TVX0XUG9HtLOCrelXNcw_z2kdcH_SUzo&usp=drive_copy)  
 
+<br>
 ---
 
 # Undergraduate TA at CUHKsz
@@ -56,6 +57,7 @@ permalink: /teaching/
 - [ECO4010_Tutorial_12.pdf](/files/teaching/eco4010/ECO4010_Tutorial_12.pdf)  
 - [ECO4010_Tutorial_12_Solution.pdf](/files/teaching/eco4010/ECO4010_Tutorial_12_Solution.pdf)  
 
+<br>
 ---
 
 ### [ECO 3011: Intermediate Microeconomic Theory](https://www.cuhk.edu.cn/en/course/8049)
@@ -72,6 +74,7 @@ permalink: /teaching/
 - [20230221_ECO3011_Tutorial_3_Recording.mp4](https://drive.google.com/open?id=1bP6eFCCxmWsu9j02X_Ubpa5XNFAj6Fvj&usp=drive_copy)  
 - [20230413_ECO3011_Week_11_Recording.mp4](https://drive.google.com/open?id=1UxdqXKgW7oT_H8e-thNG6tjDBCfKgB9U&usp=drive_copy)  
 
+<br>
 ---
 
 # Non-academic Teaching
