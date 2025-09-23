@@ -13,9 +13,7 @@ permalink: /research/
 
 ### [“Ding-Dong! The Wicked Witch Is Dead!”: A Model of Scapegoating in Social Networks](files/research/Working_Paper_1.pdf)  
 **Supervised by Duke’s Prof. Charles Becker, Dec. 2024 – Present**  
-- This independent research proposed a networked game to explore the structural mechanisms of scapegoating  
-- Used game theory and ABM to analyze how network structure influences scapegoat selection via network centrality measures, and examined why leaders with higher political trust scapegoat more effectively, while peripheral agents are more vulnerable  
-- Concluded mechanisms driving inequality and social injustice within interconnected communities, yielding an A+ graded course paper  
+**Abstract:** Scapegoating often targets marginalized individuals. Existing accounts focus on identity attributes. In contrast, this paper develops a structural theory of scapegoating that emphasizes how network position shapes vulnerability to unfair blame. A leader facing systemic failure strategically decides whether to self-blame or scapegoat, while agents embedded in a network update beliefs and form public opinions through social learning. Game-theoretic analysis shows that scapegoating systematically targets peripheral nodes with lower centrality. The findings offer insights into the structural mechanism driving inequality and social injustice in interconnected communities.
 
 ### [Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction](files/research/590.06-Sp05-Liu-Yu-Network Experiments under Dynamic Treatment Diffusion Design and Estimation for Bias Reduction.pdf)  
 **Supervised by Duke’s Prof. Sudeepa Roy, Mar. 2025 – May. 2025**  
