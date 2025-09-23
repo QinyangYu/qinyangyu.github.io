@@ -4,9 +4,7 @@ title: "Research"
 permalink: /research/
 ---
 
-# Research Experience
-
-## Cluster 1: Networks, Experiments, & Games
+# Cluster 1: Networks, Experiments, & Games
 
 ### Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election
 **SICSS, NYU Shanghai** 
@@ -45,7 +43,7 @@ permalink: /research/
 
 ---
 
-## Cluster 2: Applied Econometrics, Policy & Development
+# Cluster 2: Applied Econometrics, Policy & Development
 
 ### Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme  
 **Coauthored with Cambridge’s Dr. Saite Lu · Aug. 2023 – Present**  
