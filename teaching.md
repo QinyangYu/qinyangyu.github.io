@@ -57,7 +57,6 @@ permalink: /teaching/
 - [ECO4010_Tutorial_12.pdf](/files/teaching/eco4010/ECO4010_Tutorial_12.pdf)  
 - [ECO4010_Tutorial_12_Solution.pdf](/files/teaching/eco4010/ECO4010_Tutorial_12_Solution.pdf)  
 
-<br>
 ---
 
 ### [ECO 3011: Intermediate Microeconomic Theory](https://www.cuhk.edu.cn/en/course/8049)
