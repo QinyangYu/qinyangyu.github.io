@@ -40,6 +40,8 @@ permalink: /research/
 - Constructed a Bayesian game to analyze witch killing and human sacrifice under incomplete information in rural Africa and India  
 - Compared SPNE and PBE to explain collective religious violence and proposed five preventive approaches as model implications  
 
+
+<br>
 ---
 
 # Cluster 2: Applied Econometrics, Policy & Development
