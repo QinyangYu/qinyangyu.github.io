@@ -61,7 +61,6 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   </li>
 </ul>
 
-<br>
 <h2>Honors and Awards</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
