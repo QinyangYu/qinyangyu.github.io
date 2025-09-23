@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-
     <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="{{ site.title }}">
+    <meta name="description" content="{{ site.description | default: site.title }}">
     <meta name="keywords" content="{{ site.keywords }}">
 
+    <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }} | {{ site.affiliation }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{{ site.affiliation | prepend:' | ' }}">
     <meta property="og:url" content="{{ site.canonical }}">
-    <meta property="og:site_name" content="{{ site.title }} | {{ site.affiliation }}">
+    <meta property="og:site_name" content="{{ site.title }}{{ site.affiliation | prepend:' | ' }}">
     <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:locale" content="default">
     <meta property="og:image" content="{{ site.avatar }}">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }} | {{ site.affiliation }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{{ site.affiliation | prepend:' | ' }}">
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:image" content="{{ site.avatar }}">
 
+    <!-- Icons / Canonical -->
     <link rel="canonical" href="{{ site.canonical }}"/>
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
 
-    <!-- 样式表（用 relative_url，保证子页面路径也能加载到） -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <!-- CSS（用 relative_url，确保子路径也能加载） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/pub.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/nav.css' | relative_url }}">
 
-    <script src="{{ '/assets/js/github-stars.js' | relative_url }}"></script>
+    <!-- JS -->
     <script src="{{ '/assets/js/jquery.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}" type="application/javascript"></script>
+    <script src="{{ '/assets/js/github-stars.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}"></script>
 
+    <!-- Mobile nav toggle -->
     <script>
-      function myFunction() {
+      function toggleNav() {
         var x = document.getElementById("myLinks");
-        if (x.style.display === "block") { x.style.display = "none"; }
-        else { x.style.display = "block"; }
+        x.style.display = (x.style.display === "block") ? "none" : "block";
       }
     </script>
 
+    <!-- 子页样式修正：无头像栏、正文居中、避免旧栅格冲突 -->
     <style>
-      /* 中心容器：所有子页共用 */
+      :root { --content-width: 900px; }
       .page-container{
-        max-width: 900px;      /* 你想要的居中宽度 */
-        margin: 0 auto;        /* 居中 */
-        padding: 24px 18px;    /* 留白 */
+        max-width: var(--content-width);
+        margin: 0 auto;
+        padding: 28px 18px 24px;
       }
+      /* 顶部导航（沿用 homepage），但子页不显示左侧头像栏 */
+      header, .wrapper > header { display: none !important; }
+
+      /* 防止固定/占位导航遮住首行内容（根据你主题实际高度可再上调） */
+      .page-container h1:first-child { margin-top: 8px; }
+
+      /* 兼容 homepage 遗留的 .pub-row/.col-sm-* 样式，消除不必要的空隙 */
+      .publications .pub-row { display: block; }
+      .publications .col-sm-12 { width: 100%; padding-left: 0; padding-right: 0; }
+
+      /* 列表卡片的统一视觉（如果你已有 pub.css，可删掉此段） */
+      .bibliography { list-style: none; padding-left: 0; }
+      .bibliography > li {
+        margin: 18px 0;
+        padding: 18px 20px;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        background: #fff;
+      }
+      .bibliography .title { font-weight: 600; font-size: 18px; line-height: 1.35; margin-bottom: 6px; }
+      .bibliography .author { margin-top: 6px; color: #555; }
+      .bibliography .periodical { margin-top: 6px; color: #666; }
+      .bibliography .abbr .badge { font-size: 11px; padding: 3px 6px; border-radius: 6px; background: #f1f3f5; color: #444; }
+      .bibliography .links a { margin-right: 8px; margin-top: 6px; display: inline-block; }
     </style>
   </head>
 
   <body>
-    <!-- 顶部导航，复用 homepage 的结构 -->
+    <!-- 顶部导航（与 homepage 一致），注意使用 relative_url -->
     <div class="topnav">
       <a href="{{ site.affiliation_link }}"><img width="190" src="{{ site.affiliation_logo }}" alt="affiliation"></a>
-      <div id="myLinks">{% include navigation.md %}</div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      <div id="myLinks">
+        {% comment %} 导航项来自 _data/navigation.yml {% endcomment %}
+        {% for link in site.data.navigation.main %}
+          <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()"><i class="fa fa-bars"></i></a>
     </div>
 
+    <!-- Back-to-top（可选） -->
     <script src="{{ '/assets/js/vanilla-back-to-top.min.js' | relative_url }}"></script>
     <script>
-      addBackToTop({ backgroundColor: '#fff', innerHTML: 'Back to Top', textColor: '#333' })
+      if (typeof addBackToTop === 'function') {
+        addBackToTop({ backgroundColor: '#fff', innerHTML: 'Back to Top', textColor: '#333' });
+      }
     </script>
     <style>
       #back-to-top { border:1px solid #ccc; border-radius:0; font-size:15px; width:100px; text-align:center; line-height:30px; height:30px; }
     </style>
 
-    <!-- 这里不再有左侧头像 header，只保留一个居中的内容容器 -->
+    <!-- 正文（居中，无头像列） -->
     <main class="page-container">
       {{ content }}
 
@@ -77,10 +111,11 @@
       <br>
       <small>Last Update:
         <script>
-          const monthNames = ["January","Februray","March","April","May","June","July","August","September","October","November","December"];
-          var modiDate = new Date(document.lastModified);
-          var showAs = modiDate.getDate() + ". " + monthNames[modiDate.getMonth()] + " " + modiDate.getFullYear();
-          document.write(showAs);
+          (function(){
+            var monthNames=["January","Februray","March","April","May","June","July","August","September","October","November","December"];
+            var d=new Date(document.lastModified);
+            document.write(d.getDate()+". "+monthNames[d.getMonth()]+" "+d.getFullYear());
+          })();
         </script>
       </small>
       {% endif %}
@@ -93,7 +128,7 @@
 
       {% if site.clustrmaps_id %}
       <div style="width:300px; pointer-events: none; margin-top:10px;">
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=LTWZqBYr9s2OPIQ_fArLjKld7T2K1HlQjSmT1yWWXlE"></script>
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d={{ site.clustrmaps_id }}"></script>
       </div>
       {% endif %}
     </main>
