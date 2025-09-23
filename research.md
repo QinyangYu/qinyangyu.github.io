@@ -42,7 +42,6 @@ permalink: /research/
 
 <br>
 ---
-<br>
 
 
 # Cluster 2: Applied Econometrics, Policy & Development
