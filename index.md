@@ -61,6 +61,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   </li>
 </ul>
 
+<br>
 <h2>Honors and Awards</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
@@ -69,6 +70,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   <li>Academic Performance Scholarship (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
   <li>Dean’s Honor List (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
   <li>Master’s List Award of Muse College – Whole-person Development Star (Silver Prize, 2020–2021, CUHKsz)</li>
+  <li>Outstanding Student Helper (2020–2021, CUHKsz)</li>
 </ul>
 
 
