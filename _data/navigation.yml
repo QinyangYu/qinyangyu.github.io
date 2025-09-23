@@ -10,6 +10,6 @@ main:
   - title: "Research"
     url: /research/
   - title: "CV"
-    url: "files/cv/CV_Qinyang_Yu_2025_09.pdf"
+    url: "/files/cv/CV_Qinyang_Yu_2025_09.pdf"
   - title: "Home"
     url: /
