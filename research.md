@@ -8,68 +8,69 @@ permalink: /research/
 
 <h2 style="margin: 30px 0 -15px;">Projects</h2>
 
-<div class="publications">
-  <ol class="bibliography" style="list-style: none; padding-left: 0;">
-  {% for link in site.data.projects.main %}
+# Research Experience
 
-    <li style="margin: 18px 0; padding: 18px 20px; border: 1px solid #eee; border-radius: 12px;">
-      <div class="pub-row">
-        <div class="col-sm-12" style="padding: 0 6px;">
-          <div class="title" style="font-weight: 600; font-size: 18px; line-height: 1.35;">
-            {% if link.web %}<a href="{{ link.web }}">{% endif %}
-            {{ link.title }}
-            {% if link.web %}</a>{% endif %}
-          </div>
+## Cluster 1: Networks, Experiments, & Games
 
-          {% if link.project_short %}
-            <div class="abbr" style="margin-top: 4px;">
-              <span class="badge" style="background:#f1f3f5; color:#444; font-size: 11px; padding:3px 6px; border-radius: 6px;">
-                {{ link.project_short }}
-              </span>
-            </div>
-          {% endif %}
+### Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion  
+**SICSS, NYU Shanghai · Jun. 2025**  
+*Extremism in the X Network during the 2020 U.S. Election [Slide]*  
+- This group project analyzed the retweet network and texts of 260 Chinese-speaking Trump supporters on X, explored the relationship between network structure and ideological extremity using LDA, SHAP, and GNNExplainer, and discussed intervention strategies  
+- Simulated counterfactual network interventions via the Friedkin–Johnsen opinion dynamics model in Python; compared five rewiring algorithms to effectively reduce extremity; contributed to a 20-minute oral and a poster presentation for the Ideathon event in SICSS  
 
-          {% if link.authors %}
-            <div class="author" style="margin-top: 6px; color:#555;">{{ link.authors }}</div>
-          {% endif %}
+### “Ding-Dong! The Wicked Witch Is Dead!”: A Model of Scapegoating in Social Networks [PDF]  
+**Supervised by Duke’s Prof. Charles Becker · Dec. 2024 – Present**  
+- This independent research proposed a networked game to explore the structural mechanisms of scapegoating  
+- Used game theory and ABM to analyze how network structure influences scapegoat selection via network centrality measures, and examined why leaders with higher political trust scapegoat more effectively, while peripheral agents are more vulnerable  
+- Concluded mechanisms driving inequality and social injustice within interconnected communities, yielding an A+ graded course paper  
 
-          {% if link.abstract %}
-            <div class="author" style="margin-top: 8px; color:#333;">{{ link.abstract }}</div>
-          {% endif %}
+### Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction [PDF]  
+**Supervised by Duke’s Prof. Sudeepa Roy · Mar. 2025 – May. 2025**  
+- Simulated the design and analysis of network experiments under treatment diffusion to reduce bias in estimating ATE  
+- Introduced the Independent Cascade Model (ICM) for treatment diffusion; compared random vs. cluster assignment paired with individual vs. neighborhood-based estimators; explored alternative diffusion patterns via the Linear Threshold Model (LTM)  
+- Found that cluster randomization combined with neighborhood-based estimators effectively reduces bias and improves accuracy, particularly when treatment or spillover effects are strong; final report scored 39/40  
 
-          {% if link.project %}
-            <div class="periodical" style="margin-top: 6px; color:#666;">
-              <em>{{ link.project }}</em>
-            </div>
-          {% endif %}
+### Government Endorsement and Voter Skepticism: An Experiment of Selective Disclosure in Political Communication [PDF]  
+**Supervised by Duke’s Prof. Pellumb Reshidi · Mar. 2025 – May. 2025**  
+- Investigated how explicit knowledge of government bias shapes voter skepticism under truthful yet selectively disclosed information  
+- Proposed a sender–receiver communication game with a skeptical PBE for hypothesis testing; designed an experiment randomly assigning participants to interact with a neutral or biased government to test equilibrium selection and deviation  
+- Linked information disclosure and sender credibility to experimental findings on the interactive effects of bias and transparency in collective decision-making; proposal scored 94/100, coding 89/100, and paper 91/100  
 
-          <div class="links" style="margin-top: 10px;">
-            {% if link.pdf %}
-              <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">PDF</a>
-            {% endif %}
-            {% if link.code %}
-              <a href="{{ link.code }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">Code</a>
-            {% endif %}
-            {% if link.page %}
-              <a href="{{ link.page }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">Project Page</a>
-            {% endif %}
-            {% if link.bibtex %}
-              <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">BibTeX</a>
-            {% endif %}
-            {% if link.web %}
-              <a href="{{ link.web }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">Website</a>
-            {% endif %}
-            {% if link.notes %}
-              <strong><i style="color:#e74d3c"> {{ link.notes }} </i></strong>
-            {% endif %}
-            {% if link.others %}
-              {{ link.others }}
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </li>
+### Lawful Roots, Lawless Routes: The Paradox of Litigation-Related Petitions in China [PDF]  
+**Supervised by CUHKsz’s Prof. Yangbo Song · Sep. 2023 – Dec. 2023**  
+- Modeled why litigation-related petitions, despite clear legal boundaries, are more likely to escalate into unauthorized forms  
+- Collected 5-year local government petition data and 4 official interviews; Constructed a Bayesian learning process and analyzed comparative statics; revealed an amplification mechanism where petitioners misinterpret legal signals and form biased posteriors  
+- Proposed strategies to resolve conflicts and preserve social order by adjusting information delivery  
 
-  {% endfor %}
-  </ol>
-</div>
+### A Game Theoretic Analysis for Witch Killing and Human Sacrifice [PDF]  
+**Supervised by CUHKsz’s Prof. Yangbo Song · Dec. 2022**  
+- Constructed a Bayesian game to analyze witch killing and human sacrifice under incomplete information in rural Africa and India  
+- Compared SPNE and PBE to explain collective religious violence and proposed five preventive approaches as model implications  
+
+---
+
+## Cluster 2: Applied Econometrics, Policy & Development
+
+### Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme [PDF]  
+**Coauthored with Cambridge’s Dr. Saite Lu · Aug. 2023 – Present**  
+- Extended subjective well-being (SWB) to three OECD-defined sub-dimensions (cognition, affect, eudaimonia) and sub-components  
+- Processed CFPS cross-sectional data; exploited a Regression Discontinuity Design (RDD) to estimate the causal impact of China’s New Rural Pension Scheme (NRPS) on SWB among rural elderly residents, with stronger gains in affect and eudaimonia  
+- Validated design via density smoothness and 13 predetermined covariates; ruled out retirement shocks at age 60; conducted robustness checks; identified multi-dimensional heterogeneity with policy implications across education, family, social class, and regions  
+- Completed a Cambridge Summer Program working paper with distinction; published in CUHKsz’s Fairy Lake Economic Journal  
+
+### On the Development Path of Hong Kong and Singapore Economy: Is the Industrial Policy Important? [PDF]  
+**Supervised by CUHKsz’s Prof. Chunrong Ai · Jun. 2022 – Jul. 2023**  
+- Investigated how differences in industrial policy shaped industrial structure and economic development in Hong Kong and Singapore  
+- Collected and visualized data from World Bank and government yearbooks; Quantified divergence and generated policy dummies; estimated a structural VAR with exogenous shocks and analyzed IRFs and variance decomposition under two Cholesky orderings  
+- Performed ADF unit-root and Granger-causality tests; selected optimal lags via AIC/SBC; ran residual and stability diagnostics  
+- Delivered policy recommendations on manufacturing and industrial coordination; received 19th–21st Undergraduate Research Awards  
+
+### Predicting Default Rate of Lending Club Loans: Lasso-Penalized Logistic Regression and Nonlinear Methods [PDF]  
+**Supervised by CUHKsz’s Prof. Qihui Chen · Dec. 2022**  
+- Constructed training/test splits and visualized multicollinearity in R; fitted lasso and elastic-net logistic models to handle high dimensionality; tuned λ via cross-validation and the one-standard-error rule; plotted lasso paths and ROC curves for model selection  
+- Compared linear vs. nonlinear models (RF, GNN) using specificity, accuracy, and time complexity; achieved project score of 96.6/100  
+
+### Total Factor Productivity and Social Capital  
+**Research Assistant, Supervised by Cambridge’s Dr. Saite Lu · Aug. 2023 – Jun. 2024**  
+- Computed weighted averages of trust variables in STATA; merged panel data across European NUTS2 regions; identified 17 controls  
+- Applied OLS, two-way fixed effects, system GMM, and semiparametric regressions; found positive impacts of social trust on TFP  
