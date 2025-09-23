@@ -4,9 +4,6 @@ title: "Research"
 permalink: /research/
 ---
 
-<!-- 中央容器：限制宽度并居中 -->
-<div style="max-width: 900px; margin: 0 auto;">
-
 <h1 id="research">Research</h1>
 
 <h2 style="margin: 30px 0 -15px;">Projects</h2>
@@ -17,8 +14,6 @@ permalink: /research/
 
     <li style="margin: 18px 0; padding: 18px 20px; border: 1px solid #eee; border-radius: 12px;">
       <div class="pub-row">
-
-        <!-- 只有一列（去掉图片栏），全部内容居中/左对齐都好看 -->
         <div class="col-sm-12" style="padding: 0 6px;">
           <div class="title" style="font-weight: 600; font-size: 18px; line-height: 1.35;">
             {% if link.web %}<a href="{{ link.web }}">{% endif %}
@@ -50,19 +45,19 @@ permalink: /research/
 
           <div class="links" style="margin-top: 10px;">
             {% if link.pdf %}
-              <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+              <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">PDF</a>
             {% endif %}
             {% if link.code %}
-              <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+              <a href="{{ link.code }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">Code</a>
             {% endif %}
             {% if link.page %}
-              <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+              <a href="{{ link.page }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">Project Page</a>
             {% endif %}
             {% if link.bibtex %}
-              <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTeX</a>
+              <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">BibTeX</a>
             {% endif %}
             {% if link.web %}
-              <a href="{{ link.web }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
+              <a href="{{ link.web }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">Website</a>
             {% endif %}
             {% if link.notes %}
               <strong><i style="color:#e74d3c"> {{ link.notes }} </i></strong>
@@ -72,12 +67,9 @@ permalink: /research/
             {% endif %}
           </div>
         </div>
-
       </div>
     </li>
 
   {% endfor %}
   </ol>
-</div>
-
 </div>
