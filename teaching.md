@@ -70,7 +70,8 @@ permalink: /teaching/
 - [ECO3011_Tutorial_3.pdf](/files/teaching/eco3011/ECO3011_Tutorial_3.pdf)  
 - [ECO3011_Tutorial_3_with_solutions.pdf](/files/teaching/eco3011/ECO3011_Tutorial_3_with_solutions.pdf)  
 - [ECO3011_Tutorial_Week_11.pdf](/files/teaching/eco3011/ECO3011_Tutorial_Week_11.pdf)  
-- [ECO3011_Tutorial_Week_11_solution.pdf](/files/teaching/eco3011/ECO3011_Tutorial_Week_11_solution.pdf)  
+- [ECO3011_Tutorial_Week_11_solution.pdf](/files/teaching/eco3011/ECO3011_Tutorial_Week_11_solution.pdf)
+
 **My Recordings:**  
 - [20230221_ECO3011_Tutorial_3_Recording.mp4](https://drive.google.com/open?id=1bP6eFCCxmWsu9j02X_Ubpa5XNFAj6Fvj&usp=drive_copy)  
 - [20230413_ECO3011_Week_11_Recording.mp4](https://drive.google.com/open?id=1UxdqXKgW7oT_H8e-thNG6tjDBCfKgB9U&usp=drive_copy)  
