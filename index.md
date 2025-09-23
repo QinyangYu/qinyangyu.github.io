@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-<h1 id="about-me"></h1>
+<h1 id="Bio"></h1>
 
 <h2 style="margin: 60px 0px 10px;">Welcome to My Academic Website!</h2>
 
