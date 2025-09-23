@@ -7,15 +7,15 @@ permalink: /research/
 # Cluster 1: Networks, Experiments, & Games
 
 ### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf) (Slides)
-**SICSS, NYU Shanghai, Jun.2025**  
+### **SICSS, NYU Shanghai, Jun.2025**  
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
 ### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/Working_Paper_1.pdf) (Old Draft)
-**Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
+### **Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
 **keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Public Trust, Structural Inequality, Collective Violence
 
 ### [Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction](files/research/590.06-Sp05-Liu-Yu-Network Experiments under Dynamic Treatment Diffusion Design and Estimation for Bias Reduction.pdf)  
-**Supervised by Duke’s Prof. Sudeepa Roy, Mar.2025 – May.2025**  
+### **Supervised by Duke’s Prof. Sudeepa Roy, Mar.2025 – May.2025**  
 **keywords:** Treatment Diffusion, Network Experiments, Average Treatment Effect (ATE), Graph Cluster Randomization, Neighborhood-Based Estimators, Independent Cascade Model (ICM), Bias Reduction
 
 ### [Government Endorsement and Voter Skepticism: An Experiment of Selective Disclosure in Political Communication](files/research/ECON_690_Concept_Paper_Group_3.pdf)  
