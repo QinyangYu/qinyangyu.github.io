@@ -5,7 +5,7 @@ permalink: /personal/
 ---
 
 # My Experimental Kitchen Lab
-Beyond academic research, I am also a passionate culinary researcher. In my personal food lab, I experiment with diverse ingredients and explore cuisines from around the world, creating flavors as a scientist creates theories. Might fail, but always fun!
+Beyond academic research, I am also a passionate culinary researcher. In my personal food lab, I experiment with diverse ingredients and explore cuisines from around the world, creating flavors just as a scientist creates theories. Might fail, but always fun!
 
 <!-- ======== 四宫格迷你滑块（原始比例 + 超出自适配） ======== -->
 <div class="grid4">
@@ -246,6 +246,7 @@ The Baron in the Trees (Il barone rampante) by Italo Calvino
 ---
 
 # Music & Piano Playing
+I have a strong appreciation for pop music and live performances, enjoy learning vocal techniques, watch reaction videos from YouTube or Bilibili, and occasionally provide improvised piano accompaniment. Below are some glimpses of my piano playing. 
 
 <!-- ======== Video Two-Column Grid ======== -->
 <div class="video-grid">
