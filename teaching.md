@@ -59,6 +59,9 @@ permalink: /teaching/
 - [ECO4010_Tutorial_12.pdf](/files/teaching/eco4010/ECO4010_Tutorial_12.pdf)  
 - [ECO4010_Tutorial_12_Solution.pdf](/files/teaching/eco4010/ECO4010_Tutorial_12_Solution.pdf)  
 
+
+<img src="/files/teaching/teaching2.jpg" alt="Teaching photo 2" style="display:block; margin:20px auto; max-width:80%; height:auto; border-radius:6px;">
+
 ---
 
 ### [ECO 3011: Intermediate Microeconomic Theory](https://www.cuhk.edu.cn/en/course/8049)
@@ -76,6 +79,8 @@ permalink: /teaching/
 - [20230221_ECO3011_Tutorial_3_Recording.mp4](https://drive.google.com/open?id=1bP6eFCCxmWsu9j02X_Ubpa5XNFAj6Fvj&usp=drive_copy)  
 - [20230413_ECO3011_Week_11_Recording.mp4](https://drive.google.com/open?id=1UxdqXKgW7oT_H8e-thNG6tjDBCfKgB9U&usp=drive_copy)  
 
+
+<img src="/files/teaching/teaching3.jpg" alt="Teaching photo 3" style="display:block; margin:20px auto; max-width:80%; height:auto; border-radius:6px;">
 
 
 <br>
