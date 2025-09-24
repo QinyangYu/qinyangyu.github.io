@@ -79,11 +79,11 @@ permalink: /teaching/
 
 <div class="photo-slider">
   <div class="track">
-    <img src="/files/teaching/teaching2.jpg" alt="teaching photo 2">
-    <img src="/files/teaching/teaching3.jpg" alt="teaching photo 3">
+    <img src="/files/teaching/teaching2.jpg" alt="whiteboard 1" class="wide">
+    <img src="/files/teaching/teaching3.jpg" alt="whiteboard 2" class="wide">
+    <!-- 其他照片 -->
   </div>
 
-  <!-- 左右箭头 -->
   <button class="arrow left"
           onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
   <button class="arrow right"
@@ -91,29 +91,37 @@ permalink: /teaching/
 </div>
 
 <style>
-  .photo-slider { position: relative; max-width: 45%; margin: 20px auto; }
+  .photo-slider { position: relative; max-width: 55%; margin: 20px auto; }
   .photo-slider .track {
     display:flex; overflow-x:auto; scroll-behavior:smooth;
     scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
     align-items:center; gap:10px;
   }
   .photo-slider img {
-    flex:0 0 auto; height:300px; width:auto; max-width:100%;
+    flex:0 0 auto; height:380px; width:auto; max-width:100%;
     object-fit:contain; border-radius:6px; user-select:none; scroll-snap-align:center;
   }
-  .photo-slider .arrow{
+  /* 专门调宽的图（白板用） */
+  .photo-slider img.wide {
+    height:320px;       /* 高度稍微低一点 */
+    max-width:140%;     /* 放宽比例 */
+  }
+
+  .photo-slider .arrow {
     position:absolute; top:50%; transform:translateY(-50%);
     font-size:2rem; background:rgba(0,0,0,.4); color:#fff; border:none;
-    border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10; user-select:none;
+    border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10;
   }
   .photo-slider .arrow.left{ left:10px; }
   .photo-slider .arrow.right{ right:10px; }
 
   @media (max-width:768px){
-    .photo-slider{ max-width:80%; }
-    .photo-slider img{ height:200px; }
+    .photo-slider{ max-width:96%; }
+    .photo-slider img{ height:240px; }
+    .photo-slider img.wide{ height:200px; max-width:120%; }
   }
 </style>
+
 
 
 
