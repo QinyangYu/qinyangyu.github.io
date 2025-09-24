@@ -17,10 +17,11 @@ permalink: /talks/
 - Presented at the 2024 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University  
 - Presented at the 2024 Master’s Research Seminar, EMAC, Duke University  
 
-<!-- ======== Talks 相册滑块（统一风格版） ======== -->
+<!-- ======== Talks 相册滑块（固定高度 + 交叉淡入，无白屏） ======== -->
 <div class="mini-slider talks" aria-label="Talks photo slider">
   <div class="track">
-    <img class="slide" src="/files/talks/Pre1.jpg" alt="Pre1" loading="lazy">
+    <!-- 首张不 lazy，避免首击等待 -->
+    <img class="slide" src="/files/talks/Pre1.jpg" alt="Pre1">
     <img class="slide" src="/files/talks/Pre4.jpg" alt="Pre4" loading="lazy">
     <img class="slide" src="/files/talks/Pre2.jpg" alt="Pre2" loading="lazy">
     <img class="slide" src="/files/talks/Pre5.jpg" alt="Pre5" loading="lazy">
@@ -33,7 +34,7 @@ permalink: /talks/
 <style>
 /* —— Talks 相册滑块 —— */
 .mini-slider.talks{
-  --img-max-h: 360px;
+  --img-max-h: 360px;          /* 统一可视高度，按需调整 */
   position:relative;
   background:#fafafa;
   border:1px solid #eee;
@@ -41,25 +42,33 @@ permalink: /talks/
   padding:12px 12px 44px;
   box-shadow:0 1px 6px rgba(0,0,0,.06);
   text-align:center;
-  max-width:55%;       /* 整体宽度控制 */
+  max-width:55%;
   margin:20px auto;
   overflow:hidden;
 }
+
+/* 固定轨道高度，杜绝高度跳动 */
 .mini-slider.talks .track{
   position:relative;
-  display:block;
-  min-height:60px;
+  height:var(--img-max-h);
 }
+
+/* 绝对定位到画布中央；仅做透明度切换 */
 .mini-slider.talks .track > img{
-  display:none;
-  width:auto; height:auto;
+  position:absolute;
+  inset:0;
+  margin:auto;
   max-width:100%;
-  max-height:var(--img-max-h);
+  max-height:100%;
+  width:auto; height:auto;
+  object-fit:contain;
   border-radius:8px;
-  margin:0 auto;
   user-select:none;
+  opacity:0;
+  transition:opacity .2s ease;
+  will-change:opacity;
 }
-.mini-slider.talks .track > img.active{ display:block; }
+.mini-slider.talks .track > img.active{ opacity:1; }
 
 .mini-slider.talks .nav{
   position:absolute;
@@ -94,50 +103,73 @@ permalink: /talks/
 (function(){
   const slider = document.querySelector('.mini-slider.talks');
   if(!slider) return;
-  setupSlider(slider);
 
-  function setupSlider(slider){
-    const imgs = Array.from(slider.querySelectorAll('.track .slide'));
-    const dotsWrap = slider.querySelector('.dots');
-    const prevBtn = slider.querySelector('.prev');
-    const nextBtn = slider.querySelector('.next');
+  const imgs = Array.from(slider.querySelectorAll('.track .slide'));
+  const dotsWrap = slider.querySelector('.dots');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
 
-    if(!imgs.length){ prevBtn.disabled=nextBtn.disabled=true; return; }
+  if(!imgs.length){ prevBtn.disabled = nextBtn.disabled = true; return; }
 
-    imgs.forEach((_,idx)=>{
-      const b=document.createElement('button');
-      b.setAttribute('role','tab');
-      b.setAttribute('aria-label','Go to slide ' + (idx+1));
-      b.addEventListener('click',()=>show(idx));
-      dotsWrap.appendChild(b);
+  // 圆点
+  imgs.forEach((_,idx)=>{
+    const b=document.createElement('button');
+    b.setAttribute('role','tab');
+    b.setAttribute('aria-label','Go to slide ' + (idx+1));
+    b.addEventListener('click',()=>queueShow(idx));
+    dotsWrap.appendChild(b);
+  });
+
+  let i=0, lock=false;
+  const guard = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
+
+  function setActive(idx){
+    imgs.forEach((img,k)=>{
+      img.classList.toggle('active', k===idx);
+      img.setAttribute('aria-hidden', k===idx ? 'false' : 'true');
     });
-
-    let i=0, lock=false;
-    const guard = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
-
-    function show(n){
-      i=(n+imgs.length)%imgs.length;
-      imgs.forEach((img,idx)=>{
-        img.classList.toggle('active', idx===i);
-        img.setAttribute('aria-hidden', idx===i ? 'false' : 'true');
-      });
-      dotsWrap.querySelectorAll('button').forEach((d,idx)=>d.classList.toggle('active', idx===i));
-    }
-
-    prevBtn.addEventListener('click', ()=> guard(()=>show(i-1)));
-    nextBtn.addEventListener('click', ()=> guard(()=>show(i+1)));
-    imgs.forEach(img=>{
-      img.addEventListener('click', ()=> guard(()=>show(i+1)));
-      img.addEventListener('dragstart', e=> e.preventDefault());
-    });
-
-    slider.setAttribute('tabindex','0');
-    slider.addEventListener('keydown', e=>{
-      if(e.key==='ArrowLeft'){ e.preventDefault(); guard(()=>show(i-1)); }
-      if(e.key==='ArrowRight'){ e.preventDefault(); guard(()=>show(i+1)); }
-    });
-
-    show(0);
+    dotsWrap.querySelectorAll('button').forEach((d,k)=>d.classList.toggle('active', k===idx));
+    i = idx;
+    preload((idx+1)%imgs.length);
   }
+
+  // 仅当目标图加载完成后切换（避免白屏）
+  function queueShow(target){
+    const t = (target + imgs.length) % imgs.length;
+    const img = imgs[t];
+    if (img.complete && img.naturalWidth){
+      setActive(t);
+    } else {
+      const onload = ()=>{ img.removeEventListener('load', onload); setActive(t); };
+      img.addEventListener('load', onload, { once:true });
+      // 触发加载（多数浏览器不需要，但更稳）
+      img.decoding = 'async';
+      img.loading = img.getAttribute('loading') || 'eager';
+      img.src = img.src;
+    }
+  }
+
+  function preload(idx){
+    const img = imgs[idx];
+    if (!img || (img.complete && img.naturalWidth)) return;
+    const pre = new Image();
+    pre.decoding = 'async';
+    pre.src = img.getAttribute('src');
+  }
+
+  prevBtn.addEventListener('click', ()=> guard(()=>queueShow(i-1)));
+  nextBtn.addEventListener('click', ()=> guard(()=>queueShow(i+1)));
+
+  slider.setAttribute('tabindex','0');
+  slider.addEventListener('keydown', e=>{
+    if(e.key==='ArrowLeft'){ e.preventDefault(); guard(()=>queueShow(i-1)); }
+    if(e.key==='ArrowRight'){ e.preventDefault(); guard(()=>queueShow(i+1)); }
+  });
+
+  // 初始化
+  imgs[0].classList.add('active');
+  imgs[0].setAttribute('aria-hidden','false');
+  dotsWrap.querySelectorAll('button')[0]?.classList.add('active');
+  preload(1);
 })();
 </script>
