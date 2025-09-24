@@ -96,79 +96,148 @@ permalink: /teaching/
 - Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
 
 
-<div class="photo-slider">
+<!-- ======== 单个迷你滑块（无四宫格、无标题，样式同前） ======== -->
+<div class="mini-slider" aria-label="photo slider">
   <div class="track">
-    <img class="slide" src="/files/teaching/volunteer/1.jpg" alt="1">
-    <img class="slide" src="/files/teaching/volunteer/2.jpg" alt="2">
-    <img class="slide" src="/files/teaching/volunteer/3.png" alt="3">
-    <img class="slide" src="/files/teaching/volunteer/4.png" alt="4">
-    <img class="slide" src="/files/teaching/volunteer/5.png" alt="5">
-    <img class="slide" src="/files/teaching/volunteer/0.jpg" alt="0">
-    <img class="slide" src="/files/teaching/volunteer/6.jpg" alt="6">
-    <img class="slide" src="/files/teaching/volunteer/7.jpg" alt="7">
-    <img class="slide" src="/files/teaching/volunteer/8.jpg" alt="8">
+    <img class="slide" src="/files/teaching/volunteer/1.jpg" alt="1" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/2.jpg" alt="2" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/3.png" alt="3" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/4.png" alt="4" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/5.png" alt="5" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/0.jpg" alt="0" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/6.jpg" alt="6" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/7.jpg" alt="7" loading="lazy">
+    <img class="slide" src="/files/teaching/volunteer/8.jpg" alt="8" loading="lazy">
   </div>
 
-  <!-- 改这里 -->
-  <button class="arrow left"  onclick="sliderNav(this,'prev')">‹</button>
-  <button class="arrow right" onclick="sliderNav(this,'next')">›</button>
+  <button class="nav prev" aria-label="Previous image">‹</button>
+  <button class="nav next" aria-label="Next image">›</button>
+  <div class="dots" role="tablist" aria-label="Slides pagination"></div>
 </div>
 
 <style>
-  .photo-slider{ position:relative; max-width:55%; margin:20px auto; }
-  .photo-slider .track{
-    display:flex; gap:10px; overflow-x:auto;
-    scroll-behavior:smooth;
-    scroll-snap-type:x mandatory;      /* 开启停靠 */
-    -webkit-overflow-scrolling:touch;
-    -ms-overflow-style:none; scrollbar-width:none;
-  }
-  .photo-slider .track::-webkit-scrollbar{ display:none; }
+/* —— 外观与前面一致 —— */
+.mini-slider{
+  /* 调整这里控制最大显示高度 */
+  --img-max-h: 360px;
 
-  .photo-slider img.slide{
-    flex:0 0 auto;
-    height:320px; width:auto; max-width:100%;
-    object-fit:contain; border-radius:6px; user-select:none;
-    scroll-snap-align:center;           /* 居中停靠 */
-    scroll-snap-stop:always;            /* 防止跳过 */
-  }
+  position:relative;
+  background:#fafafa;
+  border:1px solid #eee;
+  border-radius:10px;
+  padding:12px 12px 44px;
+  box-shadow:0 1px 6px rgba(0,0,0,.06);
+  text-align:center;
+  max-width: 880px;   /* 单滑块居中宽度，可按需改 */
+  margin: 20px auto;
+  overflow:hidden;
+}
 
-  .photo-slider .arrow{
-    position:absolute; top:50%; transform:translateY(-50%);
-    font-size:2rem; background:rgba(0,0,0,.4); color:#fff;
-    border:none; border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10;
-  }
-  .photo-slider .arrow.left{ left:10px; }
-  .photo-slider .arrow.right{ right:10px; }
+.mini-slider .track{
+  position: relative;
+  display:block;
+  min-height:60px;
+}
 
-  @media (max-width:768px){
-    .photo-slider{ max-width:90%; }
-    .photo-slider img.slide{ height:220px; }
-  }
+/* 原始比例显示：小图不放大；大图按容器等比缩小 */
+.mini-slider .track > img{
+  display:none;                 /* 通过 .active 切换可见 */
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:var(--img-max-h);  /* 控制最高显示高度 */
+  border-radius:8px;
+  user-select:none;
+  margin:0 auto;                /* 居中 */
+}
+.mini-slider .track > img.active{ display:block; }
+
+.mini-slider .nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:38px; height:38px;
+  border:none; border-radius:50%;
+  background:rgba(0,0,0,.45);
+  color:#fff; font-size:20px; line-height:38px;
+  cursor:pointer;
+  transition:opacity .15s ease;
+}
+.mini-slider .nav:hover{ opacity:.9; }
+.mini-slider .prev{ left:8px; }
+.mini-slider .next{ right:8px; }
+
+.mini-slider .dots{
+  position:absolute;
+  left:0; right:0; bottom:8px;
+  display:flex; gap:6px; justify-content:center;
+}
+.mini-slider .dots button{
+  width:8px; height:8px; border-radius:50%;
+  border:none; background:#cfcfcf; cursor:pointer;
+}
+.mini-slider .dots button.active{ background:#333; }
+
+@media (max-width: 768px){
+  .mini-slider{ max-width: 92%; --img-max-h: 260px; }
+}
 </style>
 
 <script>
-  function sliderNav(btn, dir){
-    const slider = btn.parentElement;
-    const track  = slider.querySelector('.track');
-    const slides = Array.from(track.querySelectorAll('.slide'));
+(function(){
+  const slider = document.querySelector('.mini-slider');
+  if(!slider) return;
 
-    // 找到当前最靠近视口中心的那张
-    const center = track.scrollLeft + track.clientWidth/2;
-    let idx = 0, best = Infinity;
-    slides.forEach((s,i)=>{
-      const mid = s.offsetLeft + s.offsetWidth/2;
-      const d = Math.abs(mid - center);
-      if (d < best){ best = d; idx = i; }
+  setupSlider(slider);
+
+  function setupSlider(slider){
+    const imgs = Array.from(slider.querySelectorAll('.track .slide'));
+    const dotsWrap = slider.querySelector('.dots');
+    const prevBtn = slider.querySelector('.prev');
+    const nextBtn = slider.querySelector('.next');
+
+    if(!imgs.length){ prevBtn.disabled = nextBtn.disabled = true; return; }
+
+    // 生成圆点
+    imgs.forEach((_,idx)=>{
+      const b=document.createElement('button');
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label','Go to slide ' + (idx+1));
+      b.addEventListener('click',()=>show(idx));
+      dotsWrap.appendChild(b);
     });
 
-    const target = dir === 'next' ? Math.min(idx+1, slides.length-1)
-                                  : Math.max(idx-1, 0);
+    let i=0, lock=false;
+    const guard = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
 
-    slides[target].scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+    function show(n){
+      i=(n+imgs.length)%imgs.length;
+      imgs.forEach((img,idx)=>{
+        img.classList.toggle('active', idx===i);
+        img.setAttribute('aria-hidden', idx===i ? 'false' : 'true');
+      });
+      dotsWrap.querySelectorAll('button').forEach((d,idx)=>d.classList.toggle('active', idx===i));
+    }
+
+    // 按钮
+    prevBtn.addEventListener('click', ()=> guard(()=>show(i-1)));
+    nextBtn.addEventListener('click', ()=> guard(()=>show(i+1)));
+
+    // 点击图片 -> 下一张
+    imgs.forEach(img=>{
+      img.addEventListener('click', ()=> guard(()=>show(i+1)));
+      img.addEventListener('dragstart', e=> e.preventDefault());
+    });
+
+    // 键盘
+    slider.setAttribute('tabindex','0');
+    slider.addEventListener('keydown', e=>{
+      if(e.key==='ArrowLeft'){ e.preventDefault(); guard(()=>show(i-1)); }
+      if(e.key==='ArrowRight'){ e.preventDefault(); guard(()=>show(i+1)); }
+    });
+
+    // 初始
+    show(0);
   }
+})();
 </script>
-
-
-
-
