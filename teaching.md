@@ -109,14 +109,14 @@ permalink: /teaching/
 </div>
 
 <style>
-  .photo-slider { position: relative; max-width: 40%; margin: 20px auto; }
+  .photo-slider { position: relative; max-width: 50%; margin: 20px auto; }
   .photo-slider .track {
     display:flex; overflow-x:auto; scroll-behavior:smooth;
     scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
     align-items:center; gap:10px;
   }
   .photo-slider img {
-    flex:0 0 auto; height:420px; width:auto; max-width:100%;
+    flex:0 0 auto; height:320px; width:auto; max-width:100%;
     object-fit:contain; border-radius:6px; user-select:none; scroll-snap-align:center;
   }
   .photo-slider .arrow{
