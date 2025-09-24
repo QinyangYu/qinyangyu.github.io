@@ -100,63 +100,35 @@ permalink: /teaching/
     <img src="/files/teaching/volunteer/7.jpg" alt="photo 7">
     <img src="/files/teaching/volunteer/8.jpg" alt="photo 8">
   </div>
-  <button class="nav prev" onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
-  <button class="nav next" onclick="this.parentElement.querySelector('.track').scrollBy({left:500,behavior:'smooth'})">›</button>
+
+  <!-- 改这里：arrow left / arrow right -->
+  <button class="arrow left"
+          onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
+  <button class="arrow right"
+          onclick="this.parentElement.querySelector('.track').scrollBy({left:500,behavior:'smooth'})">›</button>
 </div>
 
 <style>
-  .photo-slider {
-    position: relative;
-    max-width: 60%;
-    margin: 20px auto;
-  }
-
+  .photo-slider { position: relative; max-width: 60%; margin: 20px auto; }
   .photo-slider .track {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    align-items: center;
-    gap: 10px;
+    display:flex; overflow-x:auto; scroll-behavior:smooth;
+    scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+    align-items:center; gap:10px;
   }
-
   .photo-slider img {
-    flex: 0 0 auto;
-    height: 420px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 6px;
-    user-select: none;
-    scroll-snap-align: center;
+    flex:0 0 auto; height:420px; width:auto; max-width:100%;
+    object-fit:contain; border-radius:6px; user-select:none; scroll-snap-align:center;
   }
+  .photo-slider .arrow{
+    position:absolute; top:50%; transform:translateY(-50%);
+    font-size:2rem; background:rgba(0,0,0,.4); color:#fff; border:none;
+    border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10; user-select:none;
+  }
+  .photo-slider .arrow.left{ left:10px; }
+  .photo-slider .arrow.right{ right:10px; }
 
-  /* 自定义箭头 */
-  .photo-slider .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: rgba(0,0,0,0.4);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    padding: 8px 12px;
-    cursor: pointer;
-    z-index: 10;
-    user-select: none;
-  }
-  .photo-slider .arrow.left {
-    left: 10px;   /* 容器左边 */
-  }
-  .photo-slider .arrow.right {
-    right: 10px;  /* 容器右边 */
-  }
-
-  /* 移动端优化 */
-  @media (max-width: 768px) {
-    .photo-slider { max-width: 96%; }
-    .photo-slider img { height: 280px; }
+  @media (max-width:768px){
+    .photo-slider{ max-width:96%; }
+    .photo-slider img{ height:280px; }
   }
 </style>
