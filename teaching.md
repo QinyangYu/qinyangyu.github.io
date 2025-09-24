@@ -107,7 +107,7 @@ permalink: /teaching/
 <style>
   .photo-slider {
     position: relative;
-    max-width: 50%;
+    max-width: 60%;
     margin: 20px auto;
   }
 
@@ -117,11 +117,10 @@ permalink: /teaching/
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    align-items: center;       /* 不同高的图片垂直居中 */
+    align-items: center;
     gap: 10px;
   }
 
-  /* 图片自适应比例，不裁剪 */
   .photo-slider img {
     flex: 0 0 auto;
     height: 420px;
@@ -133,10 +132,10 @@ permalink: /teaching/
     scroll-snap-align: center;
   }
 
-  /* 左右箭头 */
+  /* 自定义箭头 */
   .photo-slider .arrow {
     position: absolute;
-    top: 50%;                  /* 垂直居中 */
+    top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
     background: rgba(0,0,0,0.4);
@@ -149,17 +148,15 @@ permalink: /teaching/
     user-select: none;
   }
   .photo-slider .arrow.left {
-    left: -50px;               /* 调整距离容器的左边位置 */
+    left: 10px;   /* 容器左边 */
   }
   .photo-slider .arrow.right {
-    right: -50px;              /* 调整距离容器的右边位置 */
+    right: 10px;  /* 容器右边 */
   }
 
-  /* 移动端缩小 */
+  /* 移动端优化 */
   @media (max-width: 768px) {
     .photo-slider { max-width: 96%; }
     .photo-slider img { height: 280px; }
-    .photo-slider .arrow.left { left: 10px; }
-    .photo-slider .arrow.right { right: 10px; }
   }
 </style>
