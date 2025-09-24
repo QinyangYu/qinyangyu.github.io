@@ -90,12 +90,12 @@ permalink: /teaching/
 
 <div class="photo-slider">
   <div class="track">
-    <img src="/files/teaching/volunteer/0.jpg" alt="photo 0">
     <img src="/files/teaching/volunteer/1.jpg" alt="photo 1">
     <img src="/files/teaching/volunteer/2.jpg" alt="photo 2">
     <img src="/files/teaching/volunteer/3.png" alt="photo 3">
     <img src="/files/teaching/volunteer/4.png" alt="photo 4">
     <img src="/files/teaching/volunteer/5.png" alt="photo 5">
+    <img src="/files/teaching/volunteer/0.jpg" alt="photo 0">
     <img src="/files/teaching/volunteer/6.jpg" alt="photo 6">
     <img src="/files/teaching/volunteer/7.jpg" alt="photo 7">
     <img src="/files/teaching/volunteer/8.jpg" alt="photo 8">
