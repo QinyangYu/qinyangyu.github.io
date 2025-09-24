@@ -88,6 +88,7 @@ permalink: /teaching/
 - Instructed 10 lower-grade classes in Chinese and Arts (Music); served as the host and pianist in the art performance  
 - Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
 
+
 <div class="photo-slider">
   <div class="track">
     <img src="/files/teaching/volunteer/1.jpg" alt="photo 1">
@@ -101,7 +102,7 @@ permalink: /teaching/
     <img src="/files/teaching/volunteer/8.jpg" alt="photo 8">
   </div>
 
-  <!-- 改这里：arrow left / arrow right -->
+  <!-- 左右箭头 -->
   <button class="arrow left"
           onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
   <button class="arrow right"
@@ -109,26 +110,58 @@ permalink: /teaching/
 </div>
 
 <style>
-  .photo-slider { position: relative; max-width: 60%; margin: 20px auto; }
-  .photo-slider .track {
-    display:flex; overflow-x:auto; scroll-behavior:smooth;
-    scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
-    align-items:center; gap:10px;
+  .photo-slider { 
+    position: relative; 
+    max-width: 45%;   /* 整体缩小 */
+    margin: 20px auto; 
   }
-  .photo-slider img {
-    flex:0 0 auto; height:420px; width:auto; max-width:100%;
-    object-fit:contain; border-radius:6px; user-select:none; scroll-snap-align:center;
-  }
-  .photo-slider .arrow{
-    position:absolute; top:50%; transform:translateY(-50%);
-    font-size:2rem; background:rgba(0,0,0,.4); color:#fff; border:none;
-    border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10; user-select:none;
-  }
-  .photo-slider .arrow.left{ left:10px; }
-  .photo-slider .arrow.right{ right:10px; }
 
-  @media (max-width:768px){
-    .photo-slider{ max-width:96%; }
-    .photo-slider img{ height:280px; }
+  .photo-slider .track {
+    display: flex; 
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch;
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .photo-slider img {
+    flex: 0 0 auto; 
+    height: 300px;    /* 图片缩小 */
+    width: auto; 
+    max-width: 100%;
+    object-fit: contain; 
+    border-radius: 6px; 
+    user-select: none; 
+    scroll-snap-align: center;
+  }
+
+  .photo-slider .arrow {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    font-size: 2rem; 
+    background: rgba(0,0,0,.4); 
+    color: #fff; 
+    border: none;
+    border-radius: 50%; 
+    padding: 8px 12px; 
+    cursor: pointer; 
+    z-index: 10; 
+    user-select: none;
+  }
+  .photo-slider .arrow.left { left: 10px; }
+  .photo-slider .arrow.right { right: 10px; }
+
+  /* 移动端优化 */
+  @media (max-width: 768px) {
+    .photo-slider { max-width: 80%; }   /* 宽一点，适合手机 */
+    .photo-slider img { height: 200px; }
   }
 </style>
+
+
+
+
+
