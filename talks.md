@@ -4,7 +4,7 @@ title: "Talks"
 permalink: /talks/
 ---
 
-# Conferences & Publications
+# Conferences
 ### Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks
 - Submitted to NetSciX 2026 - International School and Conference on Network Science
 - Submitted to Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications
