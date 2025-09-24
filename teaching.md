@@ -107,8 +107,8 @@ permalink: /teaching/
 <style>
   .photo-slider {
     position: relative;
-    max-width: 70%;   /* 整体宽度：页面的70% */
-    margin: 20px auto; /* 居中显示 */
+    max-width: 50%;
+    margin: 20px auto;
   }
   .photo-slider .track {
     display: flex;
@@ -116,31 +116,24 @@ permalink: /teaching/
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    align-items: center;          /* 让不同高的图片垂直居中 */
+ gap: 10px;
   }
+  /* 关键修改：限制高度，按比例缩放，不裁剪 */
   .photo-slider img {
-    flex: 0 0 auto;    /* 保持原始比例，不强行拉伸 */
-    max-width: 100%;   /* 限制最大宽度不超过容器 */
-    height: auto;      /* 高度自动，保持比例 */
+    flex: 0 0 auto;
+    height: 420px;               /* 统一显示高度（可改） */
+    width: auto;                 /* 宽度自适应 */
+    max-width: 100%;             /* 不超过容器 */
+    object-fit: contain;         /* 保持比例，不裁切 */
     border-radius: 6px;
-    margin-right: 10px;
-    scroll-snap-align: center;
     user-select: none;
+    scroll-snap-align: center;
   }
-  .photo-slider .nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,.45);
-    color: #fff;
-    border: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  /* 移动端更小一点 */
+  @media (max-width: 768px) {
+    .photo-slider { max-width: 96%; }
+    .photo-slider img { height: 280px; }
   }
-  .photo-slider .prev { left: 8px; }
-  .photo-slider .next { right: 8px; }
 </style>
