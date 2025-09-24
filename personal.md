@@ -238,42 +238,8 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
 ### My Spirit Book:
 The Baron in the Trees (Il barone rampante) by Italo Calvino
 
-<!-- ======== Spirit Book Card ======== -->
-<div class="book-card">
-  <h3 class="book-title">
-    My Spirit Book:
-    <span>The Baron in the Trees (<em>Il barone rampante</em>) by Italo Calvino</span>
-  </h3>
-  <img src="/files/personal/barons.jpg" alt="The Baron in the Trees by Italo Calvino" class="book-cover" loading="lazy">
-</div>
+<img src="/files/personal/barons.jpg" alt="The Baron in the Trees" style="max-width:220px; height:auto; border-radius:8px; display:block; margin:20px auto;">
 
-<style>
-.book-card{
-  max-width: 320px;          /* 控制整体大小 */
-  margin: 30px auto;
-  background:#fafafa;
-  border:1px solid #eee;
-  border-radius:12px;
-  padding:16px;
-  box-shadow:0 1px 6px rgba(0,0,0,.08);
-  text-align:center;
-}
-.book-title{
-  font-size:1rem;
-  font-weight:600;
-  margin:0 0 12px;
-  line-height:1.4;
-}
-.book-title span{
-  font-weight:400;
-}
-.book-cover{
-  max-width:100%;             /* 不会超过容器宽度 */
-  height:auto;                /* 保持比例 */
-  border-radius:10px;
-  box-shadow:0 1px 8px rgba(0,0,0,.15); /* 可选阴影 */
-}
-</style>
 
 
 <br>
