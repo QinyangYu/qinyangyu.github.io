@@ -7,13 +7,12 @@ permalink: /personal/
 # My Experimental Kitchen Lab
 Beyond academic research, I am also a passionate culinary researcher. In my personal food lab, I experiment with diverse ingredients and explore cuisines from around the world, creating flavors just as a scientist creates theories. Might fail, but always fun!
 
-<!-- ======== 四宫格迷你滑块（原始比例 + 首次加载防跳动） ======== -->
+<!-- ======== 四宫格迷你滑块（固定高度 + 交叉淡入，无白屏无跳动） ======== -->
 <div class="grid4">
   <!-- A -->
   <div class="mini-slider" aria-label="Italian, French, and American Food slider">
     <h3 class="slider-title">Italian, French, and American Food</h3>
     <div class="track">
-      <!-- 首张图不lazy，避免首击等待导致塌陷 -->
       <img src="/files/personal/a1.jpg"  alt="a1">
       <img src="/files/personal/a2.jpg"  alt="a2"  loading="lazy">
       <img src="/files/personal/a3.jpg"  alt="a3"  loading="lazy">
@@ -99,8 +98,7 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   margin:28px auto;
 }
 .mini-slider{
-  /* 可调：限制图片最高显示高度，避免超长图 */
-  --img-max-h: 360px;
+  --img-max-h: 360px; /* 统一可视高度。需要更高就改这里 */
 
   position:relative;
   background:#fafafa;
@@ -117,28 +115,31 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   margin:0 0 12px;
 }
 
-/* 轨道预留最大高度，避免首轮塌陷；切换高度有过渡更顺滑 */
+/* 轨道固定高度；里面的图片绝对定位 + contain，切换只做透明度 */
 .mini-slider .track{
   position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:var(--img-max-h);
-  transition: height .2s ease, min-height .2s ease;
+  height:var(--img-max-h);   /* 固定，彻底杜绝“高度跳” */
 }
-
-/* 原比例，不拉伸；小图不放大，大图缩到容器内 */
 .mini-slider .track > img{
-  display:none;
+  position:absolute;
+  inset:0;                  /* top/right/bottom/left:0 */
+  margin:auto;
+  max-width:100%;
+  max-height:100%;
   width:auto;
   height:auto;
-  max-width:100%;
-  max-height:var(--img-max-h);
+  object-fit:contain;       /* 保持比例完整显示 */
   border-radius:8px;
   user-select:none;
-  margin:0 auto;
+  pointer-events:none;      /* 防止点击穿透问题：我们用按钮/键盘切换 */
+  opacity:0;
+  transition:opacity .2s ease;
+  will-change:opacity;
 }
-.mini-slider .track > img.active{ display:block; }
+.mini-slider .track > img.active{
+  opacity:1;
+  pointer-events:auto;
+}
 
 .mini-slider .nav{
   position:absolute;
@@ -168,7 +169,7 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
 
 @media (max-width: 720px){
   .grid4{ grid-template-columns:1fr; }
-  .mini-slider{ --img-max-h: 260px; } /* 移动端略收高度 */
+  .mini-slider{ --img-max-h: 260px; }
 }
 </style>
 
@@ -181,7 +182,6 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
     const dotsWrap = slider.querySelector('.dots');
     const prevBtn = slider.querySelector('.prev');
     const nextBtn = slider.querySelector('.next');
-    const track = slider.querySelector('.track');
 
     if (!imgs.length){
       prevBtn.disabled = true; nextBtn.disabled = true;
@@ -193,89 +193,67 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
       const b=document.createElement('button');
       b.setAttribute('role','tab');
       b.setAttribute('aria-label','Go to slide ' + (idx+1));
-      b.addEventListener('click',()=>show(idx));
+      b.addEventListener('click',()=>queueShow(idx));
       dotsWrap.appendChild(b);
     });
 
-    let i=0, lock=false, rAF=null;
+    let i=0, lock=false;
     const guarded = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
 
-    // 计算当前图显示高度（受 --img-max-h 约束），固定到 track.height，避免长宽比差导致跳动
-    function fitTrackHeight(img){
-      if(!img || !img.naturalWidth || !img.naturalHeight) return;
-      const cs = getComputedStyle(slider);
-      const maxH = parseFloat(cs.getPropertyValue('--img-max-h')) || 360;
-      const w = track.clientWidth || slider.clientWidth || 0;
-      if (!w) return;
-      const ratio = img.naturalHeight / img.naturalWidth;
-      const displayH = Math.min(maxH, Math.round(w * ratio));
-      track.style.height = displayH + 'px';
+    // —— 只在“目标图片加载完成”后才切换，并做交叉淡入
+    function switchTo(idx){
+      imgs.forEach((img,k)=>{
+        img.classList.toggle('active', k===idx);
+        img.setAttribute('aria-hidden', k===idx ? 'false' : 'true');
+      });
+      dotsWrap.querySelectorAll('button').forEach((d,k)=>d.classList.toggle('active', k===idx));
+      i = idx;
+      preload((idx+1)%imgs.length); // 预热下一张
     }
 
-    // 轻量预热下一张，减少首次切过去的等待
-    function preloadNext(idx){
-      const j = (idx + 1) % imgs.length;
-      const url = imgs[j].getAttribute('src');
-      if(!url) return;
+    // 若目标图未加载完，先预加载，onload 后再切
+    function queueShow(target){
+      const img = imgs[(target+imgs.length)%imgs.length];
+      if (img.complete && img.naturalWidth) {
+        switchTo((target+imgs.length)%imgs.length);
+      } else {
+        // 保持当前图继续可见，不白屏
+        const onload = ()=>{ img.removeEventListener('load', onload); switchTo((target+imgs.length)%imgs.length); };
+        img.addEventListener('load', onload);
+        // 触发加载
+        img.decoding = 'async';
+        img.loading = img.getAttribute('loading') || 'eager';
+        img.src = img.src; // 保守触发（多数浏览器不需要）
+      }
+    }
+
+    function preload(idx){
+      const img = imgs[idx];
+      if (!img) return;
+      if (img.complete && img.naturalWidth) return;
       const pre = new Image();
       pre.decoding = 'async';
-      pre.src = url;
+      pre.src = img.getAttribute('src');
     }
 
-    function show(n){
-      i=(n+imgs.length)%imgs.length;
-      imgs.forEach((img,idx)=>{
-        img.classList.toggle('active', idx===i);
-        img.setAttribute('aria-hidden', idx===i ? 'false' : 'true');
-      });
-      dotsWrap.querySelectorAll('button').forEach((d,idx)=>d.classList.toggle('active', idx===i));
+    prevBtn.addEventListener('click', ()=> guarded(()=>queueShow(i-1)));
+    nextBtn.addEventListener('click', ()=> guarded(()=>queueShow(i+1)));
 
-      const cur = imgs[i];
-      if (cur.complete && cur.naturalWidth){
-        fitTrackHeight(cur);
-      } else {
-        // 当前图未加载好：先用最大高度兜底，onload 后再收敛到精确高度
-        const cs = getComputedStyle(slider);
-        track.style.height = cs.getPropertyValue('--img-max-h');
-        cur.addEventListener('load', ()=>fitTrackHeight(cur), { once:true });
-      }
-      preloadNext(i);
-    }
-
-    prevBtn.addEventListener('click', ()=> guarded(()=>show(i-1)));
-    nextBtn.addEventListener('click', ()=> guarded(()=>show(i+1)));
-
-    imgs.forEach(img=>{
-      img.addEventListener('click', ()=> guarded(()=>show(i+1)));
-      img.addEventListener('dragstart', e=> e.preventDefault());
-    });
-
+    // 点击图片也下一张（已禁 pointer-events，则不做）
     slider.setAttribute('tabindex','0');
     slider.addEventListener('keydown', e=>{
-      if(e.key==='ArrowLeft'){ e.preventDefault(); guarded(()=>show(i-1)); }
-      if(e.key==='ArrowRight'){ e.preventDefault(); guarded(()=>show(i+1)); }
+      if(e.key==='ArrowLeft'){ e.preventDefault(); guarded(()=>queueShow(i-1)); }
+      if(e.key==='ArrowRight'){ e.preventDefault(); guarded(()=>queueShow(i+1)); }
     });
 
-    // 首次：若首图已缓存则立刻拟合，否则等 onload
-    if (imgs[0].complete && imgs[0].naturalWidth){
-      fitTrackHeight(imgs[0]);
-    } else {
-      imgs[0].addEventListener('load', ()=>fitTrackHeight(imgs[0]), { once:true });
-      // 保险：首屏先把高度顶到 max，避免首屏塌陷
-      const cs = getComputedStyle(slider);
-      track.style.height = cs.getPropertyValue('--img-max-h');
-    }
-    show(0);
-
-    // 窗口尺寸变化时，按当前图重算一次高度（rAF 节流）
-    window.addEventListener('resize', ()=>{
-      if (rAF) cancelAnimationFrame(rAF);
-      rAF = requestAnimationFrame(()=> fitTrackHeight(imgs[i]));
-    });
+    // 初始：第一张设为 active，并预热第二张
+    imgs[0].classList.add('active');
+    imgs[0].setAttribute('aria-hidden','false');
+    dotsWrap.querySelectorAll('button')[0]?.classList.add('active');
+    preload(1);
   }
 })();
 </script>
-
 
 
 <br>
