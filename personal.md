@@ -230,29 +230,50 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
 
 # Literature & Compositions
 ### My Childhood Composition Collections:
-[My compositions in primary school](https://drive.google.com/open?id=1_niWxb7tZWgJRS9MDL2hWbvonDqckOg8&usp=drive_copy)
-[My compositions in junior high school](https://drive.google.com/open?id=12SsCkEP6_1uGnqcgXEG_JX5yQidzEuyw&usp=drive_copy)
-[My compositions in senior high school](https://drive.google.com/open?id=1Ziun7v1DAFD1EacY_lEulgkskddGpwLt&usp=drive_copy)
+[My compositions in primary school](https://drive.google.com/open?id=1_niWxb7tZWgJRS9MDL2hWbvonDqckOg8&usp=drive_copy)  
+[My compositions in junior high school](https://drive.google.com/open?id=12SsCkEP6_1uGnqcgXEG_JX5yQidzEuyw&usp=drive_copy)  
+[My compositions in senior high school](https://drive.google.com/open?id=1Ziun7v1DAFD1EacY_lEulgkskddGpwLt&usp=drive_copy)  
 
-### My Composition Collections:
-**My Spirit Book:** The Baron in the Trees (Il barone rampante) by Italo Calvino
+### My Spirit Book:
+The Baron in the Trees (Il barone rampante) by Italo Calvino
 
-<div class="photo-single">
-  <img src="/files/personal/barons.jpg" alt="Barons" loading="lazy">
+<!-- ======== Spirit Book Card ======== -->
+<div class="book-card">
+  <h3 class="book-title">
+    My Spirit Book:
+    <span>The Baron in the Trees (<em>Il barone rampante</em>) by Italo Calvino</span>
+  </h3>
+  <img src="/files/personal/barons.jpg" alt="The Baron in the Trees by Italo Calvino" class="book-cover" loading="lazy">
 </div>
 
 <style>
-.photo-single{
-  text-align:center;    /* 居中 */
-  margin:20px auto;
+.book-card{
+  max-width: 320px;          /* 控制整体大小 */
+  margin: 30px auto;
+  background:#fafafa;
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:16px;
+  box-shadow:0 1px 6px rgba(0,0,0,.08);
+  text-align:center;
 }
-.photo-single img{
-  max-width:90%;        /* 控制最大宽度，不撑破屏幕 */
-  height:auto;          /* 保持比例 */
-  border-radius:10px;   /* 可选：圆角 */
-  box-shadow:0 1px 8px rgba(0,0,0,.15); /* 可选：阴影 */
+.book-title{
+  font-size:1rem;
+  font-weight:600;
+  margin:0 0 12px;
+  line-height:1.4;
+}
+.book-title span{
+  font-weight:400;
+}
+.book-cover{
+  max-width:100%;             /* 不会超过容器宽度 */
+  height:auto;                /* 保持比例 */
+  border-radius:10px;
+  box-shadow:0 1px 8px rgba(0,0,0,.15); /* 可选阴影 */
 }
 </style>
+
 
 
 # Music & Piano Playing
