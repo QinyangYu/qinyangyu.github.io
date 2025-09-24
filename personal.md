@@ -17,7 +17,7 @@ permalink: /personal/
 - Presented at the 2024 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University  
 - Presented at the 2024 Master’s Research Seminar, EMAC, Duke University  
 
-<!-- ======== 四宫格迷你滑块（原始尺寸版） ======== -->
+<!-- ======== 四宫格迷你滑块（原始比例 + 超出自适配） ======== -->
 <div class="grid4">
   <!-- A -->
   <div class="mini-slider" aria-label="Italian, French, and American Food slider">
@@ -108,6 +108,9 @@ permalink: /personal/
   margin:28px auto;
 }
 .mini-slider{
+  /* 可调：限制图片最高显示高度，避免超长图 */
+  --img-max-h: 360px;
+
   position:relative;
   background:#fafafa;
   border:1px solid #eee;
@@ -123,23 +126,25 @@ permalink: /personal/
   margin:0 0 12px;
 }
 
-/* 轨道允许滚动，避免超大图把卡片撑坏 */
+/* 居中容器，不裁剪；高度随内容而变 */
 .mini-slider .track{
   position:relative;
-  overflow:auto;     /* 大图出现滚动条（水平/垂直） */
-  -webkit-overflow-scrolling: touch;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:60px;
 }
 
-/* 图片保持原始尺寸，不拉伸/不裁切 */
+/* 核心：保持原始比例；小图不放大；大图缩小到容器内 */
 .mini-slider .track > img{
   display:none;
-  width:auto;        /* 关键：不强制铺满 */
-  height:auto;       /* 关键：保持原始比例 */
-  max-width:none;    /* 关键：不限制最大宽度 */
-  max-height:none;   /* 关键：不限制最大高度 */
+  width:auto;            /* 不强制铺满 */
+  height:auto;           /* 维持比例 */
+  max-width:100%;        /* 宽度不超过卡片 */
+  max-height:var(--img-max-h); /* 可调上限，避免过高 */
   border-radius:8px;
   user-select:none;
-  margin:0 auto;     /* 居中 */
+  margin:0 auto;
 }
 .mini-slider .track > img.active{ display:block; }
 
@@ -171,13 +176,12 @@ permalink: /personal/
 
 @media (max-width: 720px){
   .grid4{ grid-template-columns:1fr; }
-  /* 移动端同样保持原始尺寸；超出时可滚动查看 */
+  .mini-slider{ --img-max-h: 260px; } /* 移动端略收一点高度 */
 }
 </style>
 
 <script>
 (function(){
-  // 初始化所有滑块
   document.querySelectorAll('.mini-slider').forEach(setupSlider);
 
   function setupSlider(slider){
@@ -191,7 +195,6 @@ permalink: /personal/
       return;
     }
 
-    // 生成圆点
     imgs.forEach((_,idx)=>{
       const b=document.createElement('button');
       b.setAttribute('role','tab');
@@ -200,18 +203,9 @@ permalink: /personal/
       dotsWrap.appendChild(b);
     });
 
-    // 当前索引
-    let i=0;
+    let i=0, lock=false;
+    const guarded = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
 
-    // 防抖，避免连点导致跳帧
-    let lock=false;
-    function guarded(fn){
-      if(lock) return;
-      lock=true; fn();
-      setTimeout(()=>lock=false, 150);
-    }
-
-    // 显示函数
     function show(n){
       i=(n+imgs.length)%imgs.length;
       imgs.forEach((img,idx)=>{
@@ -219,34 +213,26 @@ permalink: /personal/
         img.setAttribute('aria-hidden', idx===i ? 'false' : 'true');
       });
       dotsWrap.querySelectorAll('button').forEach((d,idx)=>d.classList.toggle('active', idx===i));
-      // 每次切换把轨道滚动复位到顶部，免得上一张留下的滚动位置干扰
-      const track = slider.querySelector('.track');
-      track.scrollTop = 0;
-      track.scrollLeft = 0;
     }
 
-    // 绑定左右按钮
     prevBtn.addEventListener('click', ()=> guarded(()=>show(i-1)));
     nextBtn.addEventListener('click', ()=> guarded(()=>show(i+1)));
-
-    // 点击图片 -> 下一张
     imgs.forEach(img=>{
       img.addEventListener('click', ()=> guarded(()=>show(i+1)));
       img.addEventListener('dragstart', e=> e.preventDefault());
     });
 
-    // 键盘支持（聚焦在滑块内时）
-    slider.setAttribute('tabindex', '0');
-    slider.addEventListener('keydown', (e)=>{
-      if(e.key === 'ArrowLeft'){ e.preventDefault(); guarded(()=>show(i-1)); }
-      if(e.key === 'ArrowRight'){ e.preventDefault(); guarded(()=>show(i+1)); }
+    slider.setAttribute('tabindex','0');
+    slider.addEventListener('keydown', e=>{
+      if(e.key==='ArrowLeft'){ e.preventDefault(); guarded(()=>show(i-1)); }
+      if(e.key==='ArrowRight'){ e.preventDefault(); guarded(()=>show(i+1)); }
     });
 
-    // 初始
     show(0);
   }
 })();
 </script>
+
 
 
 
