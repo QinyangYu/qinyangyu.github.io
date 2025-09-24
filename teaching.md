@@ -88,11 +88,27 @@ permalink: /teaching/
 - Instructed 10 lower-grade classes in Chinese and Arts (Music); served as the host and pianist in the art performance  
 - Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
 
+<div class="photo-slider">
+  <div class="track">
+    <img src="/files/teaching/volunteer/0.jpg" alt="photo 0">
+    <img src="/files/teaching/volunteer/1.jpg" alt="photo 1">
+    <img src="/files/teaching/volunteer/2.jpg" alt="photo 2">
+    <img src="/files/teaching/volunteer/3.png" alt="photo 3">
+    <img src="/files/teaching/volunteer/4.png" alt="photo 4">
+    <img src="/files/teaching/volunteer/5.png" alt="photo 5">
+    <img src="/files/teaching/volunteer/6.jpg" alt="photo 6">
+    <img src="/files/teaching/volunteer/7.jpg" alt="photo 7">
+    <img src="/files/teaching/volunteer/8.jpg" alt="photo 8">
+  </div>
+  <button class="nav prev" onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
+  <button class="nav next" onclick="this.parentElement.querySelector('.track').scrollBy({left:500,behavior:'smooth'})">›</button>
+</div>
+
 <style>
   .photo-slider {
     position: relative;
-    max-width: 300px;   /* 控制整体宽度，比如 600px，你可以调 */
-    margin: 16px auto;  /* 居中显示 */
+    max-width: 70%;   /* 整体宽度：页面的70% */
+    margin: 20px auto; /* 居中显示 */
   }
   .photo-slider .track {
     display: flex;
@@ -102,10 +118,11 @@ permalink: /teaching/
     -webkit-overflow-scrolling: touch;
   }
   .photo-slider img {
-    flex: 0 0 100%;
-    width: 100%;
-    height: auto;
+    flex: 0 0 auto;    /* 保持原始比例，不强行拉伸 */
+    max-width: 100%;   /* 限制最大宽度不超过容器 */
+    height: auto;      /* 高度自动，保持比例 */
     border-radius: 6px;
+    margin-right: 10px;
     scroll-snap-align: center;
     user-select: none;
   }
@@ -114,16 +131,16 @@ permalink: /teaching/
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,.45);
-    color:#fff;
-    border:0;
-    width:40px;
-    height:40px;
-    border-radius:999px;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    color: #fff;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .photo-slider .prev{ left:8px; }
-  .photo-slider .next{ right:8px; }
+  .photo-slider .prev { left: 8px; }
+  .photo-slider .next { right: 8px; }
 </style>
