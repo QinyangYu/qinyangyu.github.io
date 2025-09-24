@@ -110,30 +110,56 @@ permalink: /teaching/
     max-width: 50%;
     margin: 20px auto;
   }
+
   .photo-slider .track {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    align-items: center;          /* 让不同高的图片垂直居中 */
- gap: 10px;
+    align-items: center;       /* 不同高的图片垂直居中 */
+    gap: 10px;
   }
-  /* 关键修改：限制高度，按比例缩放，不裁剪 */
+
+  /* 图片自适应比例，不裁剪 */
   .photo-slider img {
     flex: 0 0 auto;
-    height: 420px;               /* 统一显示高度（可改） */
-    width: auto;                 /* 宽度自适应 */
-    max-width: 100%;             /* 不超过容器 */
-    object-fit: contain;         /* 保持比例，不裁切 */
+    height: 420px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: 6px;
     user-select: none;
     scroll-snap-align: center;
   }
 
-  /* 移动端更小一点 */
+  /* 左右箭头 */
+  .photo-slider .arrow {
+    position: absolute;
+    top: 50%;                  /* 垂直居中 */
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+  }
+  .photo-slider .arrow.left {
+    left: -50px;               /* 调整距离容器的左边位置 */
+  }
+  .photo-slider .arrow.right {
+    right: -50px;              /* 调整距离容器的右边位置 */
+  }
+
+  /* 移动端缩小 */
   @media (max-width: 768px) {
     .photo-slider { max-width: 96%; }
     .photo-slider img { height: 280px; }
+    .photo-slider .arrow.left { left: 10px; }
+    .photo-slider .arrow.right { right: 10px; }
   }
 </style>
