@@ -76,6 +76,47 @@ permalink: /teaching/
 - [20230221_ECO3011_Tutorial_3_Recording.mp4](https://drive.google.com/open?id=1bP6eFCCxmWsu9j02X_Ubpa5XNFAj6Fvj&usp=drive_copy)  
 - [20230413_ECO3011_Week_11_Recording.mp4](https://drive.google.com/open?id=1UxdqXKgW7oT_H8e-thNG6tjDBCfKgB9U&usp=drive_copy)  
 
+
+<div class="photo-slider">
+  <div class="track">
+    <img src="/files/teaching/teaching2.jpg" alt="teaching photo 2">
+    <img src="/files/teaching/teaching3.jpg" alt="teaching photo 3">
+  </div>
+
+  <!-- 左右箭头 -->
+  <button class="arrow left"
+          onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
+  <button class="arrow right"
+          onclick="this.parentElement.querySelector('.track').scrollBy({left:500,behavior:'smooth'})">›</button>
+</div>
+
+<style>
+  .photo-slider { position: relative; max-width: 45%; margin: 20px auto; }
+  .photo-slider .track {
+    display:flex; overflow-x:auto; scroll-behavior:smooth;
+    scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+    align-items:center; gap:10px;
+  }
+  .photo-slider img {
+    flex:0 0 auto; height:300px; width:auto; max-width:100%;
+    object-fit:contain; border-radius:6px; user-select:none; scroll-snap-align:center;
+  }
+  .photo-slider .arrow{
+    position:absolute; top:50%; transform:translateY(-50%);
+    font-size:2rem; background:rgba(0,0,0,.4); color:#fff; border:none;
+    border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10; user-select:none;
+  }
+  .photo-slider .arrow.left{ left:10px; }
+  .photo-slider .arrow.right{ right:10px; }
+
+  @media (max-width:768px){
+    .photo-slider{ max-width:80%; }
+    .photo-slider img{ height:200px; }
+  }
+</style>
+
+
+
 <br>
 ---
 
