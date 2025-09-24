@@ -88,47 +88,42 @@ permalink: /teaching/
 - Instructed 10 lower-grade classes in Chinese and Arts (Music); served as the host and pianist in the art performance  
 - Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
 
-<!-- 可左右点击的照片滑动组件（无需外部库） -->
 <style>
-  .photo-slider { position: relative; max-width: 900px; margin: 16px 0; }
+  .photo-slider {
+    position: relative;
+    max-width: 300px;   /* 控制整体宽度，比如 600px，你可以调 */
+    margin: 16px auto;  /* 居中显示 */
+  }
   .photo-slider .track {
-    display: flex; overflow-x: auto; scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
   .photo-slider img {
-    flex: 0 0 100%; width: 100%; height: auto; border-radius: 6px;
-    scroll-snap-align: center; user-select: none;
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    scroll-snap-align: center;
+    user-select: none;
   }
   .photo-slider .nav {
-    position: absolute; top: 50%; transform: translateY(-50%);
-    background: rgba(0,0,0,.45); color:#fff; border:0; width:40px; height:40px;
-    border-radius:999px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.45);
+    color:#fff;
+    border:0;
+    width:40px;
+    height:40px;
+    border-radius:999px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
   .photo-slider .prev{ left:8px; }
   .photo-slider .next{ right:8px; }
 </style>
-
-<div id="volunteer" class="photo-slider">
-  <button class="nav prev" onclick="scrollSlider('volunteer', -1)">‹</button>
-  <div class="track">
-    <img src="/files/teaching/volunteer/0.jpg" alt="volunteer 0">
-    <img src="/files/teaching/volunteer/1.jpg" alt="volunteer 1">
-    <img src="/files/teaching/volunteer/2.jpg" alt="volunteer 2">
-    <img src="/files/teaching/volunteer/3.png" alt="volunteer 3">
-    <img src="/files/teaching/volunteer/4.png" alt="volunteer 4">
-    <img src="/files/teaching/volunteer/5.png" alt="volunteer 5">
-    <img src="/files/teaching/volunteer/6.jpg" alt="volunteer 6">
-    <img src="/files/teaching/volunteer/7.jpg" alt="volunteer 7">
-    <img src="/files/teaching/volunteer/8.jpg" alt="volunteer 8">
-  </div>
-  <button class="nav next" onclick="scrollSlider('volunteer', 1)">›</button>
-</div>
-
-<script>
-  function scrollSlider(id, dir){
-    const track = document.querySelector('#'+id+' .track');
-    track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' });
-  }
-</script>
-
-
