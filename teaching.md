@@ -92,8 +92,10 @@ permalink: /teaching/
 **Aug.01–Aug.15, 2021**  
 **Lumos Society of Muse College, CUHKsz**  
 **My Experience:**  
-- Instructed 10 lower-grade classes in Chinese and Arts (Music); served as the host and pianist in the art performance  
-- Undertook 3 post-class home visits to provide feedback and understand family backgrounds; interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
+- Instructed 10 lower-grade classes in Chinese and Arts (Music)
+- Served as the host and pianist in the art performance  
+- Undertook 3 post-class home visits to provide feedback and understand family backgrounds
+- Interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
 
 
 <!-- ======== Teaching 相册滑块（与 talks 同款格式） ======== -->
