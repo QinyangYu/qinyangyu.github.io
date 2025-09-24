@@ -253,3 +253,59 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   box-shadow:0 1px 8px rgba(0,0,0,.15); /* 可选：阴影 */
 }
 </style>
+
+
+# Music & Piano Playing
+
+<!-- ======== Video Two-Column Grid ======== -->
+<div class="video-grid">
+  <!-- Video 1 -->
+  <div class="video-card">
+    <h3 class="video-title">Murmures</h3>
+    <video controls>
+      <source src="/files/personal/Murmures.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="video-card">
+    <h3 class="video-title">The Butterfly Lovers</h3>
+    <video controls>
+      <source src="/files/personal/The Butterfly Lovers.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<style>
+.video-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+.video-card{
+  background:#fafafa;
+  border:1px solid #eee;
+  border-radius:10px;
+  padding:16px;
+  box-shadow:0 1px 6px rgba(0,0,0,.08);
+  text-align:center;
+}
+.video-title{
+  font-size:1.05rem;
+  font-weight:600;
+  margin:0 0 12px;
+}
+.video-card video{
+  width:100%;
+  border-radius:8px;
+  outline:none;
+}
+@media (max-width: 768px){
+  .video-grid{ grid-template-columns: 1fr; }
+}
+</style>
+
