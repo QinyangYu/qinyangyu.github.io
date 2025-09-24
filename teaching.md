@@ -147,76 +147,76 @@ permalink: /teaching/
 
 <div class="photo-slider">
   <div class="track">
-    <img src="/files/teaching/volunteer/1.jpg" alt="photo 1">
-    <img src="/files/teaching/volunteer/2.jpg" alt="photo 2">
-    <img src="/files/teaching/volunteer/3.png" alt="photo 3">
-    <img src="/files/teaching/volunteer/4.png" alt="photo 4">
-    <img src="/files/teaching/volunteer/5.png" alt="photo 5">
-    <img src="/files/teaching/volunteer/0.jpg" alt="photo 0">
-    <img src="/files/teaching/volunteer/6.jpg" alt="photo 6">
-    <img src="/files/teaching/volunteer/7.jpg" alt="photo 7">
-    <img src="/files/teaching/volunteer/8.jpg" alt="photo 8">
+    <img class="slide" src="/files/teaching/volunteer/1.jpg" alt="1">
+    <img class="slide" src="/files/teaching/volunteer/2.jpg" alt="2">
+    <img class="slide" src="/files/teaching/volunteer/3.png" alt="3">
+    <img class="slide" src="/files/teaching/volunteer/4.png" alt="4">
+    <img class="slide" src="/files/teaching/volunteer/5.png" alt="5">
+    <img class="slide" src="/files/teaching/volunteer/0.jpg" alt="0">
+    <img class="slide" src="/files/teaching/volunteer/6.jpg" alt="6">
+    <img class="slide" src="/files/teaching/volunteer/7.jpg" alt="7">
+    <img class="slide" src="/files/teaching/volunteer/8.jpg" alt="8">
   </div>
 
-  <!-- 左右箭头 -->
-  <button class="arrow left"
-          onclick="this.parentElement.querySelector('.track').scrollBy({left:-500,behavior:'smooth'})">‹</button>
-  <button class="arrow right"
-          onclick="this.parentElement.querySelector('.track').scrollBy({left:500,behavior:'smooth'})">›</button>
+  <!-- 改这里 -->
+  <button class="arrow left"  onclick="sliderNav(this,'prev')">‹</button>
+  <button class="arrow right" onclick="sliderNav(this,'next')">›</button>
 </div>
 
 <style>
-  .photo-slider { 
-    position: relative; 
-    max-width: 45%;   /* 整体缩小 */
-    margin: 20px auto; 
+  .photo-slider{ position:relative; max-width:55%; margin:20px auto; }
+  .photo-slider .track{
+    display:flex; gap:10px; overflow-x:auto;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;      /* 开启停靠 */
+    -webkit-overflow-scrolling:touch;
+    -ms-overflow-style:none; scrollbar-width:none;
+  }
+  .photo-slider .track::-webkit-scrollbar{ display:none; }
+
+  .photo-slider img.slide{
+    flex:0 0 auto;
+    height:320px; width:auto; max-width:100%;
+    object-fit:contain; border-radius:6px; user-select:none;
+    scroll-snap-align:center;           /* 居中停靠 */
+    scroll-snap-stop:always;            /* 防止跳过 */
   }
 
-  .photo-slider .track {
-    display: flex; 
-    overflow-x: auto; 
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; 
-    -webkit-overflow-scrolling: touch;
-    align-items: center; 
-    gap: 10px;
+  .photo-slider .arrow{
+    position:absolute; top:50%; transform:translateY(-50%);
+    font-size:2rem; background:rgba(0,0,0,.4); color:#fff;
+    border:none; border-radius:50%; padding:8px 12px; cursor:pointer; z-index:10;
   }
+  .photo-slider .arrow.left{ left:10px; }
+  .photo-slider .arrow.right{ right:10px; }
 
-  .photo-slider img {
-    flex: 0 0 auto; 
-    height: 300px;    /* 图片缩小 */
-    width: auto; 
-    max-width: 100%;
-    object-fit: contain; 
-    border-radius: 6px; 
-    user-select: none; 
-    scroll-snap-align: center;
-  }
-
-  .photo-slider .arrow {
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%);
-    font-size: 2rem; 
-    background: rgba(0,0,0,.4); 
-    color: #fff; 
-    border: none;
-    border-radius: 50%; 
-    padding: 8px 12px; 
-    cursor: pointer; 
-    z-index: 10; 
-    user-select: none;
-  }
-  .photo-slider .arrow.left { left: 10px; }
-  .photo-slider .arrow.right { right: 10px; }
-
-  /* 移动端优化 */
-  @media (max-width: 768px) {
-    .photo-slider { max-width: 80%; }   /* 宽一点，适合手机 */
-    .photo-slider img { height: 200px; }
+  @media (max-width:768px){
+    .photo-slider{ max-width:90%; }
+    .photo-slider img.slide{ height:220px; }
   }
 </style>
 
+<script>
+  function sliderNav(btn, dir){
+    const slider = btn.parentElement;
+    const track  = slider.querySelector('.track');
+    const slides = Array.from(track.querySelectorAll('.slide'));
+
+    // 找到当前最靠近视口中心的那张
+    const center = track.scrollLeft + track.clientWidth/2;
+    let idx = 0, best = Infinity;
+    slides.forEach((s,i)=>{
+      const mid = s.offsetLeft + s.offsetWidth/2;
+      const d = Math.abs(mid - center);
+      if (d < best){ best = d; idx = i; }
+    });
+
+    const target = dir === 'next' ? Math.min(idx+1, slides.length-1)
+                                  : Math.max(idx-1, 0);
+
+    slides[target].scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+  }
+</script>
 
 
 
