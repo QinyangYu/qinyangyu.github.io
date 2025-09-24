@@ -246,7 +246,7 @@ The Baron in the Trees (Il barone rampante) by Italo Calvino
 ---
 
 # Music & Piano Playing
-I have a strong appreciation for pop music and live performances, enjoy learning vocal techniques, watch reaction videos from YouTube or Bilibili, and occasionally provide improvised piano accompaniment. Below are some glimpses of my piano playing. 
+I have a strong appreciation for pop music and live performances, enjoy learning vocal techniques, watch reaction videos from YouTube or Bilibili, and occasionally offer improvised piano accompaniment. Below are a few glimpses of my piano playing. 
 
 <!-- ======== Video Two-Column Grid ======== -->
 <div class="video-grid">
