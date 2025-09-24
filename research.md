@@ -20,11 +20,11 @@ permalink: /research/
 
 ### [Government Endorsement and Voter Skepticism: An Experiment of Selective Disclosure in Political Communication](files/research/ECON_690_Concept_Paper_Group_3.pdf)  
 **Supervised by FSU’s Prof. Pellumb Reshidi, Mar.2025 – May.2025**  
-**keywords:** Government Bias, Voter Skepticism, Selective Information Disclosure, Experimental Politics, Political Communication
+**keywords:** Government Bias, Voter Skepticism, Selective Information Disclosure, Misinformation, Experimental Politics, Political Communication
 
 ### [Lawful Roots, Lawless Routes: The Paradox of Litigation-Related Petitions in China](files/research/Independent_Research_1.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Sep.2023 – Dec.2023**  
-**keywords:** Petition System, Institutional Failure, Game Theory, Law and Economics, Public Grievance Mechanisms, Misinformation, Bayesian Learning
+**keywords:** Petition System, Institutional Failure, Game Theory, Law and Economics, Misinformation, Public Grievance Mechanisms, Bayesian Learning
 
 ### [A Game Theoretic Analysis for Witch Killing and Human Sacrifice](files/research/ECO3160_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Dec.2022**  
