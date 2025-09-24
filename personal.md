@@ -5,7 +5,7 @@ permalink: /personal/
 ---
 
 # My Experimental Kitchen Lab
-Beyond academic research, I am also a passionate culinary researcher. In my personal food lab, I experimente with diverse ingredients and explore cuisines from around the world, creating flavors as a scientist creates theories.
+Beyond academic research, I am also a passionate culinary researcher. In my personal food lab, I experiment with diverse ingredients and explore cuisines from around the world, creating flavors as a scientist creates theories.
 
 <!-- ======== 四宫格迷你滑块（原始比例 + 超出自适配） ======== -->
 <div class="grid4">
