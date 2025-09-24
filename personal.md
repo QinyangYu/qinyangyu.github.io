@@ -7,13 +7,14 @@ permalink: /personal/
 # My Experimental Kitchen Lab
 Beyond academic research, I am also a passionate culinary researcher. In my personal food lab, I experiment with diverse ingredients and explore cuisines from around the world, creating flavors just as a scientist creates theories. Might fail, but always fun!
 
-<!-- ======== 四宫格迷你滑块（原始比例 + 超出自适配） ======== -->
+<!-- ======== 四宫格迷你滑块（原始比例 + 首次加载防跳动） ======== -->
 <div class="grid4">
   <!-- A -->
   <div class="mini-slider" aria-label="Italian, French, and American Food slider">
     <h3 class="slider-title">Italian, French, and American Food</h3>
     <div class="track">
-      <img src="/files/personal/a1.jpg"  alt="a1"  loading="lazy">
+      <!-- 首张图不lazy，避免首击等待导致塌陷 -->
+      <img src="/files/personal/a1.jpg"  alt="a1">
       <img src="/files/personal/a2.jpg"  alt="a2"  loading="lazy">
       <img src="/files/personal/a3.jpg"  alt="a3"  loading="lazy">
       <img src="/files/personal/a4.jpg"  alt="a4"  loading="lazy">
@@ -37,7 +38,7 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   <div class="mini-slider" aria-label="Chinese and Japanese Food slider">
     <h3 class="slider-title">Chinese and Japanese Food</h3>
     <div class="track">
-      <img src="/files/personal/b1.jpg" alt="b1" loading="lazy">
+      <img src="/files/personal/b1.jpg" alt="b1">
       <img src="/files/personal/b2.jpg" alt="b2" loading="lazy">
       <img src="/files/personal/b3.jpg" alt="b3" loading="lazy">
       <img src="/files/personal/b4.jpg" alt="b4" loading="lazy">
@@ -53,7 +54,7 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   <div class="mini-slider" aria-label="How to make a pizza? slider">
     <h3 class="slider-title">How to make a pizza?</h3>
     <div class="track">
-      <img src="/files/personal/c1.jpg" alt="c1" loading="lazy">
+      <img src="/files/personal/c1.jpg" alt="c1">
       <img src="/files/personal/c2.jpg" alt="c2" loading="lazy">
       <img src="/files/personal/c3.jpg" alt="c3" loading="lazy">
       <img src="/files/personal/c4.jpg" alt="c4" loading="lazy">
@@ -70,7 +71,7 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   <div class="mini-slider" aria-label="How to make Chinese dumplings? slider">
     <h3 class="slider-title">How to make Chinese dumplings?</h3>
     <div class="track">
-      <img src="/files/personal/d1.jpg"  alt="d1"  loading="lazy">
+      <img src="/files/personal/d1.jpg"  alt="d1">
       <img src="/files/personal/d2.jpg"  alt="d2"  loading="lazy">
       <img src="/files/personal/d3.jpg"  alt="d3"  loading="lazy">
       <img src="/files/personal/d4.jpg"  alt="d4"  loading="lazy">
@@ -116,22 +117,23 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
   margin:0 0 12px;
 }
 
-/* 居中容器，不裁剪；高度随内容而变 */
+/* 轨道预留最大高度，避免首轮塌陷；切换高度有过渡更顺滑 */
 .mini-slider .track{
   position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height:60px;
+  min-height:var(--img-max-h);
+  transition: height .2s ease, min-height .2s ease;
 }
 
-/* 核心：保持原始比例；小图不放大；大图缩小到容器内 */
+/* 原比例，不拉伸；小图不放大，大图缩到容器内 */
 .mini-slider .track > img{
   display:none;
-  width:auto;            /* 不强制铺满 */
-  height:auto;           /* 维持比例 */
-  max-width:100%;        /* 宽度不超过卡片 */
-  max-height:var(--img-max-h); /* 可调上限，避免过高 */
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:var(--img-max-h);
   border-radius:8px;
   user-select:none;
   margin:0 auto;
@@ -166,7 +168,7 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
 
 @media (max-width: 720px){
   .grid4{ grid-template-columns:1fr; }
-  .mini-slider{ --img-max-h: 260px; } /* 移动端略收一点高度 */
+  .mini-slider{ --img-max-h: 260px; } /* 移动端略收高度 */
 }
 </style>
 
@@ -179,12 +181,14 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
     const dotsWrap = slider.querySelector('.dots');
     const prevBtn = slider.querySelector('.prev');
     const nextBtn = slider.querySelector('.next');
+    const track = slider.querySelector('.track');
 
     if (!imgs.length){
       prevBtn.disabled = true; nextBtn.disabled = true;
       return;
     }
 
+    // 创建分页点
     imgs.forEach((_,idx)=>{
       const b=document.createElement('button');
       b.setAttribute('role','tab');
@@ -193,8 +197,30 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
       dotsWrap.appendChild(b);
     });
 
-    let i=0, lock=false;
+    let i=0, lock=false, rAF=null;
     const guarded = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
+
+    // 计算当前图显示高度（受 --img-max-h 约束），固定到 track.height，避免长宽比差导致跳动
+    function fitTrackHeight(img){
+      if(!img || !img.naturalWidth || !img.naturalHeight) return;
+      const cs = getComputedStyle(slider);
+      const maxH = parseFloat(cs.getPropertyValue('--img-max-h')) || 360;
+      const w = track.clientWidth || slider.clientWidth || 0;
+      if (!w) return;
+      const ratio = img.naturalHeight / img.naturalWidth;
+      const displayH = Math.min(maxH, Math.round(w * ratio));
+      track.style.height = displayH + 'px';
+    }
+
+    // 轻量预热下一张，减少首次切过去的等待
+    function preloadNext(idx){
+      const j = (idx + 1) % imgs.length;
+      const url = imgs[j].getAttribute('src');
+      if(!url) return;
+      const pre = new Image();
+      pre.decoding = 'async';
+      pre.src = url;
+    }
 
     function show(n){
       i=(n+imgs.length)%imgs.length;
@@ -203,10 +229,22 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
         img.setAttribute('aria-hidden', idx===i ? 'false' : 'true');
       });
       dotsWrap.querySelectorAll('button').forEach((d,idx)=>d.classList.toggle('active', idx===i));
+
+      const cur = imgs[i];
+      if (cur.complete && cur.naturalWidth){
+        fitTrackHeight(cur);
+      } else {
+        // 当前图未加载好：先用最大高度兜底，onload 后再收敛到精确高度
+        const cs = getComputedStyle(slider);
+        track.style.height = cs.getPropertyValue('--img-max-h');
+        cur.addEventListener('load', ()=>fitTrackHeight(cur), { once:true });
+      }
+      preloadNext(i);
     }
 
     prevBtn.addEventListener('click', ()=> guarded(()=>show(i-1)));
     nextBtn.addEventListener('click', ()=> guarded(()=>show(i+1)));
+
     imgs.forEach(img=>{
       img.addEventListener('click', ()=> guarded(()=>show(i+1)));
       img.addEventListener('dragstart', e=> e.preventDefault());
@@ -218,10 +256,26 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
       if(e.key==='ArrowRight'){ e.preventDefault(); guarded(()=>show(i+1)); }
     });
 
+    // 首次：若首图已缓存则立刻拟合，否则等 onload
+    if (imgs[0].complete && imgs[0].naturalWidth){
+      fitTrackHeight(imgs[0]);
+    } else {
+      imgs[0].addEventListener('load', ()=>fitTrackHeight(imgs[0]), { once:true });
+      // 保险：首屏先把高度顶到 max，避免首屏塌陷
+      const cs = getComputedStyle(slider);
+      track.style.height = cs.getPropertyValue('--img-max-h');
+    }
     show(0);
+
+    // 窗口尺寸变化时，按当前图重算一次高度（rAF 节流）
+    window.addEventListener('resize', ()=>{
+      if (rAF) cancelAnimationFrame(rAF);
+      rAF = requestAnimationFrame(()=> fitTrackHeight(imgs[i]));
+    });
   }
 })();
 </script>
+
 
 
 <br>
