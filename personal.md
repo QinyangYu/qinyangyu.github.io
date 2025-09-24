@@ -229,7 +229,27 @@ Beyond academic research, I am also a passionate culinary researcher. In my pers
 
 
 # Literature & Compositions
+### My Childhood Composition Collections:
+[My compositions in primary school](https://drive.google.com/open?id=1_niWxb7tZWgJRS9MDL2hWbvonDqckOg8&usp=drive_copy)
+[My compositions in junior high school](https://drive.google.com/open?id=12SsCkEP6_1uGnqcgXEG_JX5yQidzEuyw&usp=drive_copy)
+[My compositions in senior high school](https://drive.google.com/open?id=1Ziun7v1DAFD1EacY_lEulgkskddGpwLt&usp=drive_copy)
+
 ### My Composition Collections:
-My compositions in primary school [PDF]
-My compositions in junior high school [PDF]
-My compositions in senior high school [PDF]
+**My Spirit Book:** The Baron in the Trees (Il barone rampante) by Italo Calvino
+
+<div class="photo-single">
+  <img src="/files/personal/barons.jpg" alt="Barons" loading="lazy">
+</div>
+
+<style>
+.photo-single{
+  text-align:center;    /* 居中 */
+  margin:20px auto;
+}
+.photo-single img{
+  max-width:90%;        /* 控制最大宽度，不撑破屏幕 */
+  height:auto;          /* 保持比例 */
+  border-radius:10px;   /* 可选：圆角 */
+  box-shadow:0 1px 8px rgba(0,0,0,.15); /* 可选：阴影 */
+}
+</style>
