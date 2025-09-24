@@ -98,10 +98,11 @@ permalink: /teaching/
 - Interviewed villagers to investigate Miao cultural practices, local development, and student issues (e.g., dietetic hygiene, short-video addiction)
 
 
-<!-- ======== Teaching 相册滑块（与 talks 同款格式） ======== -->
+<!-- ======== Teaching 相册滑块（固定高度 + 交叉淡入，无白屏） ======== -->
 <div class="mini-slider teaching" aria-label="Teaching photo slider">
   <div class="track">
-    <img class="slide" src="/files/teaching/volunteer/1.jpg" alt="1" loading="lazy">
+    <!-- 首张不 lazy，避免首击等待 -->
+    <img class="slide" src="/files/teaching/volunteer/1.jpg" alt="1">
     <img class="slide" src="/files/teaching/volunteer/2.jpg" alt="2" loading="lazy">
     <img class="slide" src="/files/teaching/volunteer/3.png" alt="3" loading="lazy">
     <img class="slide" src="/files/teaching/volunteer/4.png" alt="4" loading="lazy">
@@ -117,9 +118,9 @@ permalink: /teaching/
 </div>
 
 <style>
-/* —— Teaching 相册滑块（完全复刻 talks 的风格与尺寸） —— */
+/* —— Teaching 相册滑块（与 talks 同风格，消除跳动） —— */
 .mini-slider.teaching{
-  --img-max-h: 360px;
+  --img-max-h: 360px;      /* 统一可视高度：需要更高改这里 */
   position:relative;
   background:#fafafa;
   border:1px solid #eee;
@@ -127,25 +128,35 @@ permalink: /teaching/
   padding:12px 12px 44px;
   box-shadow:0 1px 6px rgba(0,0,0,.06);
   text-align:center;
-  max-width:55%;       /* 与 talks 一样的整体宽度策略 */
+  max-width:55%;
   margin:20px auto;
   overflow:hidden;
 }
+
+/* 轨道固定高度；不再随图片比例抖动 */
 .mini-slider.teaching .track{
   position:relative;
-  display:block;
-  min-height:60px;
+  height:var(--img-max-h);
 }
+
+/* 绝对定位到画布中央；只做透明度切换，避免白屏 */
 .mini-slider.teaching .track > img{
-  display:none;
-  width:auto; height:auto;
+  position:absolute;
+  inset:0;               /* top/right/bottom/left 全 0 */
+  margin:auto;
   max-width:100%;
-  max-height:var(--img-max-h);
+  max-height:100%;
+  width:auto; height:auto;
+  object-fit:contain;
   border-radius:8px;
-  margin:0 auto;
   user-select:none;
+  opacity:0;
+  transition:opacity .2s ease;
+  will-change:opacity;
 }
-.mini-slider.teaching .track > img.active{ display:block; }
+.mini-slider.teaching .track > img.active{
+  opacity:1;
+}
 
 .mini-slider.teaching .nav{
   position:absolute;
@@ -180,51 +191,73 @@ permalink: /teaching/
 (function(){
   const slider = document.querySelector('.mini-slider.teaching');
   if(!slider) return;
-  setupSlider(slider);
 
-  function setupSlider(slider){
-    const imgs = Array.from(slider.querySelectorAll('.track .slide'));
-    const dotsWrap = slider.querySelector('.dots');
-    const prevBtn = slider.querySelector('.prev');
-    const nextBtn = slider.querySelector('.next');
+  const imgs = Array.from(slider.querySelectorAll('.track .slide'));
+  const dotsWrap = slider.querySelector('.dots');
+  const prevBtn = slider.querySelector('.prev');
+  const nextBtn = slider.querySelector('.next');
 
-    if(!imgs.length){ prevBtn.disabled=nextBtn.disabled=true; return; }
+  if(!imgs.length){ prevBtn.disabled=nextBtn.disabled=true; return; }
 
-    // 生成圆点
-    imgs.forEach((_,idx)=>{
-      const b=document.createElement('button');
-      b.setAttribute('role','tab');
-      b.setAttribute('aria-label','Go to slide ' + (idx+1));
-      b.addEventListener('click',()=>show(idx));
-      dotsWrap.appendChild(b);
+  // 圆点
+  imgs.forEach((_,idx)=>{
+    const b=document.createElement('button');
+    b.setAttribute('role','tab');
+    b.setAttribute('aria-label','Go to slide ' + (idx+1));
+    b.addEventListener('click',()=>queueShow(idx));
+    dotsWrap.appendChild(b);
+  });
+
+  let i=0, lock=false;
+  const guard = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
+
+  function setActive(idx){
+    imgs.forEach((img,k)=>{
+      img.classList.toggle('active', k===idx);
+      img.setAttribute('aria-hidden', k===idx ? 'false' : 'true');
     });
-
-    let i=0, lock=false;
-    const guard = fn => { if(lock) return; lock=true; fn(); setTimeout(()=>lock=false,150); };
-
-    function show(n){
-      i=(n+imgs.length)%imgs.length;
-      imgs.forEach((img,idx)=>{
-        img.classList.toggle('active', idx===i);
-        img.setAttribute('aria-hidden', idx===i ? 'false' : 'true');
-      });
-      dotsWrap.querySelectorAll('button').forEach((d,idx)=>d.classList.toggle('active', idx===i));
-    }
-
-    prevBtn.addEventListener('click', ()=> guard(()=>show(i-1)));
-    nextBtn.addEventListener('click', ()=> guard(()=>show(i+1)));
-    imgs.forEach(img=>{
-      img.addEventListener('click', ()=> guard(()=>show(i+1)));
-      img.addEventListener('dragstart', e=> e.preventDefault());
-    });
-
-    slider.setAttribute('tabindex','0');
-    slider.addEventListener('keydown', e=>{
-      if(e.key==='ArrowLeft'){ e.preventDefault(); guard(()=>show(i-1)); }
-      if(e.key==='ArrowRight'){ e.preventDefault(); guard(()=>show(i+1)); }
-    });
-
-    show(0);
+    dotsWrap.querySelectorAll('button').forEach((d,k)=>d.classList.toggle('active', k===idx));
+    i = idx;
+    preload((idx+1)%imgs.length);
   }
+
+  // 仅当目标图加载完成时才切换（避免白屏）
+  function queueShow(target){
+    const t = (target + imgs.length) % imgs.length;
+    const img = imgs[t];
+    if (img.complete && img.naturalWidth){
+      setActive(t);
+    } else {
+      const onload = ()=>{ img.removeEventListener('load', onload); setActive(t); };
+      img.addEventListener('load', onload, { once:true });
+      // 触发加载（多数浏览器不需要，但这里更稳）
+      img.decoding = 'async';
+      img.loading = img.getAttribute('loading') || 'eager';
+      img.src = img.src;
+    }
+  }
+
+  function preload(idx){
+    const img = imgs[idx];
+    if (!img || (img.complete && img.naturalWidth)) return;
+    const pre = new Image();
+    pre.decoding = 'async';
+    pre.src = img.getAttribute('src');
+  }
+
+  prevBtn.addEventListener('click', ()=> guard(()=>queueShow(i-1)));
+  nextBtn.addEventListener('click', ()=> guard(()=>queueShow(i+1)));
+
+  slider.setAttribute('tabindex','0');
+  slider.addEventListener('keydown', e=>{
+    if(e.key==='ArrowLeft'){ e.preventDefault(); guard(()=>queueShow(i-1)); }
+    if(e.key==='ArrowRight'){ e.preventDefault(); guard(()=>queueShow(i+1)); }
+  });
+
+  // 初始化
+  imgs[0].classList.add('active');
+  imgs[0].setAttribute('aria-hidden','false');
+  dotsWrap.querySelectorAll('button')[0]?.classList.add('active');
+  preload(1);
 })();
 </script>
