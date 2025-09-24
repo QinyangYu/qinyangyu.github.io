@@ -116,7 +116,7 @@ permalink: /teaching/
     align-items:center; gap:10px;
   }
   .photo-slider img {
-    flex:0 0 auto; height:420px; width:auto; max-width:100%;
+    flex:0 0 auto; height:420px; width:auto; max-width:70%;
     object-fit:contain; border-radius:6px; user-select:none; scroll-snap-align:center;
   }
   .photo-slider .arrow{
