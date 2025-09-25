@@ -7,7 +7,7 @@ permalink: /research/
 # Cluster 1: Networks, Experiments, & Games
 
 ### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf)
-**SICSS, NYU Shanghai, Jun.2025**  
+**SICSS-NYUSH, Jun.2025**  
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
 ### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/Working_Paper_1.pdf) (Old Draft)
@@ -46,8 +46,8 @@ permalink: /research/
 
 ### [Predicting Default Rate of Lending Club Loans: Lasso-Penalized Logistic Regression and Nonlinear Methods](files/research/ECO3080_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Qihui Chen, Dec.2022**  
-**keywords:** Credit Scoring, Default Prediction, Logistic Regression, Regularization, Causal Forest, Neural Networks, Specificity, AUC
+**keywords:** Credit Scoring, Default Prediction, Logistic Regression, Regularization, Decision Trees, Neural Networks, Specificity, AUC
 
 ### Total Factor Productivity and Social Capital  
 **Research Assistant, Supervised by Cambridge’s Dr. Saite Lu , Aug.2023 – Jun.2024**  
-**keywords:** European NUTS2 Regions, TFP, Social Trust, Two-way Fixed Effect, System GMM, Semiparametric Regressions
+**keywords:** European NUTS2 Regions, Development Economics, TFP, Social Trust, Two-way Fixed Effect, System GMM, Semiparametric Regressions
