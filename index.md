@@ -6,7 +6,11 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). My academic interests lie at the intersection of network science, social science, and formal modeling tools such as complexity science, agent-based modeling, and game theory. My current research focuses on human dynamics in networks and complex social systems. Substantively, I study how information, opinions, and behaviors interact and diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I am also interested in causal inference and experimental design. 
+I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). 
+
+My academic interests lie at the intersection of network science and social science. I aim to conduct interdisplinary research by integrating insights from social science and mathematical/computational modeling tools from fields such as social network analysis (SNA), complexity science, and game theory.
+
+My current research focuses on human dynamics in networks and complex social systems. Substantively, I explore how information, opinions, and behaviors interact and diffuse to shape collective outcomes, both empirically and theoretically. Methodologically, I use mathematical and  tools developed in interdisplinary fields such as complexity science and game theory. I am also interested in behavioral/decision science and experimental design. 
 
 <style>
 .research-columns {
