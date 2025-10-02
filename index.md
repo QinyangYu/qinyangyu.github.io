@@ -10,7 +10,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 My academic interests lie at the intersection of network science and computational social science. I aim to pursue interdisciplinary research that integrates insights from social science with mathematical and computational modeling tools drawn from diverse fields, such as social network analysis (SNA), complexity science, and game theory.
 
-My current research focuses on human dynamics in networks and complex social systems. Substantively, I explore how information, opinions, and behaviors interact and diffuse to shape collective outcomes, both empirically and theoretically. I am also interested in behavioral science and experimental design. 
+My current research focuses on human dynamics in networks and complex social systems. Substantively, I explore how information, opinions, and behaviors interact and diffuse to shape collective outcomes, both empirically and theoretically. I am also interested in behavioral and decision science, as well as experimental design. 
 
 <style>
 .research-columns {
@@ -26,9 +26,9 @@ My current research focuses on human dynamics in networks and complex social sys
   <li>Network Science</li>
   <li>Complex Systems</li>
   <li>Computational Social Science</li>
-  <li>Agent-based Modeling</li>
-  <li>Game-theory</li>
-  <li>Behavioral Science, Experiments</li>
+  <li>Agent-Based Modeling</li>
+  <li>Game Theory</li>
+  <li>Behavioral Experiments</li>
   <li>Opinion Dynamics</li>
   <li>Collective Behavior</li>
   <li>Misinformation</li>
