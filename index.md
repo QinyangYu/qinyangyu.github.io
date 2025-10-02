@@ -8,26 +8,30 @@ layout: homepage
 
 I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). 
 
-My academic interests lie at the intersection of network science and social science. I aim to pursue interdisciplinary research that integrates insights from social science with mathematical and computational modeling tools drawn from diverse fields, such as social network analysis (SNA), complexity science, and game theory.
+My academic interests lie at the intersection of network science and computational social science. I aim to pursue interdisciplinary research that integrates insights from social science with mathematical and computational modeling tools drawn from diverse fields, such as social network analysis (SNA), complexity science, and game theory.
 
 My current research focuses on human dynamics in networks and complex social systems. Substantively, I explore how information, opinions, and behaviors interact and diffuse to shape collective outcomes, both empirically and theoretically. I am also interested in behavioral science and experimental design. 
 
 <style>
 .research-columns {
-  columns: 2;          /* 两列 */
-  -webkit-columns: 2;  /* Safari 支持 */
-  -moz-columns: 2;     /* Firefox 支持 */
+  columns: 3;          /* 两列 */
+  -webkit-columns: 3;  /* Safari 支持 */
+  -moz-columns: 3;     /* Firefox 支持 */
 }
 </style>
 
 ## Research Interest
 
 <ul class="research-columns">
-  <li>Network Science, Complex Systems</li>
+  <li>Network Science</li>
+  <li>Complex Systems</li>
   <li>Computational Social Science</li>
-  <li>Game-theoretic and Agent-based Modeling</li>
+  <li>Agent-based Modeling</li>
+  <li>Game-theory</li>
   <li>Behavioral Science, Experiments</li>
-  <li>Opinion Dynamics, Collective Behavior, Misinformation</li>
+  <li>Opinion Dynamics</li>
+  <li>Collective Behavior</li>
+  <li>Misinformation</li>
 </ul>
 
 
