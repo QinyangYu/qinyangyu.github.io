@@ -23,7 +23,7 @@ My current research focuses on human dynamics in networks and complex social sys
 ## Research Interest
 
 <ul class="research-columns">
-  <li>Social Networks, Complex Systems</li>
+  <li>Network Science, Complex Systems</li>
   <li>Computational Social Science</li>
   <li>Game-theoretic and Agent-based Modeling</li>
   <li>Behavioral Science, Experiments</li>
