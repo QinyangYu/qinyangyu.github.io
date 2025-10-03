@@ -18,7 +18,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
     <strong>Mathematical and Computational Modeling</strong>: game theory, agent-based modeling, simulation
   </li>
   <li style="margin:0.35em 0;">
-    <strong>Behavioral and Decision Science</strong>: cognitive biases, social influence, judgment and decision-making, survey and experimental design
+    <strong>Behavioral and Decision Science</strong>: cognitive biases, social influence, judgment and decision-making, survey methods and experimental design
   </li>
 </ul>
 
