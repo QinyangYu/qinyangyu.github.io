@@ -6,9 +6,9 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. 
+I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science, with a particular focus on network science. 
 
-My current research interests lie at **(1) social dynamics in complex networks and systems**, such as opinion dynamics, information diffusion, and collective behavior; **(2) mathematical and computational modeling**, such as game theory and agent-based simulation; and **(3) behavioral and decision science**, such as cognitive biases, social influence, and judgment and decision-making, as well as survey and experimental design.
+   and
 
 
 <style>
@@ -21,12 +21,11 @@ My current research interests lie at **(1) social dynamics in complex networks a
 
 ## Research Interest
 
+My current research interests lie at
 <ul class="research-columns">
-  <li>Computational Social Science</li>
-  <li>Network Science</li>
-  <li>Complex Systems</li>
-  <li>Formal Modeling</li>
-  <li>Behavioral Science</li>
+  <li>**(1) social dynamics in complex networks and systems**, such as opinion dynamics, information diffusion, and collective behavior;</li>
+  <li>**(2) mathematical and computational modeling**, such as game theory and agent-based simulation;</li>
+  <li> **(3) behavioral and decision science**, such as cognitive biases, social influence, and judgment and decision-making, as well as survey and experimental design.</li>
 </ul>
 
 
