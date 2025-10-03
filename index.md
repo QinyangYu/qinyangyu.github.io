@@ -13,7 +13,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 <ul style="margin:0; padding-left:1.25em;">
   <li style="margin:0.35em 0;">
     <strong>Social Dynamics in Complex Networks and Systems</strong><br>
-    opinion dynamics, information diffusion, collective behavior
+    opinion dynamics, information diffusion, collective behavior and decision-making
   </li>
   <li style="margin:0.35em 0;">
     <strong>Theoretical and Computational Modeling</strong><br>
