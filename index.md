@@ -21,7 +21,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   </li>
   <li style="margin:0.35em 0;">
     <strong>Behavioral and Decision Science</strong><br>
-    cognitive biases, social influence, judgment and decision-making, survey and experimental design
+    cognitive biases, social influence, misinformation, survey methods, experimental design
   </li>
 </ul>
 
