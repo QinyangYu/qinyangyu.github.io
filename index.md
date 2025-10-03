@@ -16,8 +16,8 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
     opinion dynamics, information diffusion, collective behavior
   </li>
   <li style="margin:0.35em 0;">
-    <strong>Mathematical and Computational Modeling</strong><br>
-    game theory, agent-based modeling, simulation
+    <strong>Theoretical and Computational Modeling</strong><br>
+    development and application of network models, game-theoretic approaches, agent-based simulations
   </li>
   <li style="margin:0.35em 0;">
     <strong>Behavioral and Decision Science</strong><br>
