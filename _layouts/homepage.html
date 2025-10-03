@@ -54,21 +54,33 @@
       }
    </script>
 
-   <!-- ✅ 新增：控制首页正文宽度 -->
+   <!-- ✅ 新增：控制首页左右宽度 -->
    <style>
    @media (min-width: 992px) {
      .homepage .wrapper {
-       max-width: 1200px !important; /* 整体容器放宽 */
+       max-width: none !important;
+       width: min(94vw, 1280px) !important; /* 调整整体页面宽度 */
+       margin-left: auto !important;
+       margin-right: auto !important;
+       display: grid !important;
+       grid-template-columns: 240px 1fr !important; /* 左栏 240px，可改小 */
+       column-gap: 48px !important;                /* 左右间距，可改小 */
+       align-items: start !important;
+     }
+     .homepage .wrapper > header {
+       width: 240px !important;
+       flex: 0 0 240px !important;
      }
      .homepage .wrapper > section {
-       max-width: 1000px !important; /* 正文区放宽 */
+       width: 100% !important;
+       max-width: none !important;
      }
    }
    </style>
 
   </head>
 
-  <!-- ✅ body 加 homepage 类 -->
+  <!-- ✅ 这里加 class="homepage" -->
   <body class="homepage">
     
     <div class="topnav">
