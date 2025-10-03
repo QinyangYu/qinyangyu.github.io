@@ -56,27 +56,28 @@
 
    <!-- ✅ 新增：控制首页左右宽度 -->
    <style>
-   @media (min-width: 992px) {
-     .homepage .wrapper {
-       max-width: none !important;
-       width: min(94vw, 1280px) !important; /* 调整整体页面宽度 */
-       margin-left: auto !important;
-       margin-right: auto !important;
-       display: grid !important;
-       grid-template-columns: 240px 1fr !important; /* 左栏 240px，可改小 */
-       column-gap: 48px !important;                /* 左右间距，可改小 */
-       align-items: start !important;
-     }
-     .homepage .wrapper > header {
-       width: 240px !important;
-       flex: 0 0 240px !important;
-     }
-     .homepage .wrapper > section {
-       width: 100% !important;
-       max-width: none !important;
-     }
-   }
-   </style>
+@media (min-width: 992px) {
+  /* 控制整体宽度 */
+  .homepage .wrapper {
+    max-width: 1280px !important;  /* 默认大约 960px，改成更宽 */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* 左边头像栏固定窄一点 */
+  .homepage .wrapper > header {
+    flex: 0 0 220px !important;   /* 左栏宽度，可调 200-240px */
+    max-width: 220px !important;
+  }
+
+  /* 右边正文占满剩余空间 */
+  .homepage .wrapper > section {
+    flex: 1 1 auto !important;
+    max-width: 100% !important;
+  }
+}
+</style>
+
 
   </head>
 
