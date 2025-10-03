@@ -8,12 +8,19 @@ layout: homepage
 
 I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science, with a particular focus on network science. 
 
-## Research Interest
+<h2>Research Interest</h2>
 
-
-- **Social Dynamics in Complex Networks and Systems**: opinion dynamics, information diffusion, collective behavior
-- **Mathematical and Computational Modeling**: game theory, agent-based modeling, simulation
-- **Behavioral and Decision Science**: cognitive biases, social influence, judgment and decision-making, survey and experimental design
+<ul style="margin:0; padding-left:1.25em;">
+  <li style="margin:0.35em 0;">
+    <strong>Social Dynamics in Complex Networks and Systems</strong>: opinion dynamics, information diffusion, collective behavior
+  </li>
+  <li style="margin:0.35em 0;">
+    <strong>Mathematical and Computational Modeling</strong>: game theory, agent-based modeling, simulation
+  </li>
+  <li style="margin:0.35em 0;">
+    <strong>Behavioral and Decision Science</strong>: cognitive biases, social influence, judgment and decision-making, survey and experimental design
+  </li>
+</ul>
 
 
 <h2>Education</h2>
