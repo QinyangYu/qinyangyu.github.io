@@ -53,178 +53,67 @@
       }
       }
    </script>
-   
-<style>
-/* 只调整 homepage 的正文区宽度 */
-.wrapper > section {
-  max-width: 800px;   /* 默认大约700px，改成你想要的数，比如900/1000 */
-}
-</style>
 
+   <!-- ✅ 新增：控制首页正文宽度 -->
+   <style>
+   @media (min-width: 992px) {
+     .homepage .wrapper {
+       max-width: 1200px !important; /* 整体容器放宽 */
+     }
+     .homepage .wrapper > section {
+       max-width: 1000px !important; /* 正文区放宽 */
+     }
+   }
+   </style>
 
   </head>
-  <body>
+
+  <!-- ✅ body 加 homepage 类 -->
+  <body class="homepage">
     
     <div class="topnav">
-
       <a href="{{ site.affiliation_link }}"><img width="190" src="{{ site.affiliation_logo }}"></a>
-
       <div id="myLinks">
       {% include navigation.md %}
       </div>
-
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
-      
     </div>
-    
-
-    <script src="./assets/js/vanilla-back-to-top.min.js"></script>
-    <script>addBackToTop({
-        backgroundColor: '#fff',
-        innerHTML: 'Back to Top',
-        textColor: '#333'
-      })
-    </script>
-    <style>
-        #back-to-top {
-          border: 1px solid #ccc;
-          border-radius: 0;
-          font-size: 15px;
-          width: 100px;
-          text-align: center;
-          line-height: 30px;
-          height: 30px;
-        }
-    </style>
     
     <div class="wrapper">
       <header>
-        
         {% if site.avatar %}
         <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
         {% endif %}
 
         <h1>{{ site.title }}</h1>
-
         {% if site.position %}
         <position style="font-size:1.10rem;">{{ site.position }}</position>
-        <br>
-        {% endif %}
-        {% if site.subaffiliation %}
-        <a href="{{ site.subaffiliation_link }}" rel="noopener" target="_blank">
-        <autocolor>{{ site.subaffiliation }},</autocolor>
-        </a>
         <br>
         {% endif %}
         {% if site.affiliation %}
         <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
         <br>
         {% endif %}
-        {% if site.address %}
-        <a href="{{ site.address_link }}" rel="noopener"><autocolor>{{ site.address }}</autocolor></a>
-        <br>
-        {% endif %}
         {% if site.email %}
         <email>{{ site.email }}</email>
         {% endif %}
-        {% if site.email2 %}
-        <br>
-        <email>{{ site.email2 }}</email>
-        {% endif %}
-        
-        <br>
-        <br>
+        <br><br>
         <div class="social-icons">
-        {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-        </a>  
-        {% endif %}
-
-        {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        {% endif %}
-
-        {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
-          <i class="fab fa-github"></i>
-        </a>
-        {% endif %}
-
-        {% if site.researchgate %}
-        <a style="margin: 0 5px 0 0" href="{{ site.researchgate }}">
-          <i class="fab fa-researchgate"></i>
-        </a>
-        {% endif %}
-
-        {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {% endif %}
-
-        {% if site.twitter %}
-        <a style="margin: 0 0 0 0" href="{{ site.twitter }}">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        {% endif %}
+          {% if site.github_link %}
+          <a href="{{ site.github_link }}"><i class="fab fa-github"></i></a>
+          {% endif %}
+          {% if site.linkedin %}
+          <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
         </div>
-        <br>
-
       </header>
+
       <section>
-
-      {{ content }}
-
-      <br>
-
-      {% if site.enable_last_update %}
-      <small>Last Update:
-            <script>
-              const monthNames = ["January", "Februray", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
-              ];
-              var modiDate = new Date(document.lastModified);
-              var showAs = modiDate.getDate() + ". " + monthNames[modiDate.getMonth()] + " " + modiDate.getFullYear();
-              document.write(showAs);
-            </script>
-      </small> 
-      {% endif %}
-
-      {% if site.footnote %}
-      <div style="font: 12px/1.2 Crimson Pro, serif">
-        <br>
-        <a href="{{ site.footnote_link }}" rel="noopener">{{ site.footnote }}</a>
-      </div>
-      {% endif %}
-
-      <br>
-      {% if site.clustrmaps_id %}
-      <div style="width:300px; pointer-events: none;">
-      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=LTWZqBYr9s2OPIQ_fArLjKld7T2K1HlQjSmT1yWWXlE"></script>
-      {% endif %}
-      
+        {{ content }}
       </section>
-      <footer>
-        <div style="font: 12px/1.2 Crimson Pro, serif">
-        <p>
-        <small>
-        {% if site.imprint %}
-        <a href="{{ site.imprint }}" rel="noopener"><autocolor>Imprint / Impressum</autocolor></a><br>
-        {% endif %}
-        {% if site.data_protection %}
-        <a href="{{ site.data_protection }}" rel="noopener"><autocolor>Data Protection / Datenschutzhinweis</autocolor></a>
-        {% endif %}
-        </small>
-        </p>
-        </div>
-        <br>
-        <br>
-      </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
   </body>
 </html>
