@@ -6,28 +6,25 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). My academic interests lie at the intersection of network science and social science. I aim to pursue interdisciplinary research that integrates insights from social science with mathematical and computational modeling tools drawn from diverse fields, such as social network analysis, complexity science, and game theory. My current research focuses on human dynamics in networks and complex social systems. Substantively, I explore how information, opinions, and behaviors interact and diffuse to shape collective outcomes, both empirically and theoretically. In addition, I am also interested in behavioral and decision science, as well as experimental design. 
+I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My current research interests lie at **(1) social dynamics in complex networks and systems**, such as opinion dynamics, information diffusion, and collective behavior; **(2) mathematical and computational modeling**, such as game theory and agent-based simulation; and **(3) behavioral and decision science**, such as cognitive biases, social influence, and judgment and decision-making, as well as survey and experimental design.
+
 
 <style>
 .research-columns {
-  columns: 3;          /* 两列 */
-  -webkit-columns: 3;  /* Safari 支持 */
-  -moz-columns: 3;     /* Firefox 支持 */
+  columns: 2;          /* 两列 */
+  -webkit-columns: 2;  /* Safari 支持 */
+  -moz-columns: 2;     /* Firefox 支持 */
 }
 </style>
 
 ## Research Interest
 
 <ul class="research-columns">
+  <li>Computational Social Science</li>
   <li>Network Science</li>
   <li>Complex Systems</li>
-  <li>Computational Social Science</li>
-  <li>Agent-Based Modeling</li>
-  <li>Game Theory</li>
-  <li>Behavioral Experiments</li>
-  <li>Opinion Dynamics</li>
-  <li>Collective Behavior</li>
-  <li>Misinformation</li>
+  <li>Formal Modeling</li>
+  <li>Behavioral Science</li>
 </ul>
 
 
