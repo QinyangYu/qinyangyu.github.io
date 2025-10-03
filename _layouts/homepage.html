@@ -57,26 +57,20 @@
    <!-- ✅ 新增：控制首页左右宽度 -->
    <style>
 @media (min-width: 992px) {
-  /* 控制整体宽度 */
+  /* 整体容器保持不变 */
   .homepage .wrapper {
-    max-width: 1280px !important;  /* 默认大约 960px，改成更宽 */
+    max-width: 1200px !important;   /* 可调大 1280/1360 看效果 */
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  /* 左边头像栏固定窄一点 */
-  .homepage .wrapper > header {
-    flex: 0 0 220px !important;   /* 左栏宽度，可调 200-240px */
-    max-width: 220px !important;
-  }
-
-  /* 右边正文占满剩余空间 */
+  /* 右边正文区单独加宽 */
   .homepage .wrapper > section {
-    flex: 1 1 auto !important;
-    max-width: 100% !important;
+    max-width: 900px !important;    /* ← 关键：这里控制右栏宽度 */
   }
 }
 </style>
+
 
 
   </head>
