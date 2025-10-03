@@ -13,7 +13,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 - **Social Dynamics in Complex Networks and Systems**: opinion dynamics, information diffusion, and collective behavior
 - **Mathematical and Computational Modeling**: game theory, agent-based modeling, simulation
-- **Behavioral and Decision Science**: cognitive biases, social influence, judgment and decision-making, survey design, experimental design
+- **Behavioral and Decision Science**: cognitive biases, social influence, judgment and decision-making, survey and experimental design
 
 
 <h2>Education</h2>
