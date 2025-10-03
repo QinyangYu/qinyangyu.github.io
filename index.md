@@ -6,7 +6,9 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My current research interests lie at **(1) social dynamics in complex networks and systems**, such as opinion dynamics, information diffusion, and collective behavior; **(2) mathematical and computational modeling**, such as game theory and agent-based simulation; and **(3) behavioral and decision science**, such as cognitive biases, social influence, and judgment and decision-making, as well as survey and experimental design.
+I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. 
+
+My current research interests lie at **(1) social dynamics in complex networks and systems**, such as opinion dynamics, information diffusion, and collective behavior; **(2) mathematical and computational modeling**, such as game theory and agent-based simulation; and **(3) behavioral and decision science**, such as cognitive biases, social influence, and judgment and decision-making, as well as survey and experimental design.
 
 
 <style>
