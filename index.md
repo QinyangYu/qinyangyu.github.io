@@ -23,7 +23,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 </ul>
 
 
-<h2>Education</h2>
+<h2 style="margin-top:20px;">Education</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
   <li style="margin:0.35em 0;">
