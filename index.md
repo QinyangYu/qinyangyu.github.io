@@ -11,10 +11,9 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 ## Research Interest
 
 
-- **Social Dynamics in Complex Networks and Systems**: opinion dynamics, information diffusion, and collective behavior</li>
-- **Mathematical and Computational Modeling**: game theory, agent-based modeling, simulation</li>
-- **Behavioral and Decision Science**: cognitive biases, social influence, judgment and decision-making, survey design, experimental design</li>
-</ul>
+- **Social Dynamics in Complex Networks and Systems**: opinion dynamics, information diffusion, and collective behavior
+- **Mathematical and Computational Modeling**: game theory, agent-based modeling, simulation
+- **Behavioral and Decision Science**: cognitive biases, social influence, judgment and decision-making, survey design, experimental design
 
 
 <h2>Education</h2>
