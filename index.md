@@ -17,7 +17,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
   </li>
   <li style="margin:0.35em 0;">
     <strong>Theoretical and Computational Modeling</strong><br>
-    network models, dynamical systems, games on networks, agent-based modeling, simulation
+    network models, dynamical systems, games on networks, agent-based modeling, social simulation
  </li>
   <li style="margin:0.35em 0;">
     <strong>Behavioral and Decision Science</strong><br>
