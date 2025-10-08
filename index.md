@@ -6,24 +6,11 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests lie at the intersection of network science, social science, and complexity science.
+I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). 
 
-<h2>Research Interest</h2>
+Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests span network science, complexity and systems science, social science, and behavioral science.
 
-<ul style="margin:0; padding-left:1.25em;">
-  <li style="margin:0.35em 0;">
-    <strong>Social Dynamics in Complex Networks and Systems</strong><br>
-    opinion dynamics, information diffusion, collective behavior and decision-making
-  </li>
-  <li style="margin:0.35em 0;">
-    <strong>Theoretical and Computational Modeling</strong><br>
-    network models, dynamical systems, games on networks, agent-based modeling, social simulation
- </li>
-  <li style="margin:0.35em 0;">
-    <strong>Behavioral and Decision Science</strong><br>
-    cognitive biases, social influence, misinformation, survey methods, experimental design
-  </li>
-</ul>
+My current research focuses on social dynamics in complex networks and systems, such as opinion dynamics, information diffusion, and collective behavior and decision-making. Methodologically, I integrate theoretical, empirical, and computational approaches, including modeling of complex networks, dynamical systems, game theory, agent-based modeling, social simulation, surveys, and experimental design.
 
 
 <h2 style="margin-top:20px;">Education</h2>
