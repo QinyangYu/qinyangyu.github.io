@@ -1,8 +1,8 @@
 # Basic Information 
 title: Qinyang Yu
 position: Master Student
-affiliation: Duke University
-affiliation_link: https://duke.edu/
+affiliation: '<span style="color:#4a4a4a; text-decoration:none;">Duke University</span>'
+#affiliation_link: https://duke.edu/
 #subaffiliation: Duke University
 #subaffiliation_link: https://duke.edu/
 #affiliation_logo: ./assets/img/spinion.svg
