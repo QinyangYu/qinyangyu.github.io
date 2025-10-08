@@ -10,7 +10,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests span network science, complexity and systems science, social science, and behavioral science.
 
-My current research focuses on social dynamics in complex networks and systems, such as opinion dynamics, information diffusion, and collective behavior and decision-making. Methodologically, I integrate theoretical, computational, and empirical approaches, including modeling of complex networks, dynamical systems, game theory, agent-based simulations, surveys, and experimental design.
+My current research focuses on social dynamics in complex networks and systems, such as opinion dynamics, information diffusion, and collective behavior and decision-making. Methodologically, I integrate theoretical, computational, and empirical approaches, including modeling of complex networks, dynamical systems, game theory, agent-based simulations, surveys, and experiments.
 
 
 <h2 style="margin-top:20px;">Education</h2>
