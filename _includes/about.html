@@ -1,9 +1,19 @@
+{% if site.title %}
+<h1>{{ site.title }}</h1>
+{% endif %}
+
+{% if site.position %}
+<p class="position">{{ site.position }}</p>
+{% endif %}
+
 {% if site.affiliation %}
-  <p class="affiliation">
   {% if site.affiliation_link %}
-    <a href="{{ site.affiliation_link }}">{{ site.affiliation }}</a>
+    <p class="affiliation"><a href="{{ site.affiliation_link }}">{{ site.affiliation }}</a></p>
   {% else %}
-    <span class="affiliation-text">{{ site.affiliation }}</span>
+    <p class="affiliation">{{ site.affiliation }}</p>
   {% endif %}
-  </p>
+{% endif %}
+
+{% if site.email %}
+<p class="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 {% endif %}
