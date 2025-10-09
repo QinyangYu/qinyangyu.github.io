@@ -1,0 +1,9 @@
+{% if site.affiliation %}
+  <p class="affiliation">
+  {% if site.affiliation_link %}
+    <a href="{{ site.affiliation_link }}">{{ site.affiliation }}</a>
+  {% else %}
+    <span class="affiliation-text">{{ site.affiliation }}</span>
+  {% endif %}
+  </p>
+{% endif %}
