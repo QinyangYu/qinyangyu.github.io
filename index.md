@@ -17,23 +17,20 @@ My current research focuses on social dynamics in complex networks and systems, 
 <ul style="margin:0; padding-left:1.25em;">
   <li style="margin:0.35em 0;">
     My extended abstract has been accepted for presentation at 
-    <a href="https://complexnetworks.org/" style="color:#000;">
-      Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications
-    </a>, 9–11 December 2025.
+    <a href="https://complexnetworks.org/">Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications</a>, 
+    9–11 December 2025.
   </li>
 
   <li style="margin:0.35em 0;">
     I will present at 
-    <a href="https://www.mvea.net/annual-conference.html" style="color:#000;">
-      2025 Missouri Valley Economic Association (MVEA) Annual Meeting
-    </a>, 23–25 October 2025.
+    <a href="https://www.mvea.net/annual-conference.html">2025 Missouri Valley Economic Association (MVEA) Annual Meeting</a>, 
+    23–25 October 2025.
   </li>
 
   <li style="margin:0.35em 0;">
     I will present at 
-    <a href="https://gcurs.rice.edu/" style="color:#000;">
-      2025 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University
-    </a>, 18 October 2025.
+    <a href="https://gcurs.rice.edu/">2025 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University</a>, 
+    18 October 2025.
   </li>
 </ul>
 
