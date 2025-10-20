@@ -71,7 +71,8 @@ My current research focuses on social dynamics in complex networks and systems, 
 <h2 style="margin-top:20px;">Honors and Awards</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
-  <li>Economics Master’s Scholarship Award (Duke University)</li>
+  <li>Dean’s Research Award for Master’s Students ($1,000, 2025-2026, Duke University)</li>
+  <li>Economics Master’s Scholarship Award (2024-2026, Duke University)</li>
   <li>Undergraduate Research Award (19th, 20th, 21st Round, CUHKsz)</li>
   <li>Academic Performance Scholarship (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
   <li>Dean’s Honor List (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
