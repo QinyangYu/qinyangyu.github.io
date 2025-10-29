@@ -21,19 +21,6 @@ My current research focuses on social dynamics in complex networks and systems, 
     9–11 December 2025.
   </li>
 
-  <li style="margin:0.35em 0;">
-    I will present at 
-    <a href="https://www.mvea.net/annual-conference.html">2025 Missouri Valley Economic Association (MVEA) Annual Meeting</a>, 
-    23–25 October 2025.
-  </li>
-
-  <li style="margin:0.35em 0;">
-    I will present at 
-    <a href="https://gcurs.rice.edu/">2025 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University</a>, 
-    18 October 2025.
-  </li>
-</ul>
-
 <h2 style="margin-top:20px;">Education</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
