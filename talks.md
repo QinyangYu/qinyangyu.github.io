@@ -25,7 +25,7 @@ permalink: /talks/
     <img class="slide" src="/files/talks/Pre4.jpg" alt="Pre4" loading="lazy">
     <img class="slide" src="/files/talks/Pre2.jpg" alt="Pre2" loading="lazy">
     <img class="slide" src="/files/talks/Pre5.jpg" alt="Pre5" loading="lazy">
-    <img class="slide" src="/files/talks/Pre5.jpg" alt="Pre6" loading="lazy">
+    <img class="slide" src="/files/talks/Pre7.jpg" alt="Pre7" loading="lazy">
   </div>
   <button class="nav prev" aria-label="Previous image">‹</button>
   <button class="nav next" aria-label="Next image">›</button>
