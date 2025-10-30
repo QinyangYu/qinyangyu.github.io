@@ -19,12 +19,10 @@ My current research focuses on social dynamics in complex networks and systems, 
     My extended abstract has been accepted for presentation at <a href="https://netscix2026.github.io/">NetSciX 2026 - International School and Conference on Network Science</a>, taking place in Auckland, New Zealand, 17-20 February 2026.
   </li>
 
-<ul style="margin:0; padding-left:1.25em;">
   <li style="margin:0.35em 0;">
     I am honored to have received the Dean’s Research Award for Master’s Students from the Duke University Graduate School for the 2025–26 academic year.
   </li>
 
-<ul style="margin:0; padding-left:1.25em;">
   <li style="margin:0.35em 0;">
     I am excited to present and share my work at <a href="https://complexnetworks.org/">Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications</a>, taking place in Binghamton, New York, 9–11 December 2025.
   </li>
