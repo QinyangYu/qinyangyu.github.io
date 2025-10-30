@@ -20,7 +20,7 @@ My current research focuses on social dynamics in complex networks and systems, 
   </li>
 
   <li style="margin:0.35em 0;">
-    I am honored to have received the Dean’s Research Award for Master’s Students from the Duke University Graduate School for the 2025–26 academic year.
+    I am honored to have received the <a href="https://gradschool.duke.edu/financial-support/find-funding/dean-s-research-award-master-s-students/">Dean’s Research Award for Master’s Students</a> from the Duke University Graduate School for the 2025–26 academic year.
   </li>
 
   <li style="margin:0.35em 0;">
