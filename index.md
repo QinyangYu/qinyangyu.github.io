@@ -26,7 +26,7 @@ My current research focuses on social dynamics in complex networks and systems, 
   <li style="margin:0.35em 0;">
     I am excited to present and share my work at <a href="https://complexnetworks.org/">Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications</a>, taking place in Binghamton, New York, 9-11 December 2025.
   </li>
-
+</ul>
 
 
 <h2 style="margin-top:20px;">Education</h2>
