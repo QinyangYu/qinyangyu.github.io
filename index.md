@@ -20,11 +20,11 @@ My current research focuses on social dynamics in complex networks and systems, 
   </li>
 
   <li style="margin:0.35em 0;">
-    I am honored to have received the <a href="https://gradschool.duke.edu/financial-support/find-funding/dean-s-research-award-master-s-students/">Dean’s Research Award for Master’s Students</a> from the Duke University Graduate School for the 2025–26 academic year.
+    I am honored to have received the <a href="https://gradschool.duke.edu/financial-support/find-funding/dean-s-research-award-master-s-students/">Dean’s Research Award for Master’s Students</a> from the Duke University Graduate School for the 2025-26 academic year.
   </li>
 
   <li style="margin:0.35em 0;">
-    I am excited to present and share my work at <a href="https://complexnetworks.org/">Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications</a>, taking place in Binghamton, New York, 9–11 December 2025.
+    I am excited to present and share my work at <a href="https://complexnetworks.org/">Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications</a>, taking place in Binghamton, New York, 9-11 December 2025.
   </li>
 
 
