@@ -10,7 +10,7 @@ permalink: /research/
 **SICSS-NYUSH, Jun.2025**  
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
-### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/MVEA_2025_Qinyang_Yu.pdf) (Slides)
+### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/Writing_Sample_Qinyang_Yu.pdf)
 **Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
 **keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Public Trust, Structural Inequality, Collective Violence
 
