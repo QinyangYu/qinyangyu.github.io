@@ -26,9 +26,11 @@ permalink: /research/
 **Supervised by CUHKsz’s Prof. Yangbo Song, Sep.2023 – Dec.2023**  
 **keywords:** Petition System, Institutional Failure, Game Theory, Law and Economics, Misinformation, Public Grievance Mechanisms, Bayesian Learning
 
+<!--
 ### [A Game Theoretic Analysis for Witch Killing and Human Sacrifice](files/research/ECO3160_Paper.pdf)    
 **Supervised by CUHKsz’s Prof. Yangbo Song, Dec.2022**  
 **keywords:** Human Sacrifice, Game Theory, Incomplete Information, Religious Violence, Poverty, Humanitarian Intervention
+-->
 
 <br>
 ---
