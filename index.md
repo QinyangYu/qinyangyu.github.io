@@ -8,9 +8,9 @@ layout: homepage
 
 I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). 
 
-Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests span network science, complexity and systems science, social science, and behavioral science.
+Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests lie at the intersection of network/complexity/systems science and social/behavioral science.
 
-My current research focuses on social dynamics in complex networks and systems, such as opinion dynamics, information diffusion, and collective behavior and decision-making. Methodologically, I integrate theoretical, computational, and empirical approaches, including modeling of complex networks, dynamical systems, game theory, agent-based simulations, surveys, and experiments.
+My current research focuses on human dynamics within complex systems and networks. I aim to integrate theoretical, computational, and empirical approachesn to uncover social and behavioral mechanisms such as opinion formation, information diffusion, and collective decision-making.
 
 <h2 style="margin-top:20px;">News</h2>
 
@@ -66,12 +66,12 @@ My current research focuses on social dynamics in complex networks and systems, 
 <h2 style="margin-top:20px;">Honors and Awards</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
-  <li>Dean’s Research Award for Master’s Students ($1,000, 2025-2026, Duke University)</li>
+  <li>Dean’s Research Award for Master’s Students (2025-2026, Duke University)</li>
   <li>Economics Master’s Scholarship Award (2024-2026, Duke University)</li>
   <li>Undergraduate Research Award (19th, 20th, 21st Round, CUHKsz)</li>
   <li>Academic Performance Scholarship (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
   <li>Dean’s Honor List (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
-  <li>Master’s List Award of Muse College – Whole-person Development Star (Silver Prize, 2020–2021, CUHKsz)</li>
+  <li>Master’s List Award of Muse College – Whole-person Development Star (2020–2021, CUHKsz)</li>
   <li>Outstanding Student Helper (2020–2021, CUHKsz)</li>
 </ul>
 
