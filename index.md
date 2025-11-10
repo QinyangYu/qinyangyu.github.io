@@ -10,7 +10,7 @@ I am currently a second-year graduate student in the [M.S. in Economics and Comp
 
 Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests lie at the intersection of network/complexity/systems science and social/behavioral science.
 
-My current research focuses on human dynamics within complex systems and networks. I aim to integrate theoretical, computational, and empirical approaches to uncover social and behavioral mechanisms such as opinion formation, information diffusion, and collective decision-making.
+My current research focuses on human dynamics within complex social systems and networks. I aim to integrate theoretical, computational, and empirical approaches to uncover social and behavioral mechanisms such as opinion formation, information diffusion, and collective decision-making.
 
 <h2 style="margin-top:20px;">News</h2>
 
