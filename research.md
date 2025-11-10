@@ -12,7 +12,7 @@ permalink: /research/
 
 ### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/Writing_Sample_Qinyang_Yu.pdf)
 **Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
-**keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Public Trust, Structural Inequality, Collective Violence
+**keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Social Complexity, Structural Inequality, Collective Violence
 
 ### [Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction](files/research/590.06-Sp05-Liu-Yu-Network Experiments under Dynamic Treatment Diffusion Design and Estimation for Bias Reduction.pdf)  
 **Supervised by Duke’s Prof. Sudeepa Roy, Mar.2025 – May.2025**  
