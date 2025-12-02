@@ -10,7 +10,7 @@ permalink: /talks/
 - Accepted for Presentation at [Complex Networks 2025 - The 14th International Conference on Complex Networks and their Applications](https://complexnetworks.org/)
 - Presented at [2025 Missouri Valley Economic Association (MVEA) Annual Meeting](https://www.mvea.net/annual-conference.html)
 - Presented at [2025 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University](https://gcurs.rice.edu/)
-- Published in the [Duke Journal of Economics (Vol. 37, Summer 2025)]([https://gcurs.rice.edu/](https://sites.duke.edu/djepapers/2025/07/31/vol-xxxvii-summer-2025/)  
+- Published in the [Duke Journal of Economics (Vol. 37, Summer 2025)](https://sites.duke.edu/djepapers/2025/07/31/vol-xxxvii-summer-2025/)  
 
 
 ### Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme  
