@@ -7,15 +7,20 @@ permalink: /research/
 # Cluster 1: Networks, Experiments, & Games
 
 ### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](files/research/Writing_Sample_Qinyang_Yu.pdf)
-**Supervised by Duke’s Prof. Charles Becker, Dec.2024 – Present**  
+**Supervised by Duke Prof. Charles Becker, Dec.2024 – Present**  
 **keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Social Complexity, Structural Inequality, Collective Violence
 
+### [Why Polarization Becomes Slow and Deep: A System Dynamics Model of Perception Delay in Opinion Networks](files/research/Writing_Sample_2_Qinyang_Yu.pdf)
+**Independent Research, Duke University, Nov.2025 – Present**  
+**keywords:** Perception Delay, Opinion Dynamics, System Dynamics, Polarization, Cognitive Inertia, Bounded Confidence, Feedback Loops
 
-
-### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf) (Slides)
-**SICSS-NYUSH, Jun.2025**  
+### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](files/research/SICSS_Pre.pdf)
+**Group Project, SICSS-NYUSH, Jun.2025**  
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
+### [Detecting Polarization with Minimal Supervision: Spectral Clustering on Stance-Augmented Embeddings](files/research/ECE_684_Final_Project_Draft.pdf)
+**Supervised by Duke Prof. Patrick Wang, Nov.2025 – Present**  
+**keywords:** Polarization Detection, Semantic Embeddings, Spectral Clustering, Ideological Structure, Weak Supervision
 
 ### [Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction](files/research/590.06-Sp05-Liu-Yu-Network Experiments under Dynamic Treatment Diffusion Design and Estimation for Bias Reduction.pdf)  
 **Supervised by Duke Prof. Sudeepa Roy, Mar.2025 – May.2025**  
