@@ -67,11 +67,13 @@ My current research focuses on human dynamics within complex social systems and 
 
 <ul style="margin:0; padding-left:1.25em;">
   <li>Dean’s Research Award for Master’s Students (2025-2026, Duke University)</li>
+  <li>International Conference Travel Grant (Department of Economics, 2025-2026, Duke University)</li>
   <li>Economics Master’s Scholarship Award (2024-2026, Duke University)</li>
   <li>Undergraduate Research Award (19th, 20th, 21st Round, CUHKsz)</li>
   <li>Academic Performance Scholarship (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
   <li>Dean’s Honor List (2020–2021, 2021–2022, 2022–2023, CUHKsz)</li>
   <li>Master’s List Award of Muse College – Whole-person Development Star (2020–2021, CUHKsz)</li>
+  <li>Merit-Based Entrance Scholarship (2020–2024, CUHKsz)</li>
   <li>Outstanding Student Helper (2020–2021, CUHKsz)</li>
 </ul>
 
