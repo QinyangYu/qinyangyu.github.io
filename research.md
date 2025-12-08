@@ -18,7 +18,7 @@ permalink: /research/
 **Group Project, SICSS-NYUSH, Jun.2025**  
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
-### [Detecting Polarization with Minimal Supervision: Spectral Clustering on Stance-Augmented Embeddings](files/research/ECE_684_Final_Project_Draft.pdf)
+### [Detecting Polarization with Minimal Supervision: Spectral Clustering on Stance-Augmented Embeddings](files/research/ECE_684_Final_Project.pdf)
 **Supervised by Duke Prof. Patrick Wang, Nov.2025 – Present**  
 **keywords:** Polarization Detection, Semantic Embeddings, Spectral Clustering, Ideological Structure, Weak Supervision
 
