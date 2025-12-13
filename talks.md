@@ -23,12 +23,12 @@ permalink: /talks/
 <div class="mini-slider talks" aria-label="Talks photo slider">
   <div class="track">
     <!-- 首张不 lazy，避免首击等待 -->
-    <img class="slide" src="/files/talks/CNA.jpg" alt="CNA">
-    <img class="slide" src="/files/talks/Pre1.jpg" alt="Pre1" loading="lazy">
+    <img class="slide" src="/files/talks/Pre1.jpg" alt="Pre1">
     <img class="slide" src="/files/talks/Pre4.jpg" alt="Pre4" loading="lazy">
     <img class="slide" src="/files/talks/Pre2.jpg" alt="Pre2" loading="lazy">
     <img class="slide" src="/files/talks/Pre5.jpg" alt="Pre5" loading="lazy">
     <img class="slide" src="/files/talks/Pre7.jpg" alt="Pre7" loading="lazy">
+    <img class="slide" src="/files/talks/CNA.jpg" alt="CNA" loading="lazy">
   </div>
   <button class="nav prev" aria-label="Previous image">‹</button>
   <button class="nav next" aria-label="Next image">›</button>
