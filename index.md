@@ -6,7 +6,9 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-Hi! I am Qinyang Yu. I am currently a first-year PhD student at the [School of Data Science](https://datascience.virginia.edu/), [University of Virginia](https://www.virginia.edu/), where I am co-advised by [YY Ahn](https://yyahn.com/about/) and [Alex Gates](https://datascience.virginia.edu/people/alex-gates), and I am a member of [Y Lab](https://yyahn.com/ylab/).
+Hi! Welcome to my website!
+
+I am Qinyang Yu, a first-year PhD student at the [School of Data Science](https://datascience.virginia.edu/), [University of Virginia](https://www.virginia.edu/). I am co-advised by [YY Ahn](https://yyahn.com/about/) and [Alex Gates](https://datascience.virginia.edu/people/alex-gates), and I am a member of [Y Lab](https://yyahn.com/ylab/).
 
 My research interests include computational social science, network science, and machine learning/AI. Specifically, I aim to study the dynamics of beliefs, culture, and knowledge in complex social systems.
 
