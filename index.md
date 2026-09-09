@@ -6,15 +6,17 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-I am currently a second-year graduate student in the [M.S. in Economics and Computation (MSEC)](https://econ.duke.edu/masters-programs/degree-programs/msec) at [Duke University](https://duke.edu/). 
+Hi! I am Qinyang Yu. I am currently a first-year PhD student at the [School of Data Science](https://datascience.virginia.edu/), [University of Virginia](https://www.virginia.edu/), where I am co-advised by [YY Ahn](https://yyahn.com/about/) and [Alex Gates](https://datascience.virginia.edu/people/alex-gates), and I am a member of [Y Lab](https://yyahn.com/ylab/).
 
-Trained in Economics, Mathematics, and Computer Science, I am actively pursuing interdisciplinary research in computational social science. My academic interests lie at the intersection of network/complexity/systems science and social/behavioral science.
-
-My current research focuses on human dynamics within complex social systems and networks. I aim to integrate theoretical, computational, and empirical approaches to uncover social and behavioral mechanisms such as opinion formation, information diffusion, and collective decision-making.
+My research interests include computational social science, network science, and machine learning/AI. Specifically, I aim to study the dynamics of beliefs, culture, and knowledge in complex social systems.
 
 <h2 style="margin-top:20px;">News</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
+  <li style="margin:0.35em 0;">
+  In August 2026, I joined <a href="https://yyahn.com/ylab/">Y Lab</a> and began my Ph.D. in Data Science at the <a href="https://datascience.virginia.edu/">School of Data Science, University of Virginia</a>.
+  </li>
+  
   <li style="margin:0.35em 0;">
     My extended abstract has been accepted for presentation at <a href="https://netscix2026.github.io/">NetSciX 2026 - International School and Conference on Network Science</a>, taking place in Auckland, New Zealand, 17-20 February 2026.
   </li>
@@ -32,10 +34,18 @@ My current research focuses on human dynamics within complex social systems and 
 <h2 style="margin-top:20px;">Education</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
+  
+  <li style="margin:0.35em 0;">
+    <strong><a href="https://www.virginia.edu/" style="color:#000;">University of Virginia</a></strong>
+    <ul style="margin:0.25em 0 0 0; padding-left:1.2em;">
+      <li><a href="https://datascience.virginia.edu/degrees/phd">Ph.D. in Data Science</a>, 2026–Present</li>
+    </ul>
+  </li>
+  
   <li style="margin:0.35em 0;">
     <strong><a href="https://duke.edu/" style="color:#000;">Duke University</a></strong>
     <ul style="margin:0.25em 0 0 0; padding-left:1.2em;">
-      <li><a href="https://econ.duke.edu/masters-programs/degree-programs/msec">M.S. in Economics and Computation (MSEC)</a>, 2024–2026 (Expected)</li>
+      <li><a href="https://econ.duke.edu/masters-programs/degree-programs/msec">M.S. in Economics and Computation (MSEC)</a>, 2024–2026</li>
     </ul>
   </li>
 
