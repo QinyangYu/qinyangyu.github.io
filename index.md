@@ -34,14 +34,14 @@ My research interests include computational social science, network science, and
 <h2 style="margin-top:20px;">Education</h2>
 
 <ul style="margin:0; padding-left:1.25em;">
-  
+
   <li style="margin:0.35em 0;">
     <strong><a href="https://www.virginia.edu/" style="color:#000;">University of Virginia</a></strong>
     <ul style="margin:0.25em 0 0 0; padding-left:1.2em;">
       <li><a href="https://datascience.virginia.edu/degrees/phd">Ph.D. in Data Science</a>, 2026–Present</li>
     </ul>
   </li>
-  
+
   <li style="margin:0.35em 0;">
     <strong><a href="https://duke.edu/" style="color:#000;">Duke University</a></strong>
     <ul style="margin:0.25em 0 0 0; padding-left:1.2em;">
@@ -57,20 +57,28 @@ My research interests include computational social science, network science, and
     </ul>
   </li>
 
+</ul>
+
+
+<h2 style="margin-top:20px;">Training</h2>
+
+<ul style="margin:0; padding-left:1.25em;">
+
   <li style="margin:0.35em 0;">
     <strong><a href="https://shanghai.nyu.edu/" style="color:#000;">New York University Shanghai</a></strong>
     <ul style="margin:0.25em 0 0 0; padding-left:1.2em;">
-      <li><a href="https://sicss.io/2025/nyu-shanghai/">Summer Institute in Computational Social Science (SICSS)</a>, Jun.2025</li>
-      <li><a href="https://caser.shanghai.nyu.edu/training/2025-summer-school-methods/">Summer School in Applied Social Science Research Methods (Advanced Courses)</a>, Jul.2025</li>
+      <li><a href="https://sicss.io/2025/nyu-shanghai/">Summer Institute in Computational Social Science (SICSS)</a>, Jun. 2025</li>
+      <li><a href="https://caser.shanghai.nyu.edu/training/2025-summer-school-methods/">Summer School in Applied Social Science Research Methods (Advanced Courses)</a>, Jul. 2025</li>
     </ul>
   </li>
 
   <li style="margin:0.35em 0;">
-    <strong><a href="https://www.cam.ac.uk/" style="color:#000;">The University of Cambridge</a></strong>
+    <strong><a href="https://www.cam.ac.uk/" style="color:#000;">University of Cambridge</a></strong>
     <ul style="margin:0.25em 0 0 0; padding-left:1.2em;">
-      <li><a href="https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme">The Online Summer Research Programme at Pembroke College</a> (First with Distinction), Jun–Jul.2023</li>
+      <li><a href="https://www.pem.cam.ac.uk/international-programmes/online-summer-research-programme">Online Summer Research Programme at Pembroke College</a> (First with Distinction), Jun.–Jul. 2023</li>
     </ul>
   </li>
+
 </ul>
 
 <h2 style="margin-top:20px;">Honors and Awards</h2>
