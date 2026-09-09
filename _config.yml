@@ -5,7 +5,7 @@ affiliation: "School of Data Science"
 affiliation_link: "https://datascience.virginia.edu/"
 subaffiliation: "University of Virginia"
 subaffiliation_link: "https://www.virginia.edu/"
-affiliation_logo: ./assets/img/SDS V Logo Color-Screen.png
+#affiliation_logo: ./assets/img/SDS V Logo Color-Screen.png
 email: <a href="mailto:kcq2ph@virginia.edu">kcq2ph@virginia.edu</a>
 email2: ""
 address: ""
@@ -14,7 +14,7 @@ address_link: ""
 # Search Engine Optimization (SEO)
 keywords: Qinyang Yu, Yu Qinyang, computational social science, network science, University of Virginia
 canonical: https://qinyangyu.github.io/
-description: Qinyang Yu is currently a first-year graduate student in the Master of Science in Economics and Computation (MSEC) at Duke University. His research focuses on computational social science (CSS) and networks.
+description: Qinyang Yu is currently a first-year PhD student in the School of Data Science at the University of Virginia. His research interests  lie at the intersection of computational social science, network science, and ML/AI methods.
 
 # The option is used to enable the Johns Hopkins template.
 enable_hopkins_logo: false
