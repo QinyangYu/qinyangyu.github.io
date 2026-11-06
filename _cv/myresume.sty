@@ -85,6 +85,18 @@
 \newcommand{\skillListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt]}
 \newcommand{\skillListEnd}{\end{itemize}\vspace{-11pt}}
 
+% Keep the gaps between list items and around lists at their natural size.
+% (Otherwise TeX may squeeze them, a point or so each, to pull a few more lines onto a page,
+%  and the whole page then looks cramped.)
+\newcommand*{\@noshrink}[1]{#1=1#1 plus\gluestretch#1\relax}
+\newcommand*{\@noshrinklist}{\@noshrink\topsep\@noshrink\parsep\@noshrink\itemsep}
+\g@addto@macro\@listI{\@noshrinklist}
+\g@addto@macro\@listi{\@noshrinklist}
+\g@addto@macro\@listii{\@noshrinklist}
+\g@addto@macro\@listiii{\@noshrinklist}
+\@listi
+\@noshrink\partopsep
+
 % Item list
 \newcommand{\itemListStart}{\begin{itemize}[itemsep=0pt]}
 \newcommand{\itemListEnd}{\end{itemize}}
@@ -126,11 +138,13 @@
 }
 
 % Title of a paper followed by bullet points (Conferences and Publications)
+% (one row only, which leaves the first bullet 0.9pt closer than under the two-row headings
+%  above; -6.1pt instead of -7pt evens that out)
 \newcommand{\pubHeading}[1]{
   \renewcommand{\arraystretch}{1.2}
     \begin{tabular}[t]{p{13.74cm}}
       \textbf{#1} \\
-    \end{tabular}\par\nobreak\vspace{-7pt}
+    \end{tabular}\par\nobreak\vspace{-6.1pt}
 }
 
 %------------------------------------
