@@ -1,0 +1,47 @@
+# Builds the CV from _cv/main.tex (XeTeX, via Tectonic) and publishes it as files/cv/CV_Qinyang_Yu.pdf,
+# so the "CV" link on the website always shows the latest version.
+# Runs whenever something in _cv/ changes on main; can also be started by hand from the Actions tab.
+name: Build CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_cv/**"
+      - ".github/workflows/build-cv.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-cv
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Tectonic
+        uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compile CV
+        working-directory: _cv
+        run: tectonic -X compile main.tex
+
+      - name: Publish the PDF on the website
+        run: |
+          cp _cv/main.pdf files/cv/CV_Qinyang_Yu.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add files/cv/CV_Qinyang_Yu.pdf
+          if git diff --cached --quiet; then
+            echo "CV unchanged"
+          else
+            git commit -m "Update CV PDF from _cv/main.tex"
+            git push
+          fi

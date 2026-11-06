@@ -1,0 +1,160 @@
+/* Dark tech theme (archived option B). Fira Sans + Fira Code, cyan with an amber second colour (no purple).
+   Kept from the first cyberpunk draft: glowing glitch name, blinking cursor, glowing network around the photo.
+   Layered on top of main.css. */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Fira+Code:wght@400;500&display=swap");
+
+:root {
+  --bg: #0b1118;
+  --panel: rgba(255, 255, 255, 0.028);
+  --text: #eef3f7;
+  --body: #b7c3ce;
+  --muted: #7e8b98;
+  --faint: #56626e;
+  --rule: rgba(255, 255, 255, 0.08);
+  --accent: #2fd8f2;
+  --accent2: #ffb454;
+  --accent-soft: rgba(47, 216, 242, 0.18);
+  --accent-line: rgba(47, 216, 242, 0.35);
+  --accent-dot: rgba(255, 180, 84, 0.75);
+  --display: "Chakra Petch", var(--sans);
+  --mono: "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+}
+
+body { background: var(--bg); color: var(--body); }
+/* faint grid that fades out below the top of the page, plus one soft glow */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 900px;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(700px 380px at 82% 0%, rgba(47, 216, 242, 0.12), transparent 70%),
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px) 0 0 / 48px 48px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) 0 0 / 48px 48px;
+  -webkit-mask-image: linear-gradient(#000 30%, transparent);
+  mask-image: linear-gradient(#000 30%, transparent);
+}
+.site-main, .site-footer { position: relative; z-index: 1; }
+
+a { color: var(--accent); }
+a:hover { color: #8fe9f8; }
+strong, b, .prose strong { color: var(--text); }
+::selection { background: var(--accent-soft); color: #fff; }
+
+/* header, with the blinking cursor after the name */
+.site-header { background: rgba(11, 17, 24, 0.78); border-bottom-color: var(--rule); }
+.wordmark, .wordmark:hover { color: var(--text); }
+.wordmark::after { content: "_"; margin-left: 1px; color: var(--accent); animation: b-blink 1.1s steps(1) infinite; }
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--text); }
+.site-nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* intro */
+.hero { padding-top: 0.5rem; }
+.hero-name, .page-title {
+  position: relative;
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 22px rgba(47, 216, 242, 0.4);
+}
+.hero-name { font-size: 3.3rem; }
+.hero-role { color: #fff; }
+.hero-links { font-family: var(--mono); font-size: 0.78rem; }
+.hero-links a {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: var(--body);
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.hero-links a:hover { border-color: var(--accent); color: var(--text); box-shadow: 0 0 0 3px var(--accent-soft); text-decoration: none; }
+.hero-photo { box-shadow: 0 0 0 4px var(--bg), 0 0 0 5.5px var(--accent), 0 0 28px rgba(47, 216, 242, 0.45); }
+
+/* glowing network around the photo */
+.hero-graph .edges line { stroke: rgba(47, 216, 242, 0.35); }
+.hero-graph .hub { fill: var(--accent); filter: drop-shadow(0 0 4px var(--accent)); animation: b-pulse 2.6s ease-in-out infinite; }
+.hero-graph .hub:nth-child(4n) { animation-delay: -0.8s; }
+.hero-graph .hub:nth-child(4n+1) { animation-delay: -1.7s; }
+.hero-graph .ring { fill: var(--bg); stroke: var(--accent2); filter: drop-shadow(0 0 4px var(--accent2)); }
+.hero-graph .leaf { fill: var(--accent2); opacity: 0.75; }
+
+/* glitch layers on the name and page titles (text copied in by dark.js) */
+.hero-name::before, .hero-name::after,
+.page-title::before, .page-title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  text-shadow: none;
+}
+.hero-name::before, .page-title::before { color: var(--accent2); animation: b-glitch-a 3.4s infinite steps(1); }
+.hero-name::after, .page-title::after { color: var(--accent); animation: b-glitch-b 2.9s infinite steps(1); }
+
+/* sections as quiet glass panels */
+.block {
+  margin-bottom: 1rem;
+  padding: 1.75rem;
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  background: var(--panel);
+}
+.block-title { font-family: var(--mono); font-size: 0.8rem; font-weight: 500; color: var(--accent); }
+.list:not(.compact) { border-left-color: rgba(47, 216, 242, 0.25); }
+.list:not(.compact) li::before { background: var(--bg); box-shadow: 0 0 8px rgba(47, 216, 242, 0.6); }
+.entry-org a { color: var(--text); }
+.entry-org a:hover { color: var(--accent); }
+.entry-date { font-family: var(--mono); font-size: 0.76rem; }
+
+/* subpages: a terminal-style path above the title (set by dark.js) */
+.page-header { padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule); }
+.page-header::before {
+  content: attr(data-path);
+  display: block;
+  margin-bottom: 0.5rem;
+  font: 400 0.78rem var(--mono);
+  color: var(--muted);
+}
+.page-title { font-size: 2.8rem; }
+.prose h1, .prose h3 { color: var(--text); }
+.prose li::marker { color: var(--accent); }
+.prose img { box-shadow: 0 0 0 1px var(--rule); }
+
+.mini-slider .nav { background: rgba(11, 17, 24, 0.85); border-color: var(--rule); color: var(--text); }
+.mini-slider .dots button { background: #2a3540; }
+.mini-slider .dots button.active { background: var(--accent); }
+
+.site-footer { border-top-color: var(--rule); color: var(--faint); font-family: var(--mono); }
+
+/* motion */
+@keyframes b-blink { 50% { opacity: 0; } }
+@keyframes b-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+@keyframes b-glitch-a {
+  0%, 86%, 100% { clip-path: inset(0 0 100% 0); transform: none; }
+  87% { clip-path: inset(12% 0 58% 0); transform: translate(3px, -1px); }
+  90% { clip-path: inset(46% 0 28% 0); transform: translate(-3px, 1px); }
+  93% { clip-path: inset(72% 0 6% 0); transform: translate(2px, 0); }
+}
+@keyframes b-glitch-b {
+  0%, 80%, 100% { clip-path: inset(100% 0 0 0); transform: none; }
+  81% { clip-path: inset(60% 0 12% 0); transform: translate(-3px, 0); }
+  84% { clip-path: inset(20% 0 60% 0); transform: translate(3px, 1px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wordmark::after, .hero-graph .hub, .hero-name::before, .hero-name::after,
+  .page-title::before, .page-title::after { animation: none; }
+}
+
+@media (max-width: 600px) {
+  .hero-name { font-size: 2.3rem; }
+  .page-title { font-size: 2rem; }
+  .block { padding: 1.4rem 1.25rem; }
+}

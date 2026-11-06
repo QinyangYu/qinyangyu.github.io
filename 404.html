@@ -1,0 +1,13 @@
+---
+layout: default
+title: 404 Not Found
+permalink: /404.html
+---
+<section class="not-found">
+  <h1 class="page-title">404 Not Found</h1>
+  <p>This is not the web page you are looking for.</p>
+  <p class="muted">You'll be redirected to the homepage in 5 seconds.</p>
+</section>
+<script>
+  setTimeout(function () { window.location.href = '{{ "/" | relative_url }}'; }, 5000);
+</script>

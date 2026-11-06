@@ -1,0 +1,54 @@
+/* Mind & AI on the homepage, dark band (archived option D). The site stays white (as in A); only the homepage intro becomes a dark band
+   with the human-head / robot-head illustration (mind.js). Layered on top of main.css. */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+
+:root {
+  --night: #0b1622;
+  --belief-pos: #3fd0e8;
+  --belief-neg: #ffb454;
+  --belief-mid: #e9f0f4;
+  --mono: "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+}
+
+html, body { overflow-x: clip; }
+
+/* homepage only: header blends into the dark band */
+body:has(.hero) .site-header { background: rgba(11, 22, 34, 0.86); border-bottom-color: rgba(255, 255, 255, 0.08); }
+body:has(.hero) .wordmark, body:has(.hero) .wordmark:hover { color: #fff; }
+body:has(.hero) .site-nav a { color: rgba(255, 255, 255, 0.62); }
+body:has(.hero) .site-nav a:hover { color: #fff; }
+
+.site-main:has(> .hero) { padding-top: 0; }
+.hero { position: relative; isolation: isolate; padding: 5rem 0 5.5rem; margin-bottom: 1rem; }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  z-index: -2;
+  background:
+    radial-gradient(620px 340px at 80% 45%, rgba(63, 208, 232, 0.12), transparent 70%),
+    radial-gradient(520px 300px at 12% 80%, rgba(255, 180, 84, 0.07), transparent 70%),
+    var(--night);
+}
+.net-canvas { position: absolute; top: 0; left: 50%; width: 100vw; height: 100%; transform: translateX(-50%); z-index: -1; display: block; }
+.hero-graph { display: none; }
+
+.hero-text { text-shadow: 0 1px 14px rgba(11, 22, 34, 0.9); }
+.hero-name { color: #fff; font-size: 3rem; }
+.hero-role { color: #fff; }
+.hero-affil a { color: var(--belief-pos); }
+.hero-links a { color: rgba(255, 255, 255, 0.78); }
+.hero-links a:hover { color: #fff; }
+.hero-photo { box-shadow: 0 0 0 4px var(--night), 0 0 0 5.5px var(--belief-pos), 0 0 34px rgba(63, 208, 232, 0.4); }
+.hero + .block { border-top: 0; }
+/* narrower windows: the illustration becomes a strip under the intro (class set by mind.js) */
+.hero.mind-strip { padding-bottom: calc(175px + 2.25rem); }
+
+@media (max-width: 600px) {
+  .hero { padding: 2.5rem 0 6rem; }
+  .hero-name { font-size: 2.3rem; }
+}

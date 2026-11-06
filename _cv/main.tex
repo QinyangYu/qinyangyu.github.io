@@ -1,0 +1,243 @@
+%-------------------------------------
+% CV of Qinyang Yu
+% Built with "Yuan's Resume" (XeLaTeX) — https://github.com/xyz-yuanhf/yuan-resume (MIT)
+%
+% Edit this file and push: GitHub builds it (.github/workflows/build-cv.yml)
+% and publishes the PDF as files/cv/CV_Qinyang_Yu.pdf on the website.
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item {\Calluna \href{mailto:kcq2ph@virginia.edu}{kcq2ph@virginia.edu}}  % E-mail address
+  \item {\Calluna \href{https://qinyangyu.github.io/}{qinyangyu.github.io}}  % Home page
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}
+  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Qinyang Yu}}
+  \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- EDUCATION --------------------
+\begin{longSection}{\section{Education}}
+\eduHeading
+  {University of Virginia}{Charlottesville, United States}
+  {Doctor of Philosophy in Data Science}{Aug.2026 – Present}
+\itemListStart
+  \myItem{School of Data Science; Advisors: Prof. YY Ahn and Prof. Alex Gates}
+\itemListEnd
+
+\eduHeading
+  {Duke University}{Durham, United States}
+  {Master of Science in Economics and Computation}{Aug.2024 – May.2026}
+\itemListStart
+  \myItem{Cumulative GPA: 3.854/4.00}
+\itemListEnd
+
+\eduHeading
+  {The Chinese University of Hong Kong, Shenzhen}{Shenzhen, China}
+  {Bachelor of Business Administration with Honours, First Class}{Sep.2020 – Jul.2024}
+\itemListStart
+  \myItem{Major in Economics (Economic Science Stream), Minor in Mathematics and Applied Mathematics}
+  \myItem{Major GPA: 3.886/4.00, Cumulative GPA: 3.765/4.00}
+\itemListEnd
+\end{longSection}
+
+% -------------------- TRAINING --------------------
+\begin{longSection}{\section{Training}}
+\eduHeading
+  {New York University Shanghai}{Shanghai, China}
+  {Summer Institute in Computational Social Science (SICSS) - NYU Shanghai}{Jun.2025}
+
+\eduLine
+  {Summer School in Applied Social Science Research Methods (Advanced Courses)}{Jul.2025}
+
+\eduHeading
+  {The University of Cambridge}{Online}
+  {The Online Summer Research Programme at Pembroke College (First with Distinction)}{Jun.2023 – Jul.2023}
+\end{longSection}
+
+% -------------------- CONFERENCES & PUBLICATIONS --------------------
+\begin{longSection}{\section{Conferences\\and\\Publications}}
+\pubHeading{Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks}
+\itemListStart
+  \myItem{Accepted for Presentation at \textit{NetSciX 2026} - International School and Conference on Network Science}
+  \myItem{Presented at \textit{Complex Networks 2025} - The 14th International Conference on Complex Networks and their Applications}
+  \myItem{Presented at 2025 Missouri Valley Economic Association (MVEA) Annual Meeting}
+  \myItem{Presented at 2025 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University}
+  \myItem{Published in the \textit{Duke Journal of Economics} (Vol. 37, Summer 2025)}
+\itemListEnd
+
+\pubHeading{Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme}
+\itemListStart
+  \myItem{Presented at the 2025 Academic Annual Conference of the Chinese Sociological Association}
+  \myItem{Presented at the 2024 Gulf Coast Undergraduate Research Symposium (GCURS), Rice University}
+  \myItem{Presented at the 2024 Master’s Research Seminar, EMAC, Duke University}
+  \myItem{Published in the Fairy Lake Economic Journal, a student academic journal at CUHKsz}
+\itemListEnd
+\end{longSection}
+
+% -------------------- RESEARCH EXPERIENCE --------------------
+\begin{longSection}{\section{Research\\Experience}}
+\clusterHeading{Cluster 1: Networks, Experiments, \& Games}
+
+\projHeading
+{Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks \weblink{https://qinyangyu.github.io/files/research/Writing_Sample_Qinyang_Yu.pdf}{PDF}}
+{Supervised by Duke Prof. Charles Becker}{Dec.2024 – Present}
+\itemListStart
+  \myItem{This paper proposed a structural theory of scapegoating focusing on how network positions shapes vulnerability beyond identity bias}
+  \myItem{Used game theory to show why scapegoating systematically targets peripheral nodes with low centrality; conducted agent-based simulations under stochastic heterogeneity and identity-structure interactions; delivered interventions for structural inequality}
+  \myItem{Yielded an A+ graded course paper; published in \textit{Duke Journal of Economics}; accepted at \textit{Complex Networks 2025} and \textit{NetSciX 2026}}
+\itemListEnd
+
+\projHeading
+{Why Polarization Becomes Slow and Deep: A System Dynamics Model of Perception Delay in Opinion Networks \weblink{https://qinyangyu.github.io/files/research/Writing_Sample_2_Qinyang_Yu.pdf}{PDF}}
+{Independent Research, Duke University}{Nov.2025 – Dec.2025}
+\itemListStart
+  \myItem{Integrated a bounded-confidence network model with first-order information delay to capture cognitive inertia in opinion updating}
+  \myItem{Simulated how perception delay leads to a “slow–deep” pattern of polarization and why depolarization interventions might fail}
+\itemListEnd
+
+\projHeading
+{Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election \weblink{https://qinyangyu.github.io/files/research/SICSS_Pre.pdf}{Slides}}
+{Group Project, SICSS-NYUSH}{Jun.2025}
+\itemListStart
+  \myItem{This group project analyzed the retweet network and texts of 260 Chinese-speaking Trump supporters on X, explored the relationship between network structure and ideological extremity using LDA, SHAP, and GNNExplainer, and discussed intervention strategies}
+  \myItem{Simulated counterfactual network interventions via the Friedkin-Johnsen opinion dynamics model in Python; compared five rewiring algorithms to effectively reduce extremity; contributed to a 20-minute oral and a poster presentation for the Ideathon event in SICSS}
+\itemListEnd
+
+\projHeading
+{Detecting Polarization with Minimal Supervision: Spectral Clustering on Stance-Augmented Embeddings \weblink{https://qinyangyu.github.io/files/research/ECE_684_Final_Project.pdf}{PDF}}
+{Supervised by Duke Prof. Patrick Wang}{Nov.2025 – Present}
+\itemListStart
+  \myItem{Developed a minimal-supervision method to detect ideological polarization geometrically using spectral clustering in large corpora}
+  \myItem{Augmented text embeddings with limited stance labels; showed 10–20\% supervision effectively recover the latent two-camp structure}
+\itemListEnd
+
+\projHeading
+{Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction \weblink{https://qinyangyu.github.io/files/research/590.06-Sp05-Liu-Yu-Network\%20Experiments\%20under\%20Dynamic\%20Treatment\%20Diffusion\%20Design\%20and\%20Estimation\%20for\%20Bias\%20Reduction.pdf}{PDF}}
+{Supervised by Duke Prof. Sudeepa Roy}{Mar.2025 – May.2025}
+\itemListStart
+  \myItem{Simulated the design and analysis of network experiments under treatment diffusion to reduce bias in estimating ATE}
+  \myItem{Introduced the Independent Cascade Model (ICM) for treatment diffusion; compared random vs. cluster assignment paired with individual vs. neighborhood-based estimators; explored alternative diffusion patterns via the Linear Threshold Model (LTM)}
+  \myItem{Found that cluster randomization combined with neighborhood-based estimators effectively reduces bias and improves accuracy, particularly when treatment or spillover effects are strong; final report scored 39/40}
+\itemListEnd
+
+\projHeading
+{Government Endorsement and Voter Skepticism: An Experiment of Selective Disclosure in Political Communication \weblink{https://qinyangyu.github.io/files/research/ECON_690_Concept_Paper_Group_3.pdf}{PDF}}
+{Supervised by FSU Prof. Pellumb Reshidi}{Mar.2025 – May.2025}
+\itemListStart
+  \myItem{Investigated how explicit knowledge of government bias shapes voter skepticism under truthful yet selectively disclosed information}
+  \myItem{Proposed a sender–receiver communication game; designed an experiment (neutral vs. biased government) to test equilibrium selection}
+  \myItem{Linked information disclosure and sender credibility to experimental findings on the interactive effects of bias and transparency in collective decision-making; proposal scored 94/100, coding 89/100, and paper 91/100}
+\itemListEnd
+
+\projHeading
+{Lawful Roots, Lawless Routes: The Paradox of Litigation-Related Petitions in China \weblink{https://qinyangyu.github.io/files/research/Independent_Research_1.pdf}{PDF}}
+{Supervised by CUHKsz Prof. Yangbo Song}{Sep.2023 – Dec.2023}
+\itemListStart
+  \myItem{Modeled why litigation-related petitions, despite clear legal boundaries, are more likely to escalate into unauthorized forms}
+  \myItem{Collected 5-year local government petition data and 4 official interviews; Constructed a Bayesian learning process and analyzed comparative statics; revealed a amplification mechanism where petitioners misinterpret legal signals and form biased posteriors}
+  \myItem{Proposed strategies to resolve conflicts and preserve social order by adjusting information delivery}
+\itemListEnd
+
+\clusterHeading{Cluster 2: Applied Econometrics, Policy, \& Development}
+
+\projHeading
+{Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme \weblink{https://qinyangyu.github.io/files/research/Working_Paper_2.pdf}{PDF}}
+{Coauthored with Cambridge Dr. Saite Lu}{Aug.2023 – Present}
+\itemListStart
+  \myItem{Extended subjective well-being (SWB) to three OECD-defined sub-dimensions (cognition, affect, eudaimonia) and sub-components}
+  \myItem{Processed CFPS cross-sectional data; exploited a Regression Discontinuity Design (RDD) to estimate the causal impact of China’s New Rural Pension Scheme (NRPS) on SWB among rural elderly residents, with stronger gains in affect and eudaimonia}
+  \myItem{Conducted validity and robustness checks; identified multi-dimensional heterogeneity across education, family, social class, and regions}
+  \myItem{Completed a Cambridge Summer Program working paper with distinction; published in CUHKsz’s \textit{Fairy Lake Economic Journal}}
+\itemListEnd
+
+\projHeading
+{On the Development Path of Hong Kong and Singapore Economy: Is the Industrial Policy Important? \weblink{https://qinyangyu.github.io/files/research/Independent_Research_3.pdf}{PDF}}
+{Supervised by CUHKsz Prof. Chunrong Ai}{Jun.2022 – Jul.2023}
+\itemListStart
+  \myItem{Investigated how differences in industrial policy shaped industrial structure and economic development in Hong Kong and Singapore}
+  \myItem{Collected and Visualized data from World Bank and government yearbooks; Quantified divergence and generated policy dummies; estimated a structural VAR with exogenous shocks and analyzed IRFs and variance decomposition under two Cholesky orderings}
+  \myItem{Performed ADF unit-root and Granger-causality tests; selected optimal lags via AIC/SBC; ran residual and stability diagnostics}
+  \myItem{Delivered policy recommendations on manufacturing and industrial coordination; received 19th–21st Undergraduate Research Awards}
+\itemListEnd
+
+\projHeading
+{Predicting Default Rate of Lending Club Loans: Lasso-Penalized Logistic Regression and Nonlinear Methods \weblink{https://qinyangyu.github.io/files/research/ECO3080_Paper.pdf}{PDF}}
+{Supervised by CUHKsz Prof. Qihui Chen}{Dec.2022}
+\itemListStart
+  \myItem{Constructed training/test splits and visualized multicollinearity in R; fitted lasso and elastic-net logistic models to handle high dimensionality; tuned $\lambda$ via cross-validation and the one-standard-error rule; plotted lasso paths and ROC curves for model selection}
+  \myItem{Compared linear vs. nonlinear models (RF, GNN) using specificity, accuracy, and time complexity; achieved project score of 96.6/100}
+\itemListEnd
+
+\projHeading
+{Total Factor Productivity and Social Capital \weblink{https://www.tandfonline.com/doi/full/10.1080/00343404.2026.2653002}{Link}}
+{Research Assistant, Supervised by Cambridge’s Dr. Saite Lu}{Aug.2023 – Jun.2024}
+\itemListStart
+  \myItem{Computed weighted averages of trust variables in STATA; merged panel data across European NUTS2 regions; identified 17 controls}
+  \myItem{Applied OLS, two-way fixed effects, system GMM, and semiparametric regressions; found positive impacts of social trust on TFP}
+\itemListEnd
+\end{longSection}
+
+% -------------------- TEACHING EXPERIENCE --------------------
+\begin{longSection}{\section{Teaching\\Experience}}
+\projHeading
+{COMPSCI 230: Discrete Mathematics for Computer Science \weblink{https://cs.duke.edu/courses/discrete-math-computer-science-1}{Link}}
+{Instructor: Duke Prof. Alex Steiger}{Spring.2025}
+\itemListStart
+  \myItem{Led 13 recitation and 1 exam review sessions; designed 3 exercise sets; created rubrics; graded 10 assignments and 3 exams; Held OH}
+\itemListEnd
+
+\projHeading
+{ECO 4010: Advanced Microeconomics \weblink{https://www.cuhk.edu.cn/en/course/8049}{Link}}
+{Instructor: CUHKsz Prof. Yangbo Song}{Spring.2024}
+\itemListStart
+  \myItem{Organized 10 tutorials and wrote exercise solutions; held weekly 2-hour Q\&A sessions and responded to students’ inquiries via email}
+\itemListEnd
+
+\projHeading
+{ECO 3011: Intermediate Microeconomic Theory \weblink{https://www.cuhk.edu.cn/en/course/8031}{Link}}
+{Instructor: CUHKsz Prof. Jieshuang He}{Spring.2023}
+\itemListStart
+  \myItem{Designed teaching materials using LaTeX; delivered 8 tutorials on consumer and producer theory; held weekly 2-hour Q\&A sessions}
+\itemListEnd
+\end{longSection}
+
+% -------------------- HONORS & AWARDS --------------------
+\sectionBlock{
+\section{Honors\\and\\Awards}
+}{
+\awardListStart
+\justifying
+\item \emph{Dean’s Research Award for Master’s Students}, Duke University\rightdate{2025–2026}
+\item \emph{International Conference Travel Grant} (Department of Economics), Duke University\rightdate{2025–2026}
+\item \emph{Economics Master’s Scholarship Award}, Duke University\rightdate{2024–2026}
+\item \emph{Undergraduate Research Award} (19th, 20th, 21st Round), CUHKsz\rightdate{2022–2023}
+\item \emph{Academic Performance Scholarship}, CUHKsz\rightdate{2020–2021, 2021–2022, 2022–2023}
+\item \emph{Dean’s Honor List}, CUHKsz\rightdate{2020–2021, 2021–2022, 2022–2023}
+\item \emph{Master’s List Award of Muse College: Whole-person Development Star}, CUHKsz\rightdate{2020–2021}
+\item \emph{Merit-Based Entrance Scholarship}, CUHKsz\rightdate{2020–2024}
+\item \emph{Outstanding Student Helper}, CUHKsz\rightdate{2020–2021}
+\awardListEnd
+}
+
+% -------------------- ADDITIONAL INFORMATION --------------------
+\sectionBlock{
+\section{Additional\\Information}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: English (Fluent), Chinese (Native)
+\item \emph{Computer Skills}: {\Courier \fontsize{11pt}{11pt}\selectfont Python}, {\Courier \fontsize{11pt}{11pt}\selectfont R}, {\Courier \fontsize{11pt}{11pt}\selectfont STATA}, {\Courier \fontsize{11pt}{11pt}\selectfont MATLAB}, {\Courier \fontsize{11pt}{11pt}\selectfont oTree}, {\Courier \fontsize{11pt}{11pt}\selectfont HTML}, {\Courier \fontsize{11pt}{11pt}\selectfont EViews}
+\item \emph{Interests}: Analytic Philosophy (Meta-Ethics, Theory of Knowledge/Epistemology), Cuisine (Chinese, Italian, French, American, Japanese), Pop Music, Literary Compositions, Badminton, Volleyball
+\skillListEnd
+}
+
+\end{document}

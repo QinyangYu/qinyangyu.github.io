@@ -1,0 +1,62 @@
+---
+layout: subpage
+title: "Research"
+permalink: /research/
+---
+
+# Cluster 1: Networks, Experiments, & Games
+
+### [Who Gets the Blame? A Structural Theory of Scapegoating in Social Networks](/files/research/Writing_Sample_Qinyang_Yu.pdf)
+**Supervised by Duke Prof. Charles Becker, Dec.2024 – Present**  
+**keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Social Complexity, Structural Inequality, Collective Violence
+
+### [Why Polarization Becomes Slow and Deep: A System Dynamics Model of Perception Delay in Opinion Networks](/files/research/Writing_Sample_2_Qinyang_Yu.pdf)
+**Independent Research, Duke University, Nov.2025 – Dec.2025**  
+**keywords:** Perception Delay, Opinion Dynamics, System Dynamics, Polarization, Cognitive Inertia, Bounded Confidence, Feedback Loops
+
+### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](/files/research/SICSS_Pre.pdf)
+**Group Project, SICSS-NYUSH, Jun.2025**  
+**keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
+
+### [Detecting Polarization with Minimal Supervision: Spectral Clustering on Stance-Augmented Embeddings](/files/research/ECE_684_Final_Project.pdf)
+**Supervised by Duke Prof. Patrick Wang, Nov.2025 – Present**  
+**keywords:** Polarization Detection, Semantic Embeddings, Spectral Clustering, Ideological Structure, Weak Supervision
+
+### [Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction](/files/research/590.06-Sp05-Liu-Yu-Network Experiments under Dynamic Treatment Diffusion Design and Estimation for Bias Reduction.pdf)  
+**Supervised by Duke Prof. Sudeepa Roy, Mar.2025 – May.2025**  
+**keywords:** Treatment Diffusion, Network Experiments, Average Treatment Effect (ATE), Graph Cluster Randomization, Neighborhood-Based Estimators, Independent Cascade Model (ICM), Bias Reduction
+
+### [Government Endorsement and Voter Skepticism: An Experiment of Selective Disclosure in Political Communication](/files/research/ECON_690_Concept_Paper_Group_3.pdf)  
+**Supervised by FSU Prof. Pellumb Reshidi, Mar.2025 – May.2025**  
+**keywords:** Government Bias, Voter Skepticism, Selective Information Disclosure, Misinformation, Experimental Politics, Political Communication
+
+### [Lawful Roots, Lawless Routes: The Paradox of Litigation-Related Petitions in China](/files/research/Independent_Research_1.pdf)    
+**Supervised by CUHKsz Prof. Yangbo Song, Sep.2023 – Dec.2023**  
+**keywords:** Petition System, Institutional Failure, Game Theory, Law and Economics, Misinformation, Public Grievance Mechanisms, Bayesian Learning
+
+<!--
+### [A Game Theoretic Analysis for Witch Killing and Human Sacrifice](/files/research/ECO3160_Paper.pdf)    
+**Supervised by CUHKsz’s Prof. Yangbo Song, Dec.2022**  
+**keywords:** Human Sacrifice, Game Theory, Incomplete Information, Religious Violence, Poverty, Humanitarian Intervention
+-->
+
+---
+
+
+# Cluster 2: Applied Econometrics, Policy, & Development
+
+### [Pension Policy as a Pathway to Happiness: Insights from China’s New Rural Pension Scheme](/files/research/Working_Paper_2.pdf)    
+**Coauthored with Cambridge Dr. Saite Lu, Aug.2023 – Present**  
+**keywords:** Subjective Well-Being (SWB), Rural Pension Schemes, Regression Discontinuity Design, Economic Inequality, Aging Population
+
+### [On the Development Path of Hong Kong and Singapore Economy: Is the Industrial Policy Important?](/files/research/Independent_Research_3.pdf)    
+**Supervised by CUHKsz Prof. Chunrong Ai, Jun.2022 – Jul.2023**  
+**keywords:** Applied Macro-econometrics, Development Economics, Industrial Policy, Economic Growth, Structural Change, Vector Autoregression
+
+### [Predicting Default Rate of Lending Club Loans: Lasso-Penalized Logistic Regression and Nonlinear Methods](/files/research/ECO3080_Paper.pdf)    
+**Supervised by CUHKsz Prof. Qihui Chen, Dec.2022**  
+**keywords:** Credit Scoring, Default Prediction, Logistic Regression, Regularization, Decision Trees, Neural Networks, Specificity, AUC
+
+### [Total Factor Productivity and Social Capital](https://www.tandfonline.com/doi/full/10.1080/00343404.2026.2653002)  
+**Research Assistant, Supervised by Cambridge’s Dr. Saite Lu , Aug.2023 – Jun.2024**  
+**keywords:** European NUTS2 Regions, Development Economics, TFP, Social Trust, Two-way Fixed Effect, System GMM, Semiparametric Regressions

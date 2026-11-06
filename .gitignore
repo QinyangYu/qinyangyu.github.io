@@ -1,0 +1,24 @@
+# Jekyll build output and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler
+vendor/
+.bundle/
+Gemfile.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# LaTeX build files for the CV (the published PDF lives in files/cv/)
+_cv/*.aux
+_cv/*.log
+_cv/*.out
+_cv/*.fls
+_cv/*.fdb_latexmk
+_cv/*.xdv
+_cv/*.synctex.gz
+_cv/main.pdf

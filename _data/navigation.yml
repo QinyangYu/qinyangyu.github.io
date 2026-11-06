@@ -1,0 +1,15 @@
+# Top navigation, shown left to right.
+# The name on the left of the bar links back to the homepage.
+main:
+  - title: "CV"
+    url: "/files/cv/CV_Qinyang_Yu.pdf"
+  - title: "Research"
+    url: /research/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Talks"
+    url: /talks/
+  - title: "Articles"
+    url: /articles/
+  - title: "Personal"
+    url: /personal/
