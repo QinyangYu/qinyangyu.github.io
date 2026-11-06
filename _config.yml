@@ -23,7 +23,7 @@ favicon: /assets/img/iamaflerken.jpg
 
 # Search engines and link previews
 keywords: Qinyang Yu, Yu Qinyang, computational social science, network science, natural language processing, large language models, belief dynamics, University of Virginia
-description: Qinyang Yu is a first-year PhD student in the School of Data Science at the University of Virginia. His current research focuses on the dynamics of complex social and information systems, from human belief systems to LLM behaviors, from social contagion to cultural evolution.
+description: Qinyang Yu is a first-year PhD student in the School of Data Science at the University of Virginia. His current research focuses on the dynamics of complex social and information systems, from human beliefs to LLM behaviors, from social contagion to cultural evolution.
 
 # Files that are not published
 exclude:
