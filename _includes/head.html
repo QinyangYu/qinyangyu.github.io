@@ -13,6 +13,37 @@
 <meta property="og:description" content="{{ site.description }}">
 <meta property="og:image" content="{{ site.avatar | absolute_url }}">
 <meta name="twitter:card" content="summary">
+{%- if site.google_site_verification %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}/",
+  "image": "{{ site.portrait | absolute_url }}",
+  "email": "mailto:{{ site.email }}",
+  "jobTitle": "PhD Student",
+  "description": "{{ site.description }}",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "School of Data Science, University of Virginia",
+    "url": "https://datascience.virginia.edu/"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Duke University" },
+    { "@type": "CollegeOrUniversity", "name": "The Chinese University of Hong Kong, Shenzhen" }
+  ],
+  "sameAs": [
+    "{{ site.linkedin }}",
+    "{{ site.github_link }}",
+    "https://datascience.virginia.edu/people/qinyang-yu"
+  ]
+}
+</script>
+{%- endif %}
 
 <link rel="icon" href="{{ site.favicon | relative_url }}">
 
