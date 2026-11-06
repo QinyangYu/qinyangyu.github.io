@@ -7,7 +7,7 @@ layout: homepage
   <div class="block-body">
     <p>Hi! Welcome to my website!</p>
     <p>I am Qinyang Yu, a first-year PhD student at the <a href="https://datascience.virginia.edu/">School of Data Science</a>, <a href="https://www.virginia.edu/">University of Virginia</a>. I am co-advised by <a href="https://yyahn.com/about/">YY Ahn</a> and <a href="https://datascience.virginia.edu/people/alex-gates">Alex Gates</a>, and I am a member of <a href="https://yyahn.com/ylab/">Y Lab</a>.</p>
-    <p>My research focuses on the dynamics of complex social systems—from the belief systems of humans to the behaviors of large language models, from the spread of information to the evolution of culture. Methodologically, I leverage tools from computational social science, network science, natural language processing, machine learning, and artificial intelligence.</p>
+    <p>My current research focuses on the dynamics of complex social and information systems, from human belief systems to LLM behaviors, from social contagion to cultural evolution. Methodologically, I leverage tools from computational social science, network science, natural language processing, machine learning, and artificial intelligence.</p>
   </div>
 </section>
 
