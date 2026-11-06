@@ -19,7 +19,7 @@ linkedin: https://www.linkedin.com/in/qinyang-yu-839125386/
 # Images
 portrait: /assets/img/portrait.jpg   # square photo shown on the homepage
 avatar: /assets/img/profile.jpg      # image used for link previews
-favicon: /assets/img/iamaflerken.jpg
+favicon: /assets/img/favicon.svg   # also: /favicon.ico, assets/img/favicon-192.png, apple-touch-icon.png
 
 # Search engines and link previews
 keywords: Qinyang Yu, Yu Qinyang, computational social science, network science, natural language processing, large language models, belief dynamics, University of Virginia
