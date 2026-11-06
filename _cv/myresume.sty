@@ -88,10 +88,10 @@
 % Item list
 \newcommand{\itemListStart}{\begin{itemize}[itemsep=0pt]}
 \newcommand{\itemListEnd}{\end{itemize}}
-\newcommand{\myItem}[1]{
-  \item{
-    {#1 \vspace{-2pt}}
-  }
+% (no space before \vspace: when the text exactly fills a line, that space used to spill
+%  onto a new, empty line and leave a gap under the bullet)
+\newcommand{\myItem}[1]{%
+  \item{#1\unskip\vspace{-2pt}}%
 }
 
 % Right-aligned date/place at the end of a line. If the line is too long, it moves to the
