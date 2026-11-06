@@ -19,7 +19,7 @@ permalink: /research/
 **keywords:** CTSs, Social Media, Ideological Extremity, Echo Chambers, Topic Modeling, Explainable AI, Rewiring Algorithms
 
 ### [Detecting Polarization with Minimal Supervision: Spectral Clustering on Stance-Augmented Embeddings](/files/research/ECE_684_Final_Project.pdf)
-**Supervised by Duke Prof. Patrick Wang, Nov.2025 – Present**  
+**Supervised by Duke Prof. Patrick Wang, Nov.2025 – Dec.2025**  
 **keywords:** Polarization Detection, Semantic Embeddings, Spectral Clustering, Ideological Structure, Weak Supervision
 
 ### [Network Experiments under Dynamic Treatment Diffusion: Design and Estimation for Bias Reduction](/files/research/590.06-Sp05-Liu-Yu-Network Experiments under Dynamic Treatment Diffusion Design and Estimation for Bias Reduction.pdf)  
