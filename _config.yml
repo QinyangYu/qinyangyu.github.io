@@ -7,7 +7,7 @@ baseurl: ""
 lang: en
 
 # Homepage header
-position: "First-year PhD Student<br>Graduate Research Assistant"
+position: "First-year PhD Student"
 affiliation: "School of Data Science"
 affiliation_link: "https://datascience.virginia.edu/"
 subaffiliation: "University of Virginia"

@@ -11,7 +11,7 @@ permalink: /research/
 **keywords:** Scapegoating, Social Networks, Opinion Dynamics, Game Theory, Network Centrality, Social Complexity, Structural Inequality, Collective Violence
 
 ### [Why Polarization Becomes Slow and Deep: A System Dynamics Model of Perception Delay in Opinion Networks](/files/research/Writing_Sample_2_Qinyang_Yu.pdf)
-**Independent Research, Duke University, Nov.2025 – Dec.2025**  
+**Supervised by Duke Prof. Jiawei Fu, Nov.2025 – Dec.2025**  
 **keywords:** Perception Delay, Opinion Dynamics, System Dynamics, Polarization, Cognitive Inertia, Bounded Confidence, Feedback Loops
 
 ### [Understanding Chinese-speaking Trump Supporters Online: Features, Factors, and Intervention Strategies of Political Opinion Extremism in the X Network during the 2020 U.S. Election](/files/research/SICSS_Pre.pdf)
