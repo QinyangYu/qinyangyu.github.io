@@ -45,9 +45,9 @@
 </script>
 {%- endif %}
 
-<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="48x48">
-<link rel="icon" href="{{ site.favicon | relative_url }}" type="image/svg+xml">
-<link rel="icon" href="{{ '/assets/img/favicon-192.png' | relative_url }}" type="image/png" sizes="192x192">
+{%- comment %} Only formats Google Search accepts (ICO, PNG), so its favicon pipeline never picks an SVG. {% endcomment %}
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
+<link rel="icon" href="{{ site.favicon | relative_url }}" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
